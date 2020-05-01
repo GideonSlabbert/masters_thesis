@@ -1,0 +1,69 @@
+%%
+%%  Department of Chemical Engineering
+%%  MEng Research Proposal - Main File
+%%  Copyright (C) 2011-2016 University of Pretoria.
+%%
+
+%% EDIT: The primary option supported by the dissertation / thesis class
+%%   is the official degree code. This code must be correctly set to allow
+%%   the degree descriptions in the template to be atomically set.
+\documentclass[12250091]{diss_thesis}
+
+%% EDIT: Replace the following with your information.
+\renewcommand{\dtthetitleeng}{TITLE}
+\renewcommand{\dtthecandidatename}{Gideon Pieter Slabbert}
+\renewcommand{\dtthedate}{October 2020}
+\renewcommand{\dtthesupervisor}{Mr C Sandrock}
+
+\begin{document}
+
+%% ---[ FRONT MATTER ]-------------------------------------------------------
+
+\maketitlepage
+\input{summary}
+\input{abbrev}
+\tableofcontents
+\updatechaptername
+\newpage
+
+%% Switch to the required header / footer style.
+\pagestyle{normal}
+\setcounter{page}{1}
+
+%% ---[ CONTENT ]------------------------------------------------------------
+
+% EDIT: Include additional chapter files as necessary.
+\input{chapter1}
+\input{chapter2}
+\input{chapter3}
+\input{chapter4}
+\input{chapter5}
+\input{chapter6}
+
+\newpage
+
+%% ---[ BACK MATTER ]--------------------------------------------------------
+
+%\backmatter
+
+%% EDIT: Change the bibliography style if necessary (not recommended).
+\pagestyle{bibliography}
+\bibliographystyle{IEEEtran}
+%\bibliographystyle{elsarticle-harv}
+\updatechaptername
+\addcontentsline{toc}{chapter}{REFERENCES}
+\bibliography{diss_thesis}
+\newpage
+
+\appendix
+\makeatletter
+\renewcommand{\@chapapp}{Addendum}
+\makeatother
+\updatechaptername
+\pagestyle{normal}
+\input{addenduma}
+\newpage
+
+\end{document}
+
+%% End of File.

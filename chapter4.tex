@@ -1,0 +1,66 @@
+%%
+%%  Department of Electrical, Electronic and Computer Engineering
+%%  MEng Dissertation / PhD Thesis - Chapter 4
+%%  Copyright (C) 2011-2016 University of Pretoria.
+%%
+
+\chapter{RESULTS}
+
+\section{CHAPTER OVERVIEW}
+
+Chapter overview chapter overview chapter overview chapter overview
+chapter overview chapter overview chapter overview chapter overview
+chapter overview.
+
+Table \ref{table:VOX_comparison_G_air} shows a more complex example of a table.
+
+\begin{table}[htb!]
+\caption{A comparison of the total thermal conductance of the VO\textsubscript{x} devices at atmospheric pressure.}
+\label{table:VOX_comparison_G_air}
+\begin{center}
+\small
+\tabcolsep=0.13cm
+\pgfplotstabletypeset[col sep=comma,
+    zerofill,
+	columns={Device, Theo1, Theo3, Simulated, Experimental},
+    columns/Device/.style={string type,
+        column name={Device},
+        %precision=3
+        },
+    columns/Theo1/.style={
+        column name={Theoretical$^{(a)}$},
+        precision=2},
+    columns/Theo3/.style={
+        column name={Theoretical$^{(b)}$},
+        precision=2},
+    columns/Simulated/.style={
+        column name={Simulated},
+        precision=2},
+    columns/Experimental/.style={
+        column name={Experimental},
+        precision=2},
+	every even row/.style={
+        before row={\rowcolor[gray]{0.925}}},
+    every head row/.style={
+        before row={\toprule},
+		after row={
+			{} & {[\si{\micro\watt\per\kelvin}]} & {[\si{\micro\watt\per\kelvin}]} & {[\si{\micro\watt\per\kelvin}]} & {[\si{\micro\watt\per\kelvin}]}  \\
+			\midrule}},
+    every last row/.style={
+        after row=\bottomrule},
+    %row predicate/.code={%
+		%\ifnum#1<0\relax
+		%\ifnum#1>5\relax
+		%	\pgfplotstableuserowfalse
+		%\fi
+		%\fi}
+    ]
+    {VOx_Thermal_conductance_air.csv}
+\end{center}
+$^{(a)}$ Theoretical calculation using the standard approach.\\
+$^{(b)}$ Theoretical calculation using the compensated method by including the thermal constriction resistance.
+\end{table}
+
+
+
+%% End of File.
