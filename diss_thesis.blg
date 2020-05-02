@@ -31,45 +31,45 @@ Warning--I didn't find a database entry for "doucet:sequentialmontecarloinpracti
 -- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
 
 Done.
-You've used 13 entries,
+You've used 15 entries,
             4087 wiz_defined-function locations,
-            927 strings with 10628 characters,
-and the built_in function-call counts, 11879 in all, are:
-= -- 971
-> -- 278
-< -- 123
-+ -- 156
-- -- 43
-* -- 590
-:= -- 1720
-add.period$ -- 31
-call.type$ -- 13
-change.case$ -- 13
-chr.to.int$ -- 282
-cite$ -- 13
-duplicate$ -- 815
-empty$ -- 908
-format.name$ -- 56
-if$ -- 2777
+            939 strings with 10972 characters,
+and the built_in function-call counts, 13857 in all, are:
+= -- 1138
+> -- 332
+< -- 145
++ -- 186
+- -- 52
+* -- 690
+:= -- 2005
+add.period$ -- 35
+call.type$ -- 15
+change.case$ -- 15
+chr.to.int$ -- 330
+cite$ -- 15
+duplicate$ -- 949
+empty$ -- 1042
+format.name$ -- 67
+if$ -- 3239
 int.to.chr$ -- 0
-int.to.str$ -- 13
-missing$ -- 133
-newline$ -- 62
-num.names$ -- 13
-pop$ -- 284
+int.to.str$ -- 15
+missing$ -- 156
+newline$ -- 68
+num.names$ -- 15
+pop$ -- 329
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 2
-skip$ -- 915
+skip$ -- 1067
 stack$ -- 0
-substring$ -- 671
-swap$ -- 718
-text.length$ -- 29
+substring$ -- 785
+swap$ -- 844
+text.length$ -- 35
 text.prefix$ -- 0
 top$ -- 5
-type$ -- 13
+type$ -- 15
 warning$ -- 0
-while$ -- 61
-width$ -- 15
-write$ -- 155
+while$ -- 71
+width$ -- 17
+write$ -- 177
 (There were 18 warnings)

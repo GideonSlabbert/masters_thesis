@@ -25,9 +25,6 @@ The methodologies involved in fault detection and diagnosis of industrial proces
 
 This study will focus on methods and approaches taken to visualize temporal or time series data. 
 
-
-
-
 \subsection{VISUALIZATION IN GENERAL}
 
 Some of the first books to discuss information visualization date back to 1967 with the publication of Jacques Bertin's Semiologie Graphique \cite{rees2019survey}. A survey by \cite{rees2019survey} highlighted the number of visualization books have been published each year, displayed in \ref{fig:1}.
@@ -41,9 +38,9 @@ Some of the first books to discuss information visualization date back to 1967 w
 
 The IEEE Visualization conference series aimed at sharing developments in this field started in 1990 and has contributed a large amount of data on how visualization assists other fields to better understand their data. \cite{isenberg2016vispubdata} compiled a database of these publications to assist researchers in this field to understand the history of visualization in a field and make the researcher aware of new developments trends. The papers presented through these conferences serve as valuable source to describe previous work related to visualization for the use of fault detection and diagnosis.
 
-\subsection{DATA ANALYTICS}
+\subsection{VISUAL ANALYTICS}
 
-Before designing it is important to understand the mental processes behind data analytics that are used by people to understand and gain insight into data.
+Before designing it is important to understand the mental processes behind data analytics that are used by people to understand and gain insight into data. The work discussed in this section first attempts to describe the human aspect of of the process and then attempts to integrate the role of the machine or computer into the process.
 
 One of the earliest  models for that describe the process of 'sensemaking' was developed by \cite{pirolli2005sensemaking}. In this model intelligence analysis or sensemaking  consists of:
 \begin{enumerate}
@@ -68,17 +65,71 @@ These frameworks or frames actually define what counts as data and shape the dat
 
 The first cycle that starts from the frame/ data idea is the elaboration cycle. In this cycle the frame is expanded and questioned - there could be doubt about the explanation it provides. If the doubt, possibly caused by troublesome data is explained away then the frame is preserved.
 
-The second cycle involves a re framing process. If questioning the frame leads to its rejection, it might lead to its replacement with a better one. We could compare frames to see which one fits the data best.
+The second cycle involves a re framing process. If questioning the frame leads to its rejection, it might lead to its replacement with a better one. We could compare frames to see which one fits the data best. 
 
 This model is displayed in Figure\ref{fig:4}.
 \begin{figure}[!ht]
-	\centering\epsfig{figure=Frame_data_sensemaking_model,scale=0.7}
+	\centering\epsfig{figure=Frame_data_sensemaking_model.PNG,scale=0.7}
 	\caption{\cite{klein2006making} frame-data sensemaking model}\label{fig:4}
 \end{figure}
 
 This is a continuous process in which a frame is strengthened or improvement at each iteration.
 
-\subsection{VISUAL ANALYTICS PROCESS}
+Any method for turning data into knowledge requires the manipulation of the data. The analysis would start with an analysis of the data. This analysis has traditionally been done manually but with the exponential growth in the amount of data that can form part of an analysis other methods are being developed to make this step more efficient. \cite{fayyad1996data} analyzed this challenge in the emerging field of knowledge discovery in databases (KDD). In simple terms this field is concerned with development of methods and techniques for making sense of data.
+
+
+One of the most noteworthy fields where these methods are applied is in the areas of astronomy. These fields contain terabytes of data contained in images. Although industrial application of data analysis contain a lot less data than this it could still be worth while studying these techniques to see if they can assist with effectively utilizing large amounts of time series data.
+
+The goal of KDD is extracting high-level knowledge from low-level data in the context of large data sets \cite{fayyad1996data}. The KDD process is visually described by Figure \ref{fig:6}.
+\begin{figure}[!ht]
+	\centering\epsfig{figure=knowledge_discovery_in_databases.PNG,scale=0.8}
+	\caption{\cite{fayyad1996data} steps in the knowledge discovery in databases model}\label{fig:6}
+\end{figure}
+The process is described by the following steps:
+\begin{enumerate}
+	\item Develop understanding of application domain and use prior knowledge to determine the goal of the KDD
+	\item Create a dataset or subset of the available data that will be used to discover useful information
+	\item Data cleaning, in this step invalid data like noise of questionable data is removed in order to prevent false deductions
+	\item Data reduction and projection - finding useful features to represent the data, in this step dimensional reduction can be done to simplify the analysis
+	\item Match the goals of KDD to a specific data mining method
+	\item Exploratory analysis of the model and hypothesis selection, in this step the data mining method is chosen as  well as the methods that wil be used to sreach for patterns
+	\item Data mining - searching for patterns in the data that would confirm the hypothesis
+	\item Interpreting the mined patters
+	\item Acting on the discovered knowledge, using it to solve the problem
+\end{enumerate}
+These steps describe a linear process but there can be movement back and forth between the steps to refine the process.
+
+
+\cite{sacha2014knowledge} goes a step further to describe the process in which knowledge is generated from data by developing a model that defines how the human and computer interact. 
+This model is split into two parts: 
+\begin{enumerate}
+	\item computer system which involves the data, visualization and analytic models
+	\item human component that describes the cognitive process  associated with an analytical session
+\end{enumerate}
+What makes visual analytics so effective is the integration of these two parts; the human side  provides the perceptive skills, cognitive reasoning and domain knowledge while the computer side provides the computing data storage capability \cite{sacha2014knowledge}. This visual analytic model also attempts to incorporate some of the other models described earlier like the Sensemaking model \cite{pirolli2005sensemaking} and the Knowledge Discovery Process in Databases (KDD) \cite{fayyad1996data}. The complete knowledge generation model with the reference to other models is displayed in Figure \ref{fig:5}.
+\begin{figure}[!ht]
+	\centering\epsfig{figure=human_computer_va_model.PNG,scale=0.5}
+	\caption{\cite{sacha2014knowledge} computer-human interaction in knowledge generating process}\label{fig:5}
+\end{figure}
+
+
+The computer part of the model has three main elements:
+\begin{enumerate}
+	\item Data - this includes all the data that describes the analytical problem and includes facts in any structured, semi-structured or unstructured manner. Another element to this is a term called meta data, which could be data that describes the structure of other data or data that summarizes other data.
+	\item Model - This can be any descriptive measure of the data ranging from statistical properties of the data to complex data mining algorithms. This process can deliver a single number to describe the strength of an hypothesis or a complex pattern.
+	\item Visualization - In this process the data is transformed into some kind of visual artifact that enables the analyst to detect relationships.
+\end{enumerate}, 
+The human element is also described in three main loops:
+The computer part of the model has three main elements:
+\begin{enumerate}
+	\item Exploration loop - Findings are made based on observations of the visual analytics system, Actions or individual tasks are then performed that result in tangible  and unique responses from the visual analytics system. 
+	\item Verification loop - Insight is gained from interpreting Findings, often with previous domain knowledge to generate units of information. A Hypothesis is then formed based on these Insights and tested in the visual analytics system through Actions.
+	\item Knowledge - The final part is to build up confidence in the Insights from the data and Hypotheses tested on the data. If  patterns or stories told by the data makes sense and can be used to answer the questions from the visual analytic process then Knowledge is generated. This Knowledge is added to the domain knowledge of the analyst to ask more questions and generate more Knowledge.
+\end{enumerate}
+This model proposed by \cite{sacha2014knowledge} again highlights the iterative process of visual analytics and how feedback loops are used in every element of the model.
+
+
+\subsection{VALUE OF RECORD KEEPING IN VISUALIZATION}
 
 \cite{mahyar2010closer} conducted a experiment to study the visual analytics process and the role of record keeping in this process. This study also elaborated on key elements for the design of a collaborative visual analysis tool. The study required groups to complete tasks given a certain data set using computer aided visual analytics.
 Actions taken during visual analytics were grouped into four phases:
@@ -104,19 +155,11 @@ Visualization plays a critical role in these data driven problem solving techniq
 
 Another approach to improve visualization of casual relations would be to adapt novel techniques used in other fields, similar to how PageRank was adapted to be used as LoopRank in industrial processes. Process monitoring and fault detection of batch processes has received attention in recent years. The extensive use of batch processing in the production of high value products makes it a important to ensure that batch runs are completed with a high level of success. \cite{wang2018geometric} developed a novel approach to process monitoring and fault detection in batch processes by utilizing a technique they termed time-explicit Kiviat diagrams. The core idea behind this technique is based on Multi-way Principle Component Analysis that facilitates batch-wise unfolding of the three dimensional (Time*Variables*Batches) batch data matrix into a two dimensional matrix that captures the variation across batches. The type of data required to warrant the use of this technique is very similar to the data generated by multiple time region analysis in the LoopRank analysis done by \cite{streicher2019plant}. Each batch can be seen as a time region in the LoopRank analysis and the analysis can be seen as the completion of multiple batch runs.
 
-\subsection{A subsection}
-
-A subsection a subsection a subsection a subsection a subsection a
-subsection a subsection a subsection a subsection a subsection a
-subsection a subsection a subsection a subsection a subsection.
-
 Equation \eqref{fig:example} shows an example of a numbered equation.
 \begin{equation}
   \Delta w_{i,j} = \alpha a_i \Delta[j]  \label{eqn:example}
 \end{equation}
-A subsection a subsection a subsection a subsection a subsection a
-subsection a subsection a subsection a subsection a subsection a
-subsection a subsection a subsection a subsection a subsection.
+
 \begin{align}
   \m{QX} \m{a} & = \m{Qy} \notag \\
   \therefore \quad (\m{QX})^T \m{QX} \m{a} & = (\m{QX})^T \m{Qy} \notag \\
@@ -125,51 +168,15 @@ subsection a subsection a subsection a subsection a subsection.
         & = \left( \mt{X} \m{W} \m{X} \right)^{-1} \mt{X} \m{W} \m{y}
           \label{equ:weightedleastsquares}
 \end{align}
-A subsection a subsection a subsection a subsection a subsection a
-subsection a subsection a subsection a subsection a subsection a
-subsection a subsection a subsection a subsection a subsection.
 
 \subsection{A subsection with a long heading that continues from the
   first line onto the second line see also table of contents}
 
-A subsection with a long heading a subsection with a long heading a
-subsection with a long heading a subsection with a long heading a
-subsection with a long heading a subsection with a long heading a
-subsection with a long heading a subsection with a long heading a
-subsection with a long heading a subsection with a long heading a
-subsection with a long heading a subsection with a long heading a
-subsection with a long heading a subsection with a long heading a
-subsection with a long heading a subsection with a long heading a
-subsection with a long heading.
 
 \subsubsection{Testing deeper nested section headers}
 
-\begin{enumerate}
-\item Enumerated list item 1 -- list item paragraph text list item paragraph
-    text list item paragraph text list item paragraph text list item
-    paragraph text list item paragraph text list item paragraph text
-    list item paragraph text list item paragraph text
-\item Enumerated list item 2 -- list item paragraph text list item paragraph
-    text list item paragraph text list item paragraph text list item
-    paragraph text list item paragraph text list item paragraph text
-    list item paragraph text list item paragraph text
-\item Enumerated list item 3 -- list item paragraph text list item paragraph
-    text list item paragraph text list item paragraph text list item
-    paragraph text list item paragraph text list item paragraph text
-    list item paragraph text list item paragraph text
-\end{enumerate}
 
-\section{THIRD THEME OF LITERATURE STUDY}
 
-Third theme of literature study third theme of literature study third
-theme of literature study third theme of literature study third theme
-of literature study third theme of literature study third theme of
-literature study third theme of literature study third theme of
-literature study third theme of literature study third theme of
-literature study third theme of literature study third theme of
-literature study.
-
-Figure \ref{fig:example} is an example of a figure, with sub-figures
 \ref{fig:examplea} and \ref{fig:exampleb}.
 \begin{figure}[!ht]
   \begin{minipage}[b]{.5\linewidth}
@@ -187,31 +194,7 @@ Figure \ref{fig:example} is an example of a figure, with sub-figures
 Third theme of literature study third theme of literature study third
 theme of literature study third theme of literature study.
 
-\section{MORE LITERATURE STUDY THEMES}
 
-More literature study themes more literature study themes more
-literature study themes more literature study themes more literature
-study themes more literature study themes more literature study themes
-more literature study themes more literature study themes more
-literature study themes more literature study themes more literature
-study themes more literature study themes more literature study themes
-more literature study themes more literature study themes.
-
-More literature study themes more literature study themes more
-literature study themes more literature study themes more literature
-study themes more literature study themes more literature study themes
-more literature study themes more literature study themes more
-literature study themes more literature study themes more literature
-study themes more literature study themes more literature study themes
-more literature study themes more literature study themes.
-
-More literature study themes more literature study themes more
-literature study themes more literature study themes more literature
-study themes more literature study themes more literature study themes
-more literature study themes more literature study themes more
-literature study themes more literature study themes more literature
-study themes more literature study themes more literature study themes
-more literature study themes more literature study themes.
 
 Table \ref{fig:example} shows an example of a table.
 \begin{center}
@@ -239,12 +222,6 @@ Table \ref{fig:example} shows an example of a table.
 \end{table}
 \end{center}
 
-More literature study themes more literature study themes more
-literature study themes more literature study themes more literature
-study themes more literature study themes more literature study themes
-more literature study themes more literature study themes more
-literature study themes more literature study themes more literature
-study themes more literature study themes more literature study themes
-more literature study themes more literature study themes.
+
 
 %% End of File.

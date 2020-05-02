@@ -71,6 +71,17 @@ G.~Klein, B.~Moon, and R.~R. Hoffman, ``Making sense of sensemaking 2: A
   macrocognitive model,'' \emph{IEEE Intelligent systems}, vol.~21, no.~5, pp.
   88--92, 2006.
 
+\bibitem{sacha2014knowledge}
+D.~Sacha, A.~Stoffel, F.~Stoffel, B.~C. Kwon, G.~Ellis, and D.~A. Keim,
+  ``Knowledge generation model for visual analytics,'' \emph{IEEE transactions
+  on visualization and computer graphics}, vol.~20, no.~12, pp. 1604--1613,
+  2014.
+
+\bibitem{fayyad1996data}
+U.~Fayyad, G.~Piatetsky-Shapiro, and P.~Smyth, ``From data mining to knowledge
+  discovery in databases,'' \emph{AI magazine}, vol.~17, no.~3, pp. 37--37,
+  1996.
+
 \bibitem{mahyar2010closer}
 N.~Mahyar, A.~Sarvghad, and M.~Tory, ``A closer look at note taking in the
   co-located collaborative visual analytics process,'' in \emph{2010 IEEE
