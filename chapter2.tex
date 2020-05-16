@@ -12,7 +12,48 @@ This chapter explores the basic
 
 \section{FAULT DETECTION AND ANALYSIS}
 
-New data driven methods that apply concepts from other fields have started to show some promising results. One of these methods is the use of the PageRank algorithm \cite{bryan200625} employed by google on the ranking of control loops based on the degree of interaction.\cite{farenzena2009looprank} has developed a methodology called LoopRank with the aim of prioritizing control loop maintenance by highlighting loops that have a higher correlation with other loops. In this methodology a relative weight matrix is compiled using partial correlation between input and output variables. The importance scores of each variable is then determined by calculating the normalized eigenvector of the relative weight matrix.\\ 
+New data driven methods that apply concepts from other fields have started to show some promising results. One of these methods is the use of the PageRank algorithm \cite{bryan200625} employed by google on the ranking of control loops based on the degree of interaction.\cite{farenzena2009looprank} has developed a methodology called LoopRank with the aim of prioritizing control loop maintenance by highlighting loops that have a higher correlation with other loops. In this methodology a relative weight matrix is compiled using partial correlation between input and output variables. The importance scores of each variable is then determined by calculating the normalized eigenvector of the relative weight matrix.\\
+
+\subsection{PAGERANK DERIVATION}
+
+The development of the ranking algorithm of \cite{bryan200625} started with the problem of how to rank web sites depending on how many times they are referenced by other websites.
+
+Consider a group of 4 websites that contain references to each other in the following manner indicated in Figure \ref{fig:7}. References are indicated by arrows.
+\begin{figure}[!ht]
+	\centering\epsfig{figure=webpages.PNG,scale=0.5}
+	\caption{web pages with references}\label{fig:7}
+\end{figure}
+An initial idea would be that a page that has more references or back links is more important. Let $x_{k}$ be the importance of page k. If this method is followed then $x_{3}$ = 3 would be the most important web page because it has the most references.
+
+Although this might seem to make sense, $x_{1}$ has two references of which one comes from $x_{3}$, it is also the only page that is referenced by $x_{3}$ which could be considered an "important" page because it has the most back links. This indicates that $x_{1}$ might be even more important?
+
+Another approach would be to let back links form important pages count more than back links from less important pages. If a page k has a back link from page j, then the score given to this back link can be calculated as $x_{k} = \frac{x_{j}}{n_{j}}$ where $n_{j}$ is the total number of references made by page j. The total score for page $x_{k}$ is then calculated by the sum of all back links to it adjusted for how many references they make. Applying this new method the importance score for each node is then:
+\newline $x_{1} = \frac{x_{3}}{1} + \frac{x_{4}}{2} $ 
+\newline $x_{2} = \frac{x_{1}}{3} $
+\newline $x_{3} = \frac{x_{1}}{3} + \frac{x_{2}}{2} + \frac{x_{4}}{2} $
+\newline $x_{4} = \frac{x_{1}}{3} + \frac{x_{2}}{2} $
+\newline writing these equations on matrix form and defining it as the link matrix A:
+\newline \[
+A=
+\begin{bmatrix}
+0           & 0           & 1 & \frac{1}{2} \\
+\frac{1}{3} & 0           & 0 & 0           \\
+\frac{1}{3} & \frac{1}{2} & 0 & \frac{1}{2} \\
+\frac{1}{3} & \frac{1}{2} & 0 & 0
+\end{bmatrix}
+\]
+\newline each row in the matrix A represents a node while each column on that row represents the importance score from another node. For example row one represents node 1 and it has a back link from node 3 with an importance score of 1 and a back link from node 4 with a importance score of $\frac{1}{2}$.
+
+if $x = \begin{bmatrix} x_{1} & x_{2} & x_{3} & x_{4} \end{bmatrix} ^{T}$ then 
+\newline $x = Ax$ 
+\newline with x being an eigenvector for A with en eigenvalue of 1
+\newline if A is a $n\times n$ then a nonzero vector x is an eigenvector if $Ax = \lambda x$ for some scalar $\lambda$. The eigenvector x that solves this equation is then calculated to be:
+\newline $x \approx \begin{bmatrix} 0.387 & 0.129 & 0.290 & 0.194\end{bmatrix}^{T}$
+which shows that node one is in fact more important than node three.
+
+\subsection{LOOPRANK ADAPTION}
+
+
 
 \cite{rahman2010new} compared LoopRank with a more traditional data driven method that utilizes the integral of absolute or squared error to determine loop interaction. Canonical correlation was used to calculate the relative weight matrix in the LoopRank methodology.
 It was found that both methods delivered similar results.\\ 
@@ -88,11 +129,11 @@ The goal of KDD is extracting high-level knowledge from low-level data in the co
 The process is described by the following steps:
 \begin{enumerate}
 	\item Develop understanding of application domain and use prior knowledge to determine the goal of the KDD
-	\item Create a dataset or subset of the available data that will be used to discover useful information
+	\item Create a data set or subset of the available data that will be used to discover useful information
 	\item Data cleaning, in this step invalid data like noise of questionable data is removed in order to prevent false deductions
 	\item Data reduction and projection - finding useful features to represent the data, in this step dimensional reduction can be done to simplify the analysis
 	\item Match the goals of KDD to a specific data mining method
-	\item Exploratory analysis of the model and hypothesis selection, in this step the data mining method is chosen as  well as the methods that wil be used to sreach for patterns
+	\item Exploratory analysis of the model and hypothesis selection, in this step the data mining method is chosen as  well as the methods that will be used to search for patterns
 	\item Data mining - searching for patterns in the data that would confirm the hypothesis
 	\item Interpreting the mined patters
 	\item Acting on the discovered knowledge, using it to solve the problem

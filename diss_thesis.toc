@@ -12,23 +12,25 @@
 \contentsline {chapter}{\numberline {2}LITERATURE STUDY}{3}%
 \contentsline {section}{\numberline {2.1}CHAPTER OBJECTIVES}{3}%
 \contentsline {section}{\numberline {2.2}FAULT DETECTION AND ANALYSIS}{3}%
-\contentsline {section}{\numberline {2.3}VISUALIZATION FOR FAULT DETECTION}{4}%
-\contentsline {subsection}{\numberline {2.3.1}VISUALIZATION IN GENERAL}{4}%
-\contentsline {subsection}{\numberline {2.3.2}VISUAL ANALYTICS}{5}%
-\contentsline {subsection}{\numberline {2.3.3}VALUE OF RECORD KEEPING IN VISUALIZATION}{10}%
-\contentsline {subsection}{\numberline {2.3.4}A subsection with a long heading that continues from the first line onto the second line see also table of contents}{13}%
-\contentsline {subsubsection}{\numberline {2.3.4.1}Testing deeper nested section headers}{13}%
-\contentsline {chapter}{\numberline {3}METHODS (FOR ILLUSTRATION THIS HEADING CONTINUES ONTO THE NEXT LINE)}{15}%
-\contentsline {section}{\numberline {3.1}CHAPTER OVERVIEW}{15}%
-\contentsline {chapter}{\numberline {4}RESULTS}{16}%
-\contentsline {section}{\numberline {4.1}CHAPTER OVERVIEW}{16}%
-\contentsline {chapter}{\numberline {5}DISCUSSION}{17}%
-\contentsline {section}{\numberline {5.1}CHAPTER OVERVIEW}{17}%
-\contentsline {chapter}{\numberline {6}CONCLUSION}{18}%
-\contentsline {section}{\numberline {6.1}EXAMPLE HEADING}{18}%
+\contentsline {subsection}{\numberline {2.2.1}PAGERANK DERIVATION}{3}%
+\contentsline {subsection}{\numberline {2.2.2}LOOPRANK ADAPTION}{5}%
+\contentsline {section}{\numberline {2.3}VISUALIZATION FOR FAULT DETECTION}{5}%
+\contentsline {subsection}{\numberline {2.3.1}VISUALIZATION IN GENERAL}{5}%
+\contentsline {subsection}{\numberline {2.3.2}VISUAL ANALYTICS}{6}%
+\contentsline {subsection}{\numberline {2.3.3}VALUE OF RECORD KEEPING IN VISUALIZATION}{12}%
+\contentsline {subsection}{\numberline {2.3.4}A subsection with a long heading that continues from the first line onto the second line see also table of contents}{14}%
+\contentsline {subsubsection}{\numberline {2.3.4.1}Testing deeper nested section headers}{14}%
+\contentsline {chapter}{\numberline {3}METHODS (FOR ILLUSTRATION THIS HEADING CONTINUES ONTO THE NEXT LINE)}{16}%
+\contentsline {section}{\numberline {3.1}CHAPTER OVERVIEW}{16}%
+\contentsline {chapter}{\numberline {4}RESULTS}{17}%
+\contentsline {section}{\numberline {4.1}CHAPTER OVERVIEW}{17}%
+\contentsline {chapter}{\numberline {5}DISCUSSION}{18}%
+\contentsline {section}{\numberline {5.1}CHAPTER OVERVIEW}{18}%
+\contentsline {chapter}{\numberline {6}CONCLUSION}{19}%
+\contentsline {section}{\numberline {6.1}EXAMPLE HEADING}{19}%
 \renewcommand *\cftchappresnum {\MakeUppercase {Chapter}\ }
-\contentsline {chapter}{REFERENCES}{19}%
+\contentsline {chapter}{REFERENCES}{20}%
 \renewcommand *\cftchappresnum {\MakeUppercase {Addendum}\ }
-\contentsline {chapter}{\numberline {A}DERIVATION OF HIGHER ORDER MODELS}{21}%
-\contentsline {section}{\numberline {A.1}Example Heading}{21}%
-\contentsline {subsection}{\numberline {A.1.1}Subheading example}{21}%
+\contentsline {chapter}{\numberline {A}DERIVATION OF HIGHER ORDER MODELS}{22}%
+\contentsline {section}{\numberline {A.1}Example Heading}{22}%
+\contentsline {subsection}{\numberline {A.1.1}Subheading example}{22}%
