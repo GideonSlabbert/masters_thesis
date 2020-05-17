@@ -16,49 +16,59 @@ New data driven methods that apply concepts from other fields have started to sh
 
 \subsection{PAGERANK DERIVATION}
 
-The development of the ranking algorithm of \cite{bryan200625} started with the problem of how to rank web sites depending on how many times they are referenced by other websites.
+The ranking algorithm developed by \cite{bryan200625} started with the idea of ranking web sites depending on how many times they are referenced by other websites.
 
-Consider a group of 4 websites that contain references to each other in the following manner indicated in Figure \ref{fig:7}. References are indicated by arrows.
+Consider a group of 4 websites that contain references to each other in the manner indicated in Figure \ref{fig:7}. References are indicated by arrows.
 \begin{figure}[!ht]
 	\centering\epsfig{figure=webpages.PNG,scale=0.5}
 	\caption{web pages with references}\label{fig:7}
 \end{figure}
-An initial idea would be that a page that has more references or back links is more important. Let $x_{k}$ be the importance of page k. If this method is followed then $x_{3}$ = 3 would be the most important web page because it has the most references.
+An initial idea would be that a page that has more references or back links is more important. Let $x_{k}$ be the importance of page k. If this method is followed then $x_{3} = 3$ would be the most important web page because it has the most references.
 
-Although this might seem to make sense, $x_{1}$ has two references of which one comes from $x_{3}$, it is also the only page that is referenced by $x_{3}$ which could be considered an "important" page because it has the most back links. This indicates that $x_{1}$ might be even more important?
+This initial ranking method indicates that $x_{3}$ is important, but it doesn't take into account the importance that $x_{3}$ passes on to $x_{1}$ because it is the only page referenced by $x_{3}$.
 
-Another approach would be to let back links form important pages count more than back links from less important pages. If a page k has a back link from page j, then the score given to this back link can be calculated as $x_{k} = \frac{x_{j}}{n_{j}}$ where $n_{j}$ is the total number of references made by page j. The total score for page $x_{k}$ is then calculated by the sum of all back links to it adjusted for how many references they make. Applying this new method the importance score for each node is then:
+Another approach would be to let back links from important pages count more than back links from less important pages. If a page k has a back link from page j, then the score given to this back link can be calculated as $x_{k} = \frac{x_{j}}{n_{j}}$ where $n_{j}$ is the total number of references made by page j. The total score for page $x_{k}$ is then calculated by the sum of all back links to it adjusted for the number of references made. Applying this new method the importance score for each node is calculated:
 \newline $x_{1} = \frac{x_{3}}{1} + \frac{x_{4}}{2} $ 
 \newline $x_{2} = \frac{x_{1}}{3} $
 \newline $x_{3} = \frac{x_{1}}{3} + \frac{x_{2}}{2} + \frac{x_{4}}{2} $
 \newline $x_{4} = \frac{x_{1}}{3} + \frac{x_{2}}{2} $
-\newline writing these equations on matrix form and defining it as the link matrix A:
-\newline \[
-A=
-\begin{bmatrix}
+\newline These equations can be written in a matrix form, which will be defined as the link matrix A:
+\newline 
+\[A=\begin{bmatrix}
 0           & 0           & 1 & \frac{1}{2} \\
 \frac{1}{3} & 0           & 0 & 0           \\
 \frac{1}{3} & \frac{1}{2} & 0 & \frac{1}{2} \\
 \frac{1}{3} & \frac{1}{2} & 0 & 0
-\end{bmatrix}
-\]
-\newline each row in the matrix A represents a node while each column on that row represents the importance score from another node. For example row one represents node 1 and it has a back link from node 3 with an importance score of 1 and a back link from node 4 with a importance score of $\frac{1}{2}$.
+\end{bmatrix}\]
+\newline Each row in the matrix A represents a page or node while each column  represents the importance score from another node. For example row one represents node 1 and it has a back link from node 3 with an importance score of 1 and a back link from node 4 with a importance score of $\frac{1}{2}$.
 
-if $x = \begin{bmatrix} x_{1} & x_{2} & x_{3} & x_{4} \end{bmatrix} ^{T}$ then 
-\newline $x = Ax$ 
+if $x = \begin{bmatrix} x_{1} & x_{2} & x_{3} & x_{4} \end{bmatrix} ^{T}$ then the problem can be defined as the eigenvector problem:
+\newline $Ax = x \lambda$ 
 \newline with x being an eigenvector for A with en eigenvalue of 1
-\newline if A is a $n\times n$ then a nonzero vector x is an eigenvector if $Ax = \lambda x$ for some scalar $\lambda$. The eigenvector x that solves this equation is then calculated to be:
+\newline if A is a $n\times n$ matrix, then a nonzero vector x is an eigenvector if $Ax = \lambda x$ for some scalar $\lambda$. The eigenvector x that solves this equation is then calculated to be:
 \newline $x \approx \begin{bmatrix} 0.387 & 0.129 & 0.290 & 0.194\end{bmatrix}^{T}$
 which shows that node one is in fact more important than node three.
 
 \subsection{LOOPRANK ADAPTION}
 
+\cite{farenzena2009looprank} developed a method called LoopRank which is based on the PageRank algorithm to prioritize control loop maintenance. Modern industrial sites have a large number of control loops which becomes challenging to maintain effectively given limited technical resources. 
 
+The LoopRank method can be summarized in five steps:
+\begin{enumerate}
+	\item Collect time series data of control loop parameters
+	\item Calculate the partial correlation between all the variables in the data set. This information is used to build a relative weight matrix A or link matrix as referred to in the PageRank algorithm
+	\item Compute the LoopRank based on the relative weight matrix A using the eigenvector centrality theorem
+	\item multiply the result for each loop with a pre-defined weight that is based on the criticality of the loop. This weight is assigned heuristically depending on loop type and profitability
+	\item Normalize the results to express the score for each loop as a percentage
+\end{enumerate}
 
-\cite{rahman2010new} compared LoopRank with a more traditional data driven method that utilizes the integral of absolute or squared error to determine loop interaction. Canonical correlation was used to calculate the relative weight matrix in the LoopRank methodology.
-It was found that both methods delivered similar results.\\ 
+\cite{farenzena2009looprank} demonstrated the efficacy of LoopRank by testing it on an industrial case study in which it successfully flagged the most critical control loops.
 
-The LoopRank methodology was further expanded on by \cite{streicher2014eigenvector} who tested the LoopRank using transfer entropy in an attempt to get a better estimation of causality when calculating the relative wight matrix. \cite{streicher2019plant} used this methodology for incipient fault detection by calculating importance scores over multiple overlapping time regions. \\ 
+\subsection{LOOPRANK DEVELOPMENT}
+
+\cite{rahman2010new} compared LoopRank with a more traditional data driven method that utilizes the integral of absolute or squared error to determine loop interaction. Canonical correlation was used to calculate the relative weight matrix in the LoopRank methodology. It was found that both methods delivered similar results.\\ 
+
+The LoopRank methodology was further expanded on by \cite{streicher2014eigenvector} who tested the LoopRank using transfer entropy in an attempt to get a better estimation of causality when calculating the relative weight matrix. \cite{streicher2019plant} used this methodology for incipient fault detection by calculating importance scores over multiple overlapping time regions. \\ 
 
 \section{VISUALIZATION FOR FAULT DETECTION}
 
@@ -192,6 +202,8 @@ Record keeping involves the saving of visual artifacts and notes. In most cases 
 
 \cite{saraiya2006insight} completed a longitudinal study of a bioinformatics data set analysis to gain understanding of the entire analysis process from raw data to insights. Visual analytics can be described as a process wherein user gain insight into complex data. The study highlighted how analysts gather and build insights over long periods of time and connecting the data to extensive domain knowledge and expertise. It is emphasized that analyst spend a significant amount of time on manual manipulation of data and this creates a very important need for the visualization tool to be interactive. Inferior visualizations with interaction were preferred over superior static visualizations.
 
+
+
 Visualization plays a critical role in these data driven problem solving techniques. \cite{elmqvist2004animated} has shown that traditional methods like directed-acyclic graphs and Hasse diagrams can display casual links in an intuitive way but becomes less suitable when the number of nodes and interactions in a system grow. The use of two novel visualization techniques called Growing Squares and Growing Polygons demonstrate the use of animations, colors and patterns to better visualize casual relations.
 
 Another approach to improve visualization of casual relations would be to adapt novel techniques used in other fields, similar to how PageRank was adapted to be used as LoopRank in industrial processes. Process monitoring and fault detection of batch processes has received attention in recent years. The extensive use of batch processing in the production of high value products makes it a important to ensure that batch runs are completed with a high level of success. \cite{wang2018geometric} developed a novel approach to process monitoring and fault detection in batch processes by utilizing a technique they termed time-explicit Kiviat diagrams. The core idea behind this technique is based on Multi-way Principle Component Analysis that facilitates batch-wise unfolding of the three dimensional (Time*Variables*Batches) batch data matrix into a two dimensional matrix that captures the variation across batches. The type of data required to warrant the use of this technique is very similar to the data generated by multiple time region analysis in the LoopRank analysis done by \cite{streicher2019plant}. Each batch can be seen as a time region in the LoopRank analysis and the analysis can be seen as the completion of multiple batch runs.
@@ -213,10 +225,7 @@ Equation \eqref{fig:example} shows an example of a numbered equation.
 \subsection{A subsection with a long heading that continues from the
   first line onto the second line see also table of contents}
 
-
 \subsubsection{Testing deeper nested section headers}
-
-
 
 \ref{fig:examplea} and \ref{fig:exampleb}.
 \begin{figure}[!ht]
@@ -234,8 +243,6 @@ Equation \eqref{fig:example} shows an example of a numbered equation.
 
 Third theme of literature study third theme of literature study third
 theme of literature study third theme of literature study.
-
-
 
 Table \ref{fig:example} shows an example of a table.
 \begin{center}
@@ -262,7 +269,4 @@ Table \ref{fig:example} shows an example of a table.
 \end{tabular}
 \end{table}
 \end{center}
-
-
-
 %% End of File.
