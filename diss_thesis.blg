@@ -9,67 +9,50 @@ Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: diss_thesis.bib
 Warning--I didn't find a database entry for "Shannon:A_Mathematical_Theory_of_Communications"
-Warning--I didn't find a database entry for "papoulis:probabilityrandomvariablesandstochasticprocesses:2001"
-Warning--I didn't find a database entry for "cooley:moc-19:1965"
-Warning--I didn't find a database entry for "ogata:moderncontrolengineering:2002"
-Warning--I didn't find a database entry for "gleb:appliedoptimalestimation:1974"
-Warning--I didn't find a database entry for "anderson:optimalfiltering:1979"
-Warning--I didn't find a database entry for "stengel:optimalcontrolandestimation:1994"
-Warning--I didn't find a database entry for "haykin:adaptivefiltertheory:2002"
-Warning--I didn't find a database entry for "stewart:ieee-ccvpr:1999"
-Warning--I didn't find a database entry for "kalman:asme-t-jobe-82d:1960"
-Warning--I didn't find a database entry for "welch:siggraph:2001"
-Warning--I didn't find a database entry for "dellaert:spie-its:1997"
-Warning--I didn't find a database entry for "fischler:cacm-24-6:1981"
-Warning--I didn't find a database entry for "matsumoto:acm-tomcs-8-1:1998"
-Warning--I didn't find a database entry for "huber:taos-13-2:1985"
-Warning--I didn't find a database entry for "valiant:cacm-27-11:1984"
-Warning--I didn't find a database entry for "rasmussen:gaussianprocessesformachinelearning:2005"
-Warning--I didn't find a database entry for "doucet:sequentialmontecarloinpractice:2001"
 -- IEEEtran.bst version 1.14 (2015/08/26) by Michael Shell.
 -- http://www.michaelshell.org/tex/ieeetran/bibtex/
 -- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
 
 Done.
-You've used 15 entries,
+You've used 19 entries,
             4087 wiz_defined-function locations,
-            939 strings with 10972 characters,
-and the built_in function-call counts, 13857 in all, are:
-= -- 1138
-> -- 332
-< -- 145
-+ -- 186
-- -- 52
-* -- 690
-:= -- 2005
-add.period$ -- 35
-call.type$ -- 15
-change.case$ -- 15
-chr.to.int$ -- 330
-cite$ -- 15
-duplicate$ -- 949
-empty$ -- 1042
-format.name$ -- 67
-if$ -- 3239
+            946 strings with 11326 characters,
+and the built_in function-call counts, 16892 in all, are:
+= -- 1377
+> -- 396
+< -- 170
++ -- 220
+- -- 62
+* -- 831
+:= -- 2447
+add.period$ -- 46
+call.type$ -- 19
+change.case$ -- 19
+chr.to.int$ -- 390
+cite$ -- 19
+duplicate$ -- 1170
+empty$ -- 1318
+format.name$ -- 81
+if$ -- 3961
 int.to.chr$ -- 0
-int.to.str$ -- 15
-missing$ -- 156
-newline$ -- 68
-num.names$ -- 15
-pop$ -- 329
+int.to.str$ -- 19
+missing$ -- 193
+newline$ -- 80
+num.names$ -- 19
+pop$ -- 419
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 2
-skip$ -- 1067
+skip$ -- 1303
 stack$ -- 0
-substring$ -- 785
-swap$ -- 844
-text.length$ -- 35
+substring$ -- 929
+swap$ -- 1015
+text.length$ -- 40
 text.prefix$ -- 0
 top$ -- 5
-type$ -- 15
+type$ -- 19
 warning$ -- 0
-while$ -- 71
-width$ -- 17
-write$ -- 177
-(There were 18 warnings)
+while$ -- 87
+width$ -- 21
+write$ -- 214
+(There was 1 warning)

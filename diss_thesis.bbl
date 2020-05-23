@@ -71,16 +71,16 @@ G.~Klein, B.~Moon, and R.~R. Hoffman, ``Making sense of sensemaking 2: A
   macrocognitive model,'' \emph{IEEE Intelligent systems}, vol.~21, no.~5, pp.
   88--92, 2006.
 
+\bibitem{fayyad1996data}
+U.~Fayyad, G.~Piatetsky-Shapiro, and P.~Smyth, ``From data mining to knowledge
+  discovery in databases,'' \emph{AI magazine}, vol.~17, no.~3, pp. 37--37,
+  1996.
+
 \bibitem{sacha2014knowledge}
 D.~Sacha, A.~Stoffel, F.~Stoffel, B.~C. Kwon, G.~Ellis, and D.~A. Keim,
   ``Knowledge generation model for visual analytics,'' \emph{IEEE transactions
   on visualization and computer graphics}, vol.~20, no.~12, pp. 1604--1613,
   2014.
-
-\bibitem{fayyad1996data}
-U.~Fayyad, G.~Piatetsky-Shapiro, and P.~Smyth, ``From data mining to knowledge
-  discovery in databases,'' \emph{AI magazine}, vol.~17, no.~3, pp. 37--37,
-  1996.
 
 \bibitem{mahyar2010closer}
 N.~Mahyar, A.~Sarvghad, and M.~Tory, ``A closer look at note taking in the
@@ -92,6 +92,29 @@ N.~Mahyar, A.~Sarvghad, and M.~Tory, ``A closer look at note taking in the
 P.~Saraiya, C.~North, V.~Lam, and K.~A. Duca, ``An insight-based longitudinal
   study of visual analytics,'' \emph{IEEE Transactions on Visualization and
   Computer Graphics}, vol.~12, no.~6, pp. 1511--1522, 2006.
+
+\bibitem{barnard2015usability}
+L.~Barnard and M.~Mertik, ``Usability of visualization libraries for web
+  browsers for use in scientific analysis,'' \emph{International Journal of
+  Computer Applications}, vol. 121, no.~1, 2015.
+
+\bibitem{fahad2018big}
+S.~A. Fahad and A.~E. Yahya, ``Big data visualization: Allotting by r and
+  python with gui tools,'' in \emph{2018 International Conference on Smart
+  Computing and Electronic Enterprise (ICSCEE)}.\hskip 1em plus 0.5em minus
+  0.4em\relax IEEE, 2018, pp. 1--8.
+
+\bibitem{ali2016big}
+S.~M. Ali, N.~Gupta, G.~K. Nayak, and R.~K. Lenka, ``Big data visualization:
+  Tools and challenges,'' in \emph{2016 2nd International Conference on
+  Contemporary Computing and Informatics (IC3I)}.\hskip 1em plus 0.5em minus
+  0.4em\relax IEEE, 2016, pp. 656--660.
+
+\bibitem{caldarola2017big}
+E.~G. Caldarola and A.~M. Rinaldi, ``Big data visualization tools: A survey,''
+  in \emph{Proceedings of the 6th International Conference on Data Science,
+  Technology and Applications}.\hskip 1em plus 0.5em minus 0.4em\relax
+  SCITEPRESS-Science and Technology Publications, Lda, 2017, pp. 296--305.
 
 \bibitem{elmqvist2004animated}
 N.~Elmqvist and P.~Tsigas, ``Animated visualization of causal relations through

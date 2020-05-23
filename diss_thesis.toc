@@ -19,19 +19,18 @@
 \contentsline {subsection}{\numberline {2.3.1}VISUALIZATION IN GENERAL}{6}%
 \contentsline {subsection}{\numberline {2.3.2}VISUAL ANALYTICS}{7}%
 \contentsline {subsection}{\numberline {2.3.3}VALUE OF RECORD KEEPING IN VISUALIZATION}{12}%
-\contentsline {subsection}{\numberline {2.3.4}A subsection with a long heading that continues from the first line onto the second line see also table of contents}{15}%
-\contentsline {subsubsection}{\numberline {2.3.4.1}Testing deeper nested section headers}{15}%
-\contentsline {chapter}{\numberline {3}METHODS (FOR ILLUSTRATION THIS HEADING CONTINUES ONTO THE NEXT LINE)}{17}%
-\contentsline {section}{\numberline {3.1}CHAPTER OVERVIEW}{17}%
-\contentsline {chapter}{\numberline {4}RESULTS}{18}%
-\contentsline {section}{\numberline {4.1}CHAPTER OVERVIEW}{18}%
-\contentsline {chapter}{\numberline {5}DISCUSSION}{19}%
-\contentsline {section}{\numberline {5.1}CHAPTER OVERVIEW}{19}%
-\contentsline {chapter}{\numberline {6}CONCLUSION}{20}%
-\contentsline {section}{\numberline {6.1}EXAMPLE HEADING}{20}%
+\contentsline {subsection}{\numberline {2.3.4}VISUALIZATION TOOLS}{14}%
+\contentsline {chapter}{\numberline {3}METHODS (FOR ILLUSTRATION THIS HEADING CONTINUES ONTO THE NEXT LINE)}{19}%
+\contentsline {section}{\numberline {3.1}CHAPTER OVERVIEW}{19}%
+\contentsline {chapter}{\numberline {4}RESULTS}{20}%
+\contentsline {section}{\numberline {4.1}CHAPTER OVERVIEW}{20}%
+\contentsline {chapter}{\numberline {5}DISCUSSION}{21}%
+\contentsline {section}{\numberline {5.1}CHAPTER OVERVIEW}{21}%
+\contentsline {chapter}{\numberline {6}CONCLUSION}{22}%
+\contentsline {section}{\numberline {6.1}EXAMPLE HEADING}{22}%
 \renewcommand *\cftchappresnum {\MakeUppercase {Chapter}\ }
-\contentsline {chapter}{REFERENCES}{21}%
+\contentsline {chapter}{REFERENCES}{23}%
 \renewcommand *\cftchappresnum {\MakeUppercase {Addendum}\ }
-\contentsline {chapter}{\numberline {A}DERIVATION OF HIGHER ORDER MODELS}{23}%
-\contentsline {section}{\numberline {A.1}Example Heading}{23}%
-\contentsline {subsection}{\numberline {A.1.1}Subheading example}{23}%
+\contentsline {chapter}{\numberline {A}DERIVATION OF HIGHER ORDER MODELS}{26}%
+\contentsline {section}{\numberline {A.1}Example Heading}{26}%
+\contentsline {subsection}{\numberline {A.1.1}Subheading example}{26}%

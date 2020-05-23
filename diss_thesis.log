@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2020.1.4)  17 MAY 2020 20:30
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2020.1.4)  23 MAY 2020 17:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1959,6 +1959,11 @@ File: webpages.PNG Graphic file (type png)
 Package pdftex.def Info: webpages.PNG  used on input line 23.
 (pdftex.def)             Requested size: 55.10573pt x 62.33272pt.
 
+Underfull \hbox (badness 10000) in paragraph at lines 21--25
+
+ []
+
+
 Overfull \hbox (8.32202pt too wide) has occurred while \output is active
     []
  []
@@ -2145,38 +2150,6 @@ Overfull \hbox (8.32202pt too wide) has occurred while \output is active
  []
 
 [14]
-Package epstopdf Info: Source file: <figure1.eps>
-(epstopdf)                    date: 2016-08-12 11:13:51
-(epstopdf)                    size: 222818 bytes
-(epstopdf)             Output file: <figure1-eps-converted-to.pdf>
-(epstopdf)                    date: 2020-04-25 09:23:39
-(epstopdf)                    size: 5174 bytes
-(epstopdf)             Command: <repstopdf --outfile=figure1-eps-converted-to.p
-df figure1.eps>
-(epstopdf)             \includegraphics on input line 233.
-Package epstopdf Info: Output file is already uptodate.
-<figure1-eps-converted-to.pdf, id=114, 142.5325pt x 142.5325pt>
-File: figure1-eps-converted-to.pdf Graphic file (type pdf)
-<use figure1-eps-converted-to.pdf>
-Package pdftex.def Info: figure1-eps-converted-to.pdf  used on input line 233.
-(pdftex.def)             Requested size: 142.53214pt x 142.53214pt.
-LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 234.
-Package epstopdf Info: Source file: <figure1.eps>
-(epstopdf)                    date: 2016-08-12 11:13:51
-(epstopdf)                    size: 222818 bytes
-(epstopdf)             Output file: <figure1-eps-converted-to.pdf>
-(epstopdf)                    date: 2020-04-25 09:23:39
-(epstopdf)                    size: 5174 bytes
-(epstopdf)             Command: <repstopdf --outfile=figure1-eps-converted-to.p
-df figure1.eps>
-(epstopdf)             \includegraphics on input line 237.
-Package epstopdf Info: Output file is already uptodate.
-File: figure1-eps-converted-to.pdf Graphic file (type pdf)
-<use figure1-eps-converted-to.pdf>
-Package pdftex.def Info: figure1-eps-converted-to.pdf  used on input line 237.
-(pdftex.def)             Requested size: 142.53214pt x 142.53214pt.
-) (./chapter3.tex
 Overfull \hbox (8.32202pt too wide) has occurred while \output is active
     []
  []
@@ -2186,7 +2159,29 @@ Overfull \hbox (8.32202pt too wide) has occurred while \output is active
     []
  []
 
-[15 <./figure1-eps-converted-to.pdf>]
+[15]
+<big_data_visualization_categories.PNG, id=116, 522.753pt x 336.0555pt>
+File: big_data_visualization_categories.PNG Graphic file (type png)
+<use big_data_visualization_categories.PNG>
+Package pdftex.def Info: big_data_visualization_categories.PNG  used on input l
+ine 279.
+(pdftex.def)             Requested size: 470.47336pt x 302.44714pt.
+
+Overfull \hbox (29.45563pt too wide) in paragraph at lines 279--280
+ [][] 
+ []
+
+
+Overfull \hbox (8.32202pt too wide) has occurred while \output is active
+    []
+ []
+
+
+Overfull \hbox (8.32202pt too wide) has occurred while \output is active
+    []
+ []
+
+[16 <./big_data_visualization_categories.PNG>]
 Overfull \hbox (8.32202pt too wide) has occurred while \output is active
     []
  []
@@ -2196,7 +2191,17 @@ Overfull \hbox (8.32202pt too wide) has occurred while \output is active
     []
  []
 
-[16]
+[17]) (./chapter3.tex
+Overfull \hbox (8.32202pt too wide) has occurred while \output is active
+    []
+ []
+
+
+Overfull \hbox (8.32202pt too wide) has occurred while \output is active
+    []
+ []
+
+[18]
 Chapter 3.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 36.
@@ -2212,7 +2217,7 @@ Overfull \hbox (8.32202pt too wide) has occurred while \output is active
     []
  []
 
-[17
+[19
 
 ]
 Chapter 4.
@@ -2227,7 +2232,7 @@ Overfull \hbox (8.32202pt too wide) has occurred while \output is active
     []
  []
 
-[18
+[20
 
 ]
 Chapter 5.
@@ -2241,7 +2246,7 @@ Overfull \hbox (8.32202pt too wide) has occurred while \output is active
     []
  []
 
-[19
+[21
 
 ]
 Chapter 6.
@@ -2255,7 +2260,7 @@ Overfull \hbox (8.32202pt too wide) has occurred while \output is active
     []
  []
 
-[20
+[22
 
 ] (./diss_thesis.bbl
 Overfull \hbox (8.32202pt too wide) has occurred while \output is active
@@ -2267,9 +2272,9 @@ Overfull \hbox (8.32202pt too wide) has occurred while \output is active
     []
  []
 
-[21
+[23
 
-])
+]
 Overfull \hbox (8.32202pt too wide) has occurred while \output is active
     []
  []
@@ -2279,7 +2284,17 @@ Overfull \hbox (8.32202pt too wide) has occurred while \output is active
     []
  []
 
-[22] (./addenduma.tex
+[24])
+Overfull \hbox (8.32202pt too wide) has occurred while \output is active
+    []
+ []
+
+
+Overfull \hbox (8.32202pt too wide) has occurred while \output is active
+    []
+ []
+
+[25] (./addenduma.tex
 Addendum A.
 )
 Overfull \hbox (8.32202pt too wide) has occurred while \output is active
@@ -2291,7 +2306,7 @@ Overfull \hbox (8.32202pt too wide) has occurred while \output is active
     []
  []
 
-[23
+[26
 
 ] (./diss_thesis.aux)
 
@@ -2303,27 +2318,25 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 50239 strings out of 492163
- 1147677 string characters out of 6129077
- 1358550 words of memory out of 5000000
- 53563 multiletter control sequences out of 15000+600000
- 647920 words of font info for 300 fonts, out of 8000000 for 9000
+ 50232 strings out of 492163
+ 1147551 string characters out of 6129077
+ 1358042 words of memory out of 5000000
+ 53551 multiletter control sequences out of 15000+600000
+ 645180 words of font info for 302 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  86i,27n,140p,1304b,1559s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/texlive/2019/texmf-dist/fonts/enc/dvips/base/8r.enc}<c:/texlive/2019/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2019/texmf-dist/fo
 nts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2019/texmf-dist/fonts/type1
 /public/amsfonts/cm/cmr10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmsy10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/sy
-mbols/msam10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/urw/symbol/usyr.pfb><c
-:/texlive/2019/texmf-dist/fonts/type1/urw/symbol/usyr.pfb><c:/texlive/2019/texm
-f-dist/fonts/type1/urw/times/utmb8a.pfb><c:/texlive/2019/texmf-dist/fonts/type1
-/urw/times/utmr8a.pfb><c:/texlive/2019/texmf-dist/fonts/type1/urw/times/utmri8a
-.pfb>
-Output written on diss_thesis.pdf (28 pages, 1195801 bytes).
+sfonts/cm/cmsy10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/urw/symbol/usyr.pf
+b><c:/texlive/2019/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><c:/texlive/2019
+/texmf-dist/fonts/type1/urw/times/utmr8a.pfb><c:/texlive/2019/texmf-dist/fonts/
+type1/urw/times/utmri8a.pfb>
+Output written on diss_thesis.pdf (31 pages, 1324732 bytes).
 PDF statistics:
  182 PDF objects out of 1000 (max. 8388607)
- 108 compressed objects within 2 object streams
+ 107 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 45205 words of extra memory for PDF output out of 51595 (max. 10000000)
+ 44693 words of extra memory for PDF output out of 51595 (max. 10000000)
 

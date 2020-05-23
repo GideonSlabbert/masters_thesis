@@ -18,8 +18,8 @@ New data driven methods that apply concepts from other fields have started to sh
 
 The ranking algorithm developed by \cite{bryan200625} started with the idea of ranking web sites depending on how many times they are referenced by other websites.
 
-Consider a group of 4 websites that contain references to each other in the manner indicated in Figure \ref{fig:7}. References are indicated by arrows.
-\begin{figure}[!ht]
+Consider a group of 4 websites that contain references to each other in the manner indicated in Figure \ref{fig:7}. References are indicated by arrows.\\
+\begin{figure}[H]
 	\centering\epsfig{figure=webpages.PNG,scale=0.5}
 	\caption{web pages with references}\label{fig:7}
 \end{figure}
@@ -99,7 +99,7 @@ One of the earliest  models for that describe the process of 'sensemaking' was d
 	\item representation of the information in the form of an outline or model that aids the analysis
 	\item development of insight through manipulation of the outline or model
 	\item Creation of a knowledge product or direct action based on the analysis
-\end{enumerate}, 
+\end{enumerate}
 The process is visually described by Figure\ref{fig:3}.
 \begin{figure}[!ht]
 	\centering\epsfig{figure=Sense_making_model.PNG,scale=0.5}
@@ -202,71 +202,133 @@ Record keeping involves the saving of visual artifacts and notes. In most cases 
 
 \cite{saraiya2006insight} completed a longitudinal study of a bioinformatics data set analysis to gain understanding of the entire analysis process from raw data to insights. Visual analytics can be described as a process wherein user gain insight into complex data. The study highlighted how analysts gather and build insights over long periods of time and connecting the data to extensive domain knowledge and expertise. It is emphasized that analyst spend a significant amount of time on manual manipulation of data and this creates a very important need for the visualization tool to be interactive. Inferior visualizations with interaction were preferred over superior static visualizations.
 
+\subsection{VISUALIZATION TOOLS}
+
+\cite{barnard2015usability} performed a comparison of visualization tools in the development of a tool that can be used for data analysis at CERN. The goal of this tool was to enable scientist to observe a data set as a whole in order to make better decisions of what variable pairs and time frames to analyze during test campaigns.
+
+JavaScript and Python Libraries were investigated and evaluated. D3 and Dygraphs were both discussed as JavaScript libraries that can be used for plotting. Matplotlib was discussed as a Python library that is based on the plotting functionalities of MATLAB. Two other Python libraries, Bokeh and Mpld3 were discussed with specific attention to their capabilities to generate HTML which enables them to easily present graphs on a web browser. Furthermore Mpld3 can integrate Matplotlob plots using D3 to render them to a web page.
+
+\cite{barnard2015usability} did a detailed comparison of Bokeh and Mpld3 which identified Bokeh as their preferred choice. Comparing key aspects like loading time, rendering time and features Bokeh was faster and had more actively developed libraries.
+
+\cite{fahad2018big} did a comparison of data visualization systems with the specific focus on big data applications. Tools were categorized into coding and zero coding tools with graphical user interfaces. 
+
+Within the coding category two languages were discussed; Python and R. Within Python multiple libraries were analyzed for visualization, including Bokeh, Altair, Seaborn, ggplot and Pygal.
+The zero coding category included Tableau, Infogram, Charblocks, Datawrapper, Plotly, RAW and Visual. It's important to note that of these zero coding tools Plotly is also a Python library used by the data science community.
+
+\cite{ali2016big} also completed an overview of tools used for big data visualization and the challenges faced with attempting to visualization large amounts of data. The tools were compared using the following criteria:
+\begin{enumerate}
+	\item Open Source
+	\item Integration with popular data sources like Hadoop Hive or Google Analytics
+	\item Interactive visualization
+	\item MOOCS; tutorials available for online learning of the tool
+	\item API; can the services of the tool be embedded
+\end{enumerate}
+Five tools were analyzed using this criteria:
+\begin{enumerate}
+	\item Tableau
+	\item Power BI
+	\item Plotly
+	\item Gephi
+	\item Excel 2016
+\end{enumerate}
+A summary of the results is displayed in 
+Table \ref{fig:tool_comparison} shows an example of a table.
+\begin{center}
+	\begin{table}[H]
+		\caption{This is a table caption}
+		\label{fig:tool_comparison}
+		\begin{tabular}{ 
+				!{\vrule width 1.1pt}
+				c!{\vrule width 1pt}
+				c!{\vrule width 1pt}
+				c!{\vrule width 1pt}
+				c!{\vrule width 1pt}
+				c!{\vrule width 1pt}
+				c!{\vrule width 1pt}
+				c!{\vrule width 1pt}
+				c!{\vrule width 1pt}}
+				%p{8cm}!{\vrule width 1pt}}
+			\noalign{\hrule height 1pt}
+			\cellcolor[gray]{0.9} \textbf{} &
+			\cellcolor[gray]{0.9} \textbf{Open source} &
+			\cellcolor[gray]{0.9} \textbf{Integration} &
+			\cellcolor[gray]{0.9} \textbf{Interactive} &
+			\cellcolor[gray]{0.9} \textbf{MOOCS} &
+			\cellcolor[gray]{0.9} \textbf{API}
+			\\ \noalign{\hrule height 1pt}
+			Tableau & N & Y & Y & Y & Y
+			\\ \hline
+			Power BI & N & Y & Y & Y & Y
+			\\ \hline
+			Plotly & Y & N & Y & Y & Y
+			\\ \hline
+			Gephi & Y & N & Y & Y & Y
+			\\ \hline
+			Tableau & N & Y & Y & Y & Y
+			\\ \noalign{\hrule height 1pt}
+		\end{tabular}
+	\end{table}
+\end{center}
+
+One of the biggest challenges with modern visualization tools is the latency created by processing large data sets \cite{ali2016big}. This can be addressed by using pre-computed data, paralizing data processing and rendering and using predictive middelware.
+
+\cite{caldarola2017big} completed a comprehensive survey of tools used in Big Data applications. The concept of Big Data has different dimensions, one model that attempts to described these dimensions is widely known as 3Vs. The 3Vs stand for Volume, Velocity and Variety.  Each of these dimensions pose its own unique challenges in the data management process.
+
+The analysis and visualization of data was represented in a diagram that distinguishes between four different types of software solutions \cite{caldarola2017big}. The diagram displayed in Figure \ref{fig:10} depicts the different types according to the Volume and Variety challenges in the 3Vs model. 
+\begin{figure}[H]
+	\centering\epsfig{figure=big_data_visualization_categories.PNG,scale=0.9}
+	\caption{Big data visualization solutions}\label{fig:10}
+\end{figure}
+Differentiation is also done according to four main categories that describe the goals of visualization. The first goal would be the clear and effective communication of information to the user with the creation and study of the visual representation of data. The Information Visualization category is created to describe this goal. The second goal diverges from the first one in terms of spatial representation. If spatial representation is given to the visualization because of the intrinsic spatial layout of data like a flow simulation in a 3D space, then this can be seen as Scientific Visualization. These two categories can be further divided according to the dimension of volume and variety of data. In the end these four categories chosen by \cite{caldarola2017big} to divide software are:
+\begin{enumerate}
+	\item business intelligent tools for data mining of heterogeneous data
+	\item scientific visualization tools focused that focus on specific spatial representations using larger data sets
+	\item data visualization tools used for visual exploration
+	\item information visualization tools used for interactive visual exploration of data
+\end{enumerate}
+\cite{caldarola2017big} analyses 35 different software solutions in these four categories. What is interesting to note is that Plotly is well described in both the data and information visualization categories which implies that does well at handling big data challenges with variety and volume.
+
+
+
 
 
 Visualization plays a critical role in these data driven problem solving techniques. \cite{elmqvist2004animated} has shown that traditional methods like directed-acyclic graphs and Hasse diagrams can display casual links in an intuitive way but becomes less suitable when the number of nodes and interactions in a system grow. The use of two novel visualization techniques called Growing Squares and Growing Polygons demonstrate the use of animations, colors and patterns to better visualize casual relations.
 
 Another approach to improve visualization of casual relations would be to adapt novel techniques used in other fields, similar to how PageRank was adapted to be used as LoopRank in industrial processes. Process monitoring and fault detection of batch processes has received attention in recent years. The extensive use of batch processing in the production of high value products makes it a important to ensure that batch runs are completed with a high level of success. \cite{wang2018geometric} developed a novel approach to process monitoring and fault detection in batch processes by utilizing a technique they termed time-explicit Kiviat diagrams. The core idea behind this technique is based on Multi-way Principle Component Analysis that facilitates batch-wise unfolding of the three dimensional (Time*Variables*Batches) batch data matrix into a two dimensional matrix that captures the variation across batches. The type of data required to warrant the use of this technique is very similar to the data generated by multiple time region analysis in the LoopRank analysis done by \cite{streicher2019plant}. Each batch can be seen as a time region in the LoopRank analysis and the analysis can be seen as the completion of multiple batch runs.
 
-Equation \eqref{fig:example} shows an example of a numbered equation.
-\begin{equation}
-  \Delta w_{i,j} = \alpha a_i \Delta[j]  \label{eqn:example}
-\end{equation}
+%Equation \eqref{fig:example} shows an example of a numbered equation.
+%\begin{equation}
+%  \Delta w_{i,j} = \alpha a_i \Delta[j]  \label{eqn:example}
+%\end{equation}
+%
+%\begin{align}
+%  \m{QX} \m{a} & = \m{Qy} \notag \\
+%  \therefore \quad (\m{QX})^T \m{QX} \m{a} & = (\m{QX})^T \m{Qy} \notag \\
+%  \therefore \quad \m{a} & = \left( (\m{QX})^T \m{QX} \right)^{-1} (\m{QX})^T \m{Qy} \notag \\
+%        & = \left( \mt{X} \mt{Q} \m{QX} \right)^{-1} \mt{X} \mt{Q} \m{Qy} \notag \\
+%        & = \left( \mt{X} \m{W} \m{X} \right)^{-1} \mt{X} \m{W} \m{y}
+%          \label{equ:weightedleastsquares}
+%\end{align}
 
-\begin{align}
-  \m{QX} \m{a} & = \m{Qy} \notag \\
-  \therefore \quad (\m{QX})^T \m{QX} \m{a} & = (\m{QX})^T \m{Qy} \notag \\
-  \therefore \quad \m{a} & = \left( (\m{QX})^T \m{QX} \right)^{-1} (\m{QX})^T \m{Qy} \notag \\
-        & = \left( \mt{X} \mt{Q} \m{QX} \right)^{-1} \mt{X} \mt{Q} \m{Qy} \notag \\
-        & = \left( \mt{X} \m{W} \m{X} \right)^{-1} \mt{X} \m{W} \m{y}
-          \label{equ:weightedleastsquares}
-\end{align}
+%\subsection{A subsection with a long heading that continues from the
+%  first line onto the second line see also table of contents}
+%
+%\subsubsection{Testing deeper nested section headers}
 
-\subsection{A subsection with a long heading that continues from the
-  first line onto the second line see also table of contents}
+%\ref{fig:examplea} and \ref{fig:exampleb}.
+%\begin{figure}[!ht]
+%  \begin{minipage}[b]{.5\linewidth}
+%  \centering\epsfig{figure=figure1.eps}
+%  \subcaption{A subfigure}\label{fig:examplea}
+%  \end{minipage}%
+%  \begin{minipage}[b]{.5\linewidth}
+%  \centering\epsfig{figure=figure1.eps,angle=-90}
+%  \subcaption{Another subfigure}\label{fig:exampleb}
+%  \end{minipage}
+%  \caption{This is a figure caption. In the example \subref{fig:exampleb}
+%  is a rotated version of \subref{fig:examplea}.}\label{fig:example}
+%\end{figure}
 
-\subsubsection{Testing deeper nested section headers}
 
-\ref{fig:examplea} and \ref{fig:exampleb}.
-\begin{figure}[!ht]
-  \begin{minipage}[b]{.5\linewidth}
-  \centering\epsfig{figure=figure1.eps}
-  \subcaption{A subfigure}\label{fig:examplea}
-  \end{minipage}%
-  \begin{minipage}[b]{.5\linewidth}
-  \centering\epsfig{figure=figure1.eps,angle=-90}
-  \subcaption{Another subfigure}\label{fig:exampleb}
-  \end{minipage}
-  \caption{This is a figure caption. In the example \subref{fig:exampleb}
-  is a rotated version of \subref{fig:examplea}.}\label{fig:example}
-\end{figure}
 
-Third theme of literature study third theme of literature study third
-theme of literature study third theme of literature study.
-
-Table \ref{fig:example} shows an example of a table.
-\begin{center}
-\begin{table}[!ht]
-\caption{This is a table caption}
-\label{fig:table}
-\begin{tabular}{ !{\vrule width 1.1pt}
-                c!{\vrule width 1pt}
-                c!{\vrule width 1pt}
-                c!{\vrule width 1pt}
-                p{8cm}!{\vrule width 1pt}}
-  \noalign{\hrule height 1pt}
-  \cellcolor[gray]{0.9} \textbf{Column 1} &
-  \cellcolor[gray]{0.9} \textbf{Column 2} &
-  \cellcolor[gray]{0.9} \textbf{Column 3} &
-  \cellcolor[gray]{0.9} \textbf{Column 4}
-  \\ \noalign{\hrule height 1pt}
-   123     &  abc & 123 & abc
-  \\ \hline
-   123     &  abc & 123 & abc
-  \\ \hline
-           &      &  & abc
-  \\ \noalign{\hrule height 1pt}
-\end{tabular}
-\end{table}
-\end{center}
 %% End of File.
