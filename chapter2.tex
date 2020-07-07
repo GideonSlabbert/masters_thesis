@@ -8,9 +8,19 @@
 
 \section{CHAPTER OBJECTIVES}
 
-This chapter explores the basic 
+This chapter explores the literature in the field of disturbance detection and diagnosis in control of industrial processes. It then elaborates of visualization techniques and how they could be used to aid the in the fault detection and diagnosis process.
 
 \section{FAULT DETECTION AND ANALYSIS}
+
+Disturbances in single control loops are fairly straight forward to solve but disturbances that propagate through a complex system on a plant wide scale are much harder to pin point. One of the goals of process control is to shift process variability to places like buffer tanks and plant utilities. In modern industrial processes these options have become limited as inventory is usually kept to a minimum and the use of recycle stream for heat integration has introduced extra sources complex interaction \cite{thornhill2007advances}.
+
+When considering which type of disturbances to analyze, the time frame of the disturbance can be used to distinguish between different types of disturbances. \cite{thornhill2007advances} classified the types of disturbances in a plant wide setting into three main categories with regards to timescales:
+\begin{enumerate}
+	\item slowly-developing, i.e. fouling of a heat exchanger
+	\item persistent and dynamic
+	\item abrupt, i.e. a compressor trip
+\end{enumerate}
+The second item, persistent and dynamic disturbances that propagate through an entire system on a continuous basis is of interest for this study.
 
 New data driven methods that apply concepts from other fields have started to show some promising results. One of these methods is the use of the PageRank algorithm \cite{bryan200625} employed by google on the ranking of control loops based on the degree of interaction.\cite{farenzena2009looprank} has developed a methodology called LoopRank with the aim of prioritizing control loop maintenance by highlighting loops that have a higher correlation with other loops. In this methodology a relative weight matrix is compiled using partial correlation between input and output variables. The importance scores of each variable is then determined by calculating the normalized eigenvector of the relative weight matrix.\\
 
