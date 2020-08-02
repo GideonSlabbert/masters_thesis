@@ -3,34 +3,34 @@
 \contentsline {chapter}{\numberline {1}Introduction}{1}%
 \contentsline {section}{\numberline {1.1}Problem Statement}{1}%
 \contentsline {subsection}{\numberline {1.1.1}Context of the problem}{1}%
-\contentsline {subsection}{\numberline {1.1.2}Research gap}{1}%
-\contentsline {section}{\numberline {1.2}RESEARCH OBJECTIVE AND QUESTIONS}{1}%
-\contentsline {section}{\numberline {1.3}HYPOTHESIS AND APPROACH (FOR ILLUSTRATION THIS HEADING CONTINUES ONTO THE NEXT LINE)}{1}%
-\contentsline {section}{\numberline {1.4}RESEARCH GOALS}{1}%
-\contentsline {section}{\numberline {1.5}RESEARCH CONTRIBUTION}{1}%
-\contentsline {section}{\numberline {1.6}OVERVIEW OF STUDY}{2}%
-\contentsline {chapter}{\numberline {2}LITERATURE STUDY}{3}%
-\contentsline {section}{\numberline {2.1}CHAPTER OBJECTIVES}{3}%
-\contentsline {section}{\numberline {2.2}FAULT DETECTION AND ANALYSIS}{3}%
-\contentsline {subsection}{\numberline {2.2.1}PAGERANK DERIVATION}{3}%
-\contentsline {subsection}{\numberline {2.2.2}LOOPRANK ADAPTION}{5}%
-\contentsline {subsection}{\numberline {2.2.3}LOOPRANK DEVELOPMENT}{5}%
-\contentsline {section}{\numberline {2.3}VISUALIZATION FOR FAULT DETECTION}{6}%
-\contentsline {subsection}{\numberline {2.3.1}VISUALIZATION IN GENERAL}{6}%
-\contentsline {subsection}{\numberline {2.3.2}VISUAL ANALYTICS}{7}%
-\contentsline {subsection}{\numberline {2.3.3}VALUE OF RECORD KEEPING IN VISUALIZATION}{12}%
-\contentsline {subsection}{\numberline {2.3.4}VISUALIZATION TOOLS}{14}%
-\contentsline {chapter}{\numberline {3}METHODS (FOR ILLUSTRATION THIS HEADING CONTINUES ONTO THE NEXT LINE)}{19}%
-\contentsline {section}{\numberline {3.1}CHAPTER OVERVIEW}{19}%
-\contentsline {chapter}{\numberline {4}RESULTS}{20}%
-\contentsline {section}{\numberline {4.1}CHAPTER OVERVIEW}{20}%
-\contentsline {chapter}{\numberline {5}DISCUSSION}{21}%
-\contentsline {section}{\numberline {5.1}CHAPTER OVERVIEW}{21}%
-\contentsline {chapter}{\numberline {6}CONCLUSION}{22}%
-\contentsline {section}{\numberline {6.1}EXAMPLE HEADING}{22}%
+\contentsline {subsection}{\numberline {1.1.2}Research gap}{2}%
+\contentsline {section}{\numberline {1.2}RESEARCH OBJECTIVE AND QUESTIONS}{3}%
+\contentsline {section}{\numberline {1.3}HYPOTHESIS AND APPROACH (FOR ILLUSTRATION THIS HEADING CONTINUES ONTO THE NEXT LINE)}{3}%
+\contentsline {section}{\numberline {1.4}RESEARCH GOALS}{3}%
+\contentsline {section}{\numberline {1.5}RESEARCH CONTRIBUTION}{4}%
+\contentsline {section}{\numberline {1.6}OVERVIEW OF STUDY}{4}%
+\contentsline {chapter}{\numberline {2}LITERATURE STUDY}{5}%
+\contentsline {section}{\numberline {2.1}CHAPTER OBJECTIVES}{5}%
+\contentsline {section}{\numberline {2.2}FAULT DETECTION AND ANALYSIS}{5}%
+\contentsline {subsection}{\numberline {2.2.1}PAGERANK DERIVATION}{6}%
+\contentsline {subsection}{\numberline {2.2.2}LOOPRANK ADAPTION}{7}%
+\contentsline {subsection}{\numberline {2.2.3}LOOPRANK DEVELOPMENT}{8}%
+\contentsline {section}{\numberline {2.3}VISUALIZATION FOR FAULT DETECTION}{8}%
+\contentsline {subsection}{\numberline {2.3.1}VISUALIZATION IN GENERAL}{8}%
+\contentsline {subsection}{\numberline {2.3.2}VISUAL ANALYTICS}{9}%
+\contentsline {subsection}{\numberline {2.3.3}VALUE OF RECORD KEEPING IN VISUALIZATION}{15}%
+\contentsline {subsection}{\numberline {2.3.4}VISUALIZATION TOOLS}{16}%
+\contentsline {chapter}{\numberline {3}METHODS (FOR ILLUSTRATION THIS HEADING CONTINUES ONTO THE NEXT LINE)}{21}%
+\contentsline {section}{\numberline {3.1}CHAPTER OVERVIEW}{21}%
+\contentsline {chapter}{\numberline {4}RESULTS}{22}%
+\contentsline {section}{\numberline {4.1}CHAPTER OVERVIEW}{22}%
+\contentsline {chapter}{\numberline {5}DISCUSSION}{23}%
+\contentsline {section}{\numberline {5.1}CHAPTER OVERVIEW}{23}%
+\contentsline {chapter}{\numberline {6}CONCLUSION}{24}%
+\contentsline {section}{\numberline {6.1}EXAMPLE HEADING}{24}%
 \renewcommand *\cftchappresnum {\MakeUppercase {Chapter}\ }
-\contentsline {chapter}{REFERENCES}{23}%
+\contentsline {chapter}{REFERENCES}{25}%
 \renewcommand *\cftchappresnum {\MakeUppercase {Addendum}\ }
-\contentsline {chapter}{\numberline {A}DERIVATION OF HIGHER ORDER MODELS}{26}%
-\contentsline {section}{\numberline {A.1}Example Heading}{26}%
-\contentsline {subsection}{\numberline {A.1.1}Subheading example}{26}%
+\contentsline {chapter}{\numberline {A}DERIVATION OF HIGHER ORDER MODELS}{28}%
+\contentsline {section}{\numberline {A.1}Example Heading}{28}%
+\contentsline {subsection}{\numberline {A.1.1}Subheading example}{28}%

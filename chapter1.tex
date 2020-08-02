@@ -1,6 +1,6 @@
 %%
-%%  Department of Electrical, Electronic and Computer Engineering
-%%  MEng Dissertation / PhD Thesis - Chapter 1
+%%  Department of Chemical Engineering
+%%  MEng Dissertation - Chapter 1
 %%  Copyright (C) 2011-2016 University of Pretoria.
 %%
 
@@ -8,21 +8,27 @@
 
 \section{Problem Statement}
 
-\nocite{Shannon:A_Mathematical_Theory_of_Communications}
-
 \subsection{Context of the problem}
 
-Context of the problem context of the problem context of the problem
-
+The modern industrial complex has a large number of automated processes. The automation of processes enables sustainable and predictable production. Control loops are one of the key building blocks that make automation possible.\par
+Each sub section of a process consists of multiple control loops that together form a complex system. Continuous maintenance and fast response to disturbances is required to ensure that the overall goals of the automated process is sustained.\par
+However, the complexities in analyzing the various number of control loops that form part of industrial systems causes a time delay between the onset of a fault and the detection of that fault. Furthermore, once a fault is detected it can be very difficult to discern the source of a disturbance without time consuming interventions that add risk to process stability.\par
+Dynamic analytical methods for fault detection based on fundamental knowledge of the processes are well developed in academic research environments. These methods struggle to gain traction in industrial environments because of the time and implicit costs involved with incorporating these dynamic, first principle models within existing processes.\par
+In industry, a data driven approach is mostly applied in solving problems and a lot of focus is given in developing methods and tools that support this approach. An approach that provides the user with an intuitive and interactive tool to analyze process behavior can add value by requiring less fundamental knowledge and quicker response time to address process instabilities.\par
+A key element of any tool that assists in process fault finding is the visualization and interaction with the data. Every decision made in a industrial process involves reacting to process data. In modern industrial processes most short term decisions are made using the process data as visualized on the process control system. This same data is used to monitor and detect deviations in the process. When deviations are detected a fault finding process needs to be followed to determine what caused the deviation and how to correct it.\par
+The fault finding process often requires a lot of data analysis using a certain frame of reference to determine what is normal behavior. With any process there needs to be some kind of visual interaction with the data in order for the human brain to process it. This visual interface can range from the simplest form of simply looking at how a point value on the control system changes over a period to constructing graphs of complex time series transformation of multiple data sets.\par
 
 \subsection{Research gap}
 
-Research gap research gap research gap research gap research gap
-
+The intent of this study is to explore different approaches to the fault detection and analysis process with specific focus on the human interaction with data to analyze and solve a problem. The core element of this process is the visual context in which the data is viewed and transformed in order to generate understanding and knowledge.\par
+In the modern industrial era a lot of fault detection problems are solved using computer based tools that are very efficient at processing large amounts of data and performing complex data transformations in a relatively short period of time.\par
+A time series fault detection and diagnosis problem is often solved by creating a specialized tool that would transform data into knowledge which would most likely have a visual representation as the end result. The problem and solution are then presented as the end result of the study. If the audience then want to re-produce the results or test the method on a different data set they have to reproduce the tool that was used to generate the knowledge as well. This is a time consuming process and a barrier to further development of the proposed method.\par
+A researcher might also make the specialized tool available to the audience but if the tool was developed on a platform that uses proprietary code then it also presents a barrier to further development. There are a lot of tools available for visualization of data but very few of them are built on open source platforms. Recent development in the computer science industry has made available a large number of open source tools and platforms, but there are very few examples in literature of them being applied in the visual analytics realm.\par
+New developments in the fault detection and diagnosis problem have presented many new views of how to identify that a fault has occurred or how to identify the root cause of a fault. These new methods display the results in static graphs that highlight the most important elements of the transformed data set. One key element of the user experience that has not been developed yet is the ability to interact with the data. Interaction allows for faster knowledge transfer and easier understanding of how the parameters used in the transformation effect the final result. If the audience could be able to interact with the presented data at every step of the transformation then a much faster and deeper understanding could be achieved of the communicated method.
 
 \section{RESEARCH OBJECTIVE AND QUESTIONS}
 
-Research objective and questions research objective and questions
+The focus of this dissertation will be to explore the ways in which visual analytic systems can be used in the fault finding process. One particular fault finding technique that involves complex transformations of data to determine the root cause of disturbances will be discussed and demonstrated. A visual analytic system will be developed based on best practices to attempt improving the user experience when analyzing a complex dynamic problem.
 
 \begin{itemize}
 \item Is this a research question?

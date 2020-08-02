@@ -14,45 +14,45 @@ Warning--I didn't find a database entry for "Shannon:A_Mathematical_Theory_of_Co
 -- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
 
 Done.
-You've used 19 entries,
+You've used 20 entries,
             4087 wiz_defined-function locations,
-            946 strings with 11326 characters,
-and the built_in function-call counts, 16892 in all, are:
-= -- 1377
-> -- 396
-< -- 170
-+ -- 220
-- -- 62
-* -- 831
-:= -- 2447
-add.period$ -- 46
-call.type$ -- 19
-change.case$ -- 19
-chr.to.int$ -- 390
-cite$ -- 19
-duplicate$ -- 1170
-empty$ -- 1318
-format.name$ -- 81
-if$ -- 3961
+            953 strings with 11506 characters,
+and the built_in function-call counts, 17884 in all, are:
+= -- 1465
+> -- 415
+< -- 183
++ -- 232
+- -- 64
+* -- 879
+:= -- 2589
+add.period$ -- 48
+call.type$ -- 20
+change.case$ -- 20
+chr.to.int$ -- 420
+cite$ -- 20
+duplicate$ -- 1236
+empty$ -- 1385
+format.name$ -- 84
+if$ -- 4194
 int.to.chr$ -- 0
-int.to.str$ -- 19
-missing$ -- 193
-newline$ -- 80
-num.names$ -- 19
-pop$ -- 419
+int.to.str$ -- 20
+missing$ -- 202
+newline$ -- 83
+num.names$ -- 20
+pop$ -- 434
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 2
-skip$ -- 1303
+skip$ -- 1382
 stack$ -- 0
-substring$ -- 929
-swap$ -- 1015
-text.length$ -- 40
+substring$ -- 1000
+swap$ -- 1079
+text.length$ -- 43
 text.prefix$ -- 0
 top$ -- 5
-type$ -- 19
+type$ -- 20
 warning$ -- 0
-while$ -- 87
-width$ -- 21
-write$ -- 214
+while$ -- 92
+width$ -- 22
+write$ -- 225
 (There was 1 warning)

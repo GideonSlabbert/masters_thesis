@@ -21,6 +21,11 @@
 \providecommand{\BIBdecl}{\relax}
 \BIBdecl
 
+\bibitem{thornhill2007advances}
+N.~F. Thornhill and A.~Horch, ``Advances and new directions in plant-wide
+  disturbance detection and diagnosis,'' \emph{Control Engineering Practice},
+  vol.~15, no.~10, pp. 1196--1206, 2007.
+
 \bibitem{bryan200625}
 K.~Bryan and T.~Leise, ``The \$25,000,000,000 eigenvector: The linear algebra
   behind google,'' \emph{SIAM review}, vol.~48, no.~3, pp. 569--581, 2006.
