@@ -68,7 +68,7 @@ The LoopRank method can be summarized in five steps:
 	\item Collect time series data of control loop parameters
 	\item Calculate the partial correlation between all the variables in the data set. This information is used to build a relative weight matrix A or link matrix as referred to in the PageRank algorithm
 	\item Compute the LoopRank based on the relative weight matrix A using the eigenvector centrality theorem
-	\item multiply the result for each loop with a pre-defined weight that is based on the criticality of the loop. This weight is assigned heuristically depending on loop type and profitability
+	\item Multiply the result for each loop with a pre-defined weight that is based on the criticality of the loop. This weight is assigned heuristically depending on loop type and profitability
 	\item Normalize the results to express the score for each loop as a percentage
 \end{enumerate}
 
@@ -77,7 +77,6 @@ The LoopRank method can be summarized in five steps:
 \subsection{LOOPRANK DEVELOPMENT}
 
 \cite{rahman2010new} compared LoopRank with a more traditional data driven method that utilizes the integral of absolute or squared error to determine loop interaction. Canonical correlation was used to calculate the relative weight matrix in the LoopRank methodology. It was found that both methods delivered similar results.\\ 
-
 The LoopRank methodology was further expanded on by \cite{streicher2014eigenvector} who tested the LoopRank using transfer entropy in an attempt to get a better estimation of causality when calculating the relative weight matrix. \cite{streicher2019plant} used this methodology for incipient fault detection by calculating importance scores over multiple overlapping time regions. \\ 
 
 \section{VISUALIZATION FOR FAULT DETECTION}
@@ -105,9 +104,9 @@ Before designing it is important to understand the mental processes behind data 
 
 One of the earliest  models for that describe the process of 'sensemaking' was developed by \cite{pirolli2005sensemaking}. In this model intelligence analysis or sensemaking  consists of:
 \begin{enumerate}
-	\item information gathering
-	\item representation of the information in the form of an outline or model that aids the analysis
-	\item development of insight through manipulation of the outline or model
+	\item Information gathering
+	\item Representation of the information in the form of an outline or model that aids the analysis
+	\item Development of insight through manipulation of the outline or model
 	\item Creation of a knowledge product or direct action based on the analysis
 \end{enumerate}
 The process is visually described by Figure\ref{fig:3}.
