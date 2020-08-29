@@ -8,11 +8,11 @@
 
 \section{CHAPTER OBJECTIVES}
 
-This chapter explores the literature in the field of disturbance detection and diagnosis in control of industrial processes. It then elaborates of visualization techniques and how they could be used to aid the in the fault detection and diagnosis process.
+This chapter explores literature in the field of disturbance detection and diagnosis of process control in industrial processes. It then elaborates on visualization techniques and how they could be used to aid in the fault detection and diagnosis process.
 
 \section{FAULT DETECTION AND ANALYSIS}
 
-Disturbances in single control loops are fairly straight forward to solve but disturbances that propagate through a complex system on a plant wide scale are much harder to pin point. One of the goals of process control is to shift process variability to places like buffer tanks and plant utilities. In modern industrial processes these options have become limited as inventory is usually kept to a minimum and the use of recycle stream for heat integration has introduced extra sources complex interaction \cite{thornhill2007advances}.
+Disturbances in single control loops are fairly straight forward to solve but disturbances that propagate through a complex system on a plant wide scale are much harder to present a much bigger challenge. One of the goals of process control is to shift process variability to places like buffer tanks and plant utilities. In modern industrial processes these options have become limited as inventory is usually kept to a minimum and the use of recycle streams for heat integration has introduced extra sources complex interaction \cite{thornhill2007advances}.
 
 When considering which type of disturbances to analyze, the time frame of the disturbance can be used to distinguish between different types of disturbances. \cite{thornhill2007advances} classified the types of disturbances in a plant wide setting into three main categories with regards to timescales:
 \begin{enumerate}
@@ -21,6 +21,11 @@ When considering which type of disturbances to analyze, the time frame of the di
 	\item abrupt, i.e. a compressor trip
 \end{enumerate}
 The second item, persistent and dynamic disturbances that propagate through an entire system on a continuous basis is of interest for this study.
+
+There have been many approaches developed to solve the problem of detecting and diagnosing plant wide disturbances. These methods can be divided into three main areas; model-based, knowledge-based and data driven methods \cite{jiang2019review}.
+
+Fault diagnosis is normally used to improve the reliability of a system \cite{gao2015survey}. There are two methods that can be used to accomplish fault diagnosis: the first is hardware redundancy and the second is software or analytical redundancy. Hardware redundancy requires the use of identical components that use the same input signals to generate duplicate output signals. If the output signal then differs between the two redundant controllers it is easy to detect a fault and take action, examples of this method is limit checking and majority voting. Hardware redundancy can be very expensive and it often times not present due to cost limitations or only present on the most critical sensor elements. This creates the opportunity for faults to occur on any of the other non-redundant elements and then propagate through to even these redundant elements. For this reason analytical redundancy has become the main method for doing fault diagnosis. In this context of analytical redundancy, fault diagnosis includes three components; fault detection, fault isolation and fault identification.
+
 
 New data driven methods that apply concepts from other fields have started to show some promising results. One of these methods is the use of the PageRank algorithm \cite{bryan200625} employed by google on the ranking of control loops based on the degree of interaction.\cite{farenzena2009looprank} has developed a methodology called LoopRank with the aim of prioritizing control loop maintenance by highlighting loops that have a higher correlation with other loops. In this methodology a relative weight matrix is compiled using partial correlation between input and output variables. The importance scores of each variable is then determined by calculating the normalized eigenvector of the relative weight matrix.\\
 
