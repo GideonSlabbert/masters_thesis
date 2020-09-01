@@ -12,25 +12,25 @@
 \contentsline {chapter}{\numberline {2}LITERATURE STUDY}{5}%
 \contentsline {section}{\numberline {2.1}CHAPTER OBJECTIVES}{5}%
 \contentsline {section}{\numberline {2.2}FAULT DETECTION AND ANALYSIS}{5}%
-\contentsline {subsection}{\numberline {2.2.1}PAGERANK DERIVATION}{6}%
-\contentsline {subsection}{\numberline {2.2.2}LOOPRANK ADAPTION}{7}%
-\contentsline {subsection}{\numberline {2.2.3}LOOPRANK DEVELOPMENT}{8}%
-\contentsline {section}{\numberline {2.3}VISUALIZATION FOR FAULT DETECTION}{8}%
-\contentsline {subsection}{\numberline {2.3.1}VISUALIZATION IN GENERAL}{8}%
-\contentsline {subsection}{\numberline {2.3.2}VISUAL ANALYTICS}{9}%
-\contentsline {subsection}{\numberline {2.3.3}VALUE OF RECORD KEEPING IN VISUALIZATION}{15}%
-\contentsline {subsection}{\numberline {2.3.4}VISUALIZATION TOOLS}{16}%
-\contentsline {chapter}{\numberline {3}METHODS (FOR ILLUSTRATION THIS HEADING CONTINUES ONTO THE NEXT LINE)}{21}%
-\contentsline {section}{\numberline {3.1}CHAPTER OVERVIEW}{21}%
-\contentsline {chapter}{\numberline {4}RESULTS}{22}%
-\contentsline {section}{\numberline {4.1}CHAPTER OVERVIEW}{22}%
-\contentsline {chapter}{\numberline {5}DISCUSSION}{23}%
-\contentsline {section}{\numberline {5.1}CHAPTER OVERVIEW}{23}%
-\contentsline {chapter}{\numberline {6}CONCLUSION}{24}%
-\contentsline {section}{\numberline {6.1}EXAMPLE HEADING}{24}%
+\contentsline {subsection}{\numberline {2.2.1}PAGERANK DERIVATION}{8}%
+\contentsline {subsection}{\numberline {2.2.2}LOOPRANK ADAPTION}{9}%
+\contentsline {subsection}{\numberline {2.2.3}LOOPRANK DEVELOPMENT}{10}%
+\contentsline {section}{\numberline {2.3}VISUALIZATION FOR FAULT DETECTION}{10}%
+\contentsline {subsection}{\numberline {2.3.1}VISUALIZATION IN GENERAL}{10}%
+\contentsline {subsection}{\numberline {2.3.2}VISUAL ANALYTICS}{11}%
+\contentsline {subsection}{\numberline {2.3.3}VALUE OF RECORD KEEPING IN VISUALIZATION}{17}%
+\contentsline {subsection}{\numberline {2.3.4}VISUALIZATION TOOLS}{18}%
+\contentsline {chapter}{\numberline {3}METHODS (FOR ILLUSTRATION THIS HEADING CONTINUES ONTO THE NEXT LINE)}{23}%
+\contentsline {section}{\numberline {3.1}CHAPTER OVERVIEW}{23}%
+\contentsline {chapter}{\numberline {4}RESULTS}{24}%
+\contentsline {section}{\numberline {4.1}CHAPTER OVERVIEW}{24}%
+\contentsline {chapter}{\numberline {5}DISCUSSION}{25}%
+\contentsline {section}{\numberline {5.1}CHAPTER OVERVIEW}{25}%
+\contentsline {chapter}{\numberline {6}CONCLUSION}{26}%
+\contentsline {section}{\numberline {6.1}EXAMPLE HEADING}{26}%
 \renewcommand *\cftchappresnum {\MakeUppercase {Chapter}\ }
-\contentsline {chapter}{REFERENCES}{25}%
+\contentsline {chapter}{REFERENCES}{27}%
 \renewcommand *\cftchappresnum {\MakeUppercase {Addendum}\ }
-\contentsline {chapter}{\numberline {A}DERIVATION OF HIGHER ORDER MODELS}{28}%
-\contentsline {section}{\numberline {A.1}Example Heading}{28}%
-\contentsline {subsection}{\numberline {A.1.1}Subheading example}{28}%
+\contentsline {chapter}{\numberline {A}DERIVATION OF HIGHER ORDER MODELS}{30}%
+\contentsline {section}{\numberline {A.1}Example Heading}{30}%
+\contentsline {subsection}{\numberline {A.1.1}Subheading example}{30}%

@@ -8,51 +8,51 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: diss_thesis.bib
-Warning--I didn't find a database entry for "Shannon:A_Mathematical_Theory_of_Communications"
 -- IEEEtran.bst version 1.14 (2015/08/26) by Michael Shell.
 -- http://www.michaelshell.org/tex/ieeetran/bibtex/
 -- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
+Warning--empty journal in cecati2015survey
 
 Done.
-You've used 20 entries,
+You've used 23 entries,
             4087 wiz_defined-function locations,
-            953 strings with 11506 characters,
-and the built_in function-call counts, 17884 in all, are:
-= -- 1465
-> -- 415
-< -- 183
-+ -- 232
-- -- 64
-* -- 879
-:= -- 2589
-add.period$ -- 48
-call.type$ -- 20
-change.case$ -- 20
-chr.to.int$ -- 420
-cite$ -- 20
-duplicate$ -- 1236
-empty$ -- 1385
-format.name$ -- 84
-if$ -- 4194
+            968 strings with 12055 characters,
+and the built_in function-call counts, 20396 in all, are:
+= -- 1677
+> -- 467
+< -- 211
++ -- 268
+- -- 77
+* -- 1004
+:= -- 2954
+add.period$ -- 54
+call.type$ -- 23
+change.case$ -- 23
+chr.to.int$ -- 486
+cite$ -- 24
+duplicate$ -- 1408
+empty$ -- 1563
+format.name$ -- 93
+if$ -- 4773
 int.to.chr$ -- 0
-int.to.str$ -- 20
-missing$ -- 202
-newline$ -- 83
-num.names$ -- 20
-pop$ -- 434
+int.to.str$ -- 23
+missing$ -- 227
+newline$ -- 92
+num.names$ -- 23
+pop$ -- 485
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 2
-skip$ -- 1382
+skip$ -- 1571
 stack$ -- 0
-substring$ -- 1000
-swap$ -- 1079
-text.length$ -- 43
+substring$ -- 1173
+swap$ -- 1234
+text.length$ -- 49
 text.prefix$ -- 0
 top$ -- 5
-type$ -- 20
-warning$ -- 0
-while$ -- 92
-width$ -- 22
-write$ -- 225
+type$ -- 23
+warning$ -- 1
+while$ -- 103
+width$ -- 25
+write$ -- 254
 (There was 1 warning)

@@ -26,20 +26,37 @@ N.~F. Thornhill and A.~Horch, ``Advances and new directions in plant-wide
   disturbance detection and diagnosis,'' \emph{Control Engineering Practice},
   vol.~15, no.~10, pp. 1196--1206, 2007.
 
-\bibitem{bryan200625}
-K.~Bryan and T.~Leise, ``The \$25,000,000,000 eigenvector: The linear algebra
-  behind google,'' \emph{SIAM review}, vol.~48, no.~3, pp. 569--581, 2006.
+\bibitem{rahman2010new}
+A.~Rahman and M.~S. Choudhury, ``New methods for detection of control loop
+  interaction to prioritize control loop maintenance,'' in \emph{International
+  Conference on Electrical \& Computer Engineering (ICECE 2010)}.\hskip 1em
+  plus 0.5em minus 0.4em\relax IEEE, 2010, pp. 263--266.
 
 \bibitem{farenzena2009looprank}
 M.~Farenzena and J.~O. Trierweiler, ``Looprank: A novel tool to evaluate loop
   connectivity,'' \emph{IFAC Proceedings Volumes}, vol.~42, no.~11, pp.
   964--969, 2009.
 
-\bibitem{rahman2010new}
-A.~Rahman and M.~S. Choudhury, ``New methods for detection of control loop
-  interaction to prioritize control loop maintenance,'' in \emph{International
-  Conference on Electrical \& Computer Engineering (ICECE 2010)}.\hskip 1em
-  plus 0.5em minus 0.4em\relax IEEE, 2010, pp. 263--266.
+\bibitem{jiang2019review}
+Q.~Jiang, X.~Yan, and B.~Huang, ``Review and perspectives of data-driven
+  distributed monitoring for industrial plant-wide processes,''
+  \emph{Industrial \& Engineering Chemistry Research}, vol.~58, no.~29, pp.
+  12\,899--12\,912, 2019.
+
+\bibitem{gao2015survey}
+Z.~Gao, C.~Cecati, and S.~X. Ding, ``A survey of fault diagnosis and
+  fault-tolerant techniques—part i: Fault diagnosis with model-based and
+  signal-based approaches,'' \emph{IEEE Transactions on Industrial
+  Electronics}, vol.~62, no.~6, pp. 3757--3767, 2015.
+
+\bibitem{cecati2015survey}
+C.~Cecati, ``A survey of fault diagnosis and fault-tolerant techniques—part
+  ii: Fault diagnosis with knowledge-based and hybrid/active approaches,''
+  2015.
+
+\bibitem{bryan200625}
+K.~Bryan and T.~Leise, ``The \$25,000,000,000 eigenvector: The linear algebra
+  behind google,'' \emph{SIAM review}, vol.~48, no.~3, pp. 569--581, 2006.
 
 \bibitem{streicher2014eigenvector}
 S.~J. Streicher, C.~Sandrock \emph{et~al.}, ``Eigenvector analysis for the
