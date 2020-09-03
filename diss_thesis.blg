@@ -14,45 +14,45 @@ Database file #1: diss_thesis.bib
 Warning--empty journal in cecati2015survey
 
 Done.
-You've used 23 entries,
+You've used 24 entries,
             4087 wiz_defined-function locations,
-            968 strings with 12055 characters,
-and the built_in function-call counts, 20396 in all, are:
-= -- 1677
-> -- 467
-< -- 211
-+ -- 268
-- -- 77
-* -- 1004
-:= -- 2954
-add.period$ -- 54
-call.type$ -- 23
-change.case$ -- 23
-chr.to.int$ -- 486
-cite$ -- 24
-duplicate$ -- 1408
-empty$ -- 1563
-format.name$ -- 93
-if$ -- 4773
+            975 strings with 12310 characters,
+and the built_in function-call counts, 21368 in all, are:
+= -- 1760
+> -- 492
+< -- 222
++ -- 282
+- -- 81
+* -- 1053
+:= -- 3095
+add.period$ -- 56
+call.type$ -- 24
+change.case$ -- 24
+chr.to.int$ -- 510
+cite$ -- 25
+duplicate$ -- 1474
+empty$ -- 1629
+format.name$ -- 98
+if$ -- 5000
 int.to.chr$ -- 0
-int.to.str$ -- 23
-missing$ -- 227
-newline$ -- 92
-num.names$ -- 23
-pop$ -- 485
+int.to.str$ -- 24
+missing$ -- 238
+newline$ -- 95
+num.names$ -- 24
+pop$ -- 506
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 2
-skip$ -- 1571
+skip$ -- 1646
 stack$ -- 0
-substring$ -- 1173
-swap$ -- 1234
-text.length$ -- 49
+substring$ -- 1230
+swap$ -- 1296
+text.length$ -- 52
 text.prefix$ -- 0
 top$ -- 5
-type$ -- 23
+type$ -- 24
 warning$ -- 1
-while$ -- 103
-width$ -- 25
-write$ -- 254
+while$ -- 108
+width$ -- 26
+write$ -- 265
 (There was 1 warning)
