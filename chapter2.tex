@@ -8,13 +8,13 @@
 
 \section{CHAPTER OBJECTIVES}
 
-This chapter explores literature in the field of disturbance detection and diagnosis of process control in industrial processes. It then elaborates on visualization techniques and how they could be used to aid in the fault detection and diagnosis process.
+This chapter explores literature in the field of fault detection and diagnosis of process control in industrial processes. It then elaborates on visualization techniques and how they could be used to aid in the fault detection and diagnosis process.
 
-\section{FAULT DETECTION AND ANALYSIS}
+\section{FAULT DETECTION AND DIAGNOSIS}
 
-The automated control of industrial processes has developed significantly in recent decades. Advances in computing power had allowed the distributed control system to become common place in most industrial processes. This together with advanced control techniques like model predictive control has allowed for automated real time optimization of the key economic variables. Despite these advances one of the most important tasks in managing a process is still being done manually by operational teams. This task involves responding to abnormal events. This task is the timely identification, diagnosis of the root cause and the appropriate supervisory action to address an abnormality and bring the process back to stability. \cite{venkatasubramanian2003review} defined this task as abnormal event management (AEM) which is critical to the stability of a process. \cite{venkatasubramanian2003review} refers to statistics that indicate that 70\SI{70}{\percent} of industrial accidents are caused by human errors. This indicates that methods to improve this task can significantly improve the economic, safety and environmental impact of these industries.
+The automated control of industrial processes has developed significantly in recent decades. Advances in computing power had allowed the distributed control system to become common place in most industrial processes. This together with advanced control techniques like model predictive control has allowed for automated real time optimization of the key economic variables. Despite these advances one of the most important tasks in managing a process is still being done manually by operational teams; responding to abnormal events. It can be described as the timely identification, diagnosis of the root cause and the appropriate supervisory action to address an abnormality and bring the process back to stability. \cite{venkatasubramanian2003review} defined this task as abnormal event management (AEM) which is critical to the stability of a process. \cite{venkatasubramanian2003review} refers to statistics that indicate that \SI{70}{\percent} of industrial accidents are caused by human errors. This indicates that methods to improve this task can significantly improve the economic, safety and environmental impact of these industries.
 
-A fault can be described as a deviation of an observable variable or calculated parameter from its acceptable operating range \cite{venkatasubramanian2003review}. This can a process deviation like low steam outlet temperatures from a boiler. A possible cause for this could be a failure on a attemperator valve which can be referred to as the basic event or root cause. The diagnosis task can be seen as a classification problem wherein a root cause or fault must be placed in a certain group of faults which will have a pe-determined method to solve them.
+A fault can be described as a deviation of an observable variable or calculated parameter from its acceptable operating range \cite{venkatasubramanian2003review}. This can be a process deviation like low steam outlet temperatures from a boiler. A possible cause for this could be a failure on a attemperator valve which can be referred to as the basic event or root cause. The diagnosis task can be seen as a classification problem wherein a root cause or fault must be placed in a certain group of faults which will have a pe-determined method to solve them.
 
 Disturbances in single control loops are fairly straight forward to solve but disturbances that propagate through a complex system on a plant wide scale are much harder to present a much bigger challenge. One of the goals of process control is to shift process variability to places like buffer tanks and plant utilities. In modern industrial processes these options have become limited as inventory is usually kept to a minimum and the use of recycle streams for heat integration has introduced extra sources complex interaction \cite{thornhill2007advances}.
 
@@ -26,13 +26,15 @@ When considering which type of disturbances to analyze, the time frame of the di
 \end{enumerate}
 The second item, persistent and dynamic disturbances that propagate through an entire system on a continuous basis is of interest for this study.
 
-There have been many approaches developed to solve the problem of detecting and diagnosing plant wide disturbances. These methods can be divided into three main areas; model-based, knowledge-based and data driven methods \cite{jiang2019review}.
+\subsection{FDD AS ANALYTICAL REDUNDANCY}
 
 Fault diagnosis is normally used to improve the reliability of a system \cite{gao2015survey}. There are two methods that can be used to accomplish fault diagnosis: the first is hardware redundancy and the second is software or analytical redundancy. Hardware redundancy requires the use of identical components that use the same input signals to generate duplicate output signals. If the output signal then differs between the two redundant controllers it is easy to detect a fault and take action, examples of this method is limit checking and majority voting. Hardware redundancy can be very expensive and is often times not present due to cost considerations or only present on the most critical sensor elements. This creates the opportunity for faults to occur on any of the other non-redundant elements and then propagate through to even these redundant elements. For this reason analytical redundancy has become the main method for doing fault diagnosis. 
 
-In this context of analytical redundancy, fault diagnosis includes three components; fault detection, fault isolation and fault identification \cite{gao2015survey}. The process always start with detecting that a fault has occurred, after detection the fault needs to be isolated by providing information as to where in the system the fault is located. Finally the fault identification step provides information on the types, shapes and size of the fault which basically provides degree/ level of malfunction.
+In this context of analytical redundancy, fault diagnosis includes three components; fault detection, fault isolation and fault identification \cite{gao2015survey}. Fault diagnosis starts with detecting that a fault has occurred, after detection the fault needs to be isolated by providing information as to where in the system the fault is located. Finally the fault identification step provides information on the types, shapes and size of the fault which basically provides degree/ level of malfunction.
 
-\cite{gao2015survey} completed a comprehensive overview of fault diagnosis techniques that have been developed over the last 30 years with specific focus on highlighting new developments over the last 10 years. Fault detection and diagnosis techniques can be divided into three methods; model-based methods, signal-based methods and knowledge-based methods.
+\subsection{CLASSIFYING FDD METHODS}
+
+\cite{gao2015survey} completed a comprehensive overview of fault diagnosis techniques that have been developed over the last 30 years with specific focus on highlighting new developments over the last 10 years. According to this study by \cite{gao2015survey}, fault detection and diagnosis techniques can be divided into three methods; model-based methods, signal-based methods and knowledge-based methods.
 
 Model based methods use a model of the system derived from physical principles or system identification techniques. The system outputs are then compared to model predicted outputs to identify faults.
 
@@ -43,6 +45,10 @@ Signal based methods do not rely on input- output relationships but rather extra
 Qualitative knowledge based fault diagnosis is expert-system methods that rely on sets of rules to evaluate data and detect faults. The rules have to be developed specifically for the system in question but integrating this method with a object-orientated paradigm provided more flexibility by developing more general rules. Another method used with this description is qualitative trend analysis (QTA) which identifies process trends from noisy data and compares them to a database that contains fault trends. The QTA method has been advanced by combining it with integrated signed directed graphs (SDG) to compensate for some of the disadvantages of this method.
 
 Quantitative knowledge based methods are based on solving the pattern recognition problem. This can be done using statistical analysis techniques like principal component analysis (PCA), partial least squares (PLS), independent component analysis (ICA) or support vector machine (SVM). This can also be done using Non statistical analysis based methods which are better suited for non-linear applications, an example of this is a neural network.
+
+A lot of new research is being done in quantitative knowledge based methods due to the vast amount of data that is now available in modern industrial complexes. \cite{jiang2019review} defines these methods as multivariate statistical process monitoring (MSPM). For linear Gaussian process methods such as PCA, PLS and canonical correlation analysis CCA are used. To cater for non-Gaussian, non-linear and dynamic characteristics numerous extensions have been developed for the above mentioned methods.
+
+\subsection{EVALUATING FFD METHODS AND STRUCTURE}
 
 Two very important concepts to understand when evaluating fault FFD methods is completeness and resolution \cite{venkatasubramanian2003review}. Completeness describes how well a method is at detecting all the possible faults exhibited by the system. Resolution then relates to how well the method is at classifying the fault into a small subset of the available faults. A diagnostic system has the following desirable characteristics according to \cite{venkatasubramanian2003review}.
 \begin{enumerate}
@@ -58,7 +64,7 @@ Two very important concepts to understand when evaluating fault FFD methods is c
 	\item Multiple fault identifiability	
 \end{enumerate}
 
-In any diagnostic system the measurements used go through a transformation process. Two important components to take note of when considering transformations are the a priori process knowledge and the search technique used \cite{venkatasubramanian2003review}. In general the transformation of data will go through four steps:
+In any diagnostic system the measurements and data goes through a transformation process. Two important components to take note of when considering transformations are the a priori process knowledge and the search technique used \cite{venkatasubramanian2003review}. In general the transformation of data will go through four steps:
 \begin{enumerate}
 	\item Measurement space
 	\item Feature space
@@ -67,12 +73,16 @@ In any diagnostic system the measurements used go through a transformation proce
 \end{enumerate}
 
 \cite{venkatasubramanian2003review} explains these spaces as follows:
-The measurement space contains the raw input signals to the diagnostic system. The feature space contains a set of variables that are derived from the measurement space using a priori problem knowledge. Useful features are extracted, in this transformation there is often a significant dimension reduction. This is normally done by using feature selection or feature extraction. Its assumed that features cluster better than measurements which will facilitate improved classification o better discrimination. By extracting discriminant features it takes the burden of the next transformation so that it can easily find the features distinguish between features that match certain decisions.
-The mapping from feature to decision space is usually done via some sort of objective function or using simple threshold functions. The class space consist of the list of possible faults and the decision space maps to it via threshold functions, template matching or symbolic reasoning. This could be summarized as using some sort of search or learning algorithm to complete these mappings. It is also the final interpretation of the diagnostic system delivered to the user. The decision space and the class space usually have the same dimensions. This could provide the option of combining these two spaces but the advantage of still keeping them separate is that a certain diagnostic method ight not be able to give a crisp solution as to what fault is being detected.
+The measurement space contains the raw input signals to the diagnostic system. The feature space contains a set of variables that are derived from the measurement space using a priori problem knowledge. Useful features are extracted, in this transformation there is often a significant dimension reduction. This is normally done by using feature selection or feature extraction. Its assumed that features cluster better than measurements which will facilitate improved classification or better discrimination. By extracting discriminant features it takes the burden of the next transformation so that it can easily find the features distinguish between features that match certain decisions.
+The mapping from feature to decision space is usually done via some sort of objective function or using simple threshold functions. The class space consist of the list of possible faults and the decision space maps to it via threshold functions, template matching or symbolic reasoning. This could be summarized as using some sort of search or learning algorithm to complete these mappings. It is also the final interpretation of the diagnostic system delivered to the user. The decision space and the class space usually have the same dimensions. This could provide the option of combining these two spaces but the advantage of still keeping them separate is that a certain diagnostic method might not be able to give a crisp solution as to what fault is being detected.
 
 A priori knowledge plays a crucial role through this entire transformation process, it can greatly simplify the problem in every step of the process. Sets of failures and relationships between observations and failures is crucial to the success of any method. This relationship can be inferred, the most basic example begin a lookup table or it can be based on domain knowledge. First principle knowledge is referred to as deep, casual and model-based knowledge whereas knowledge gained from past experience with the process can be referred to as shallow, compiled, evidential or process history-based knowledge \cite{venkatasubramanian2003review}.
 
-New data driven methods that apply concepts from other fields have started to show some promising results. One of these methods is the use of the PageRank algorithm \cite{bryan200625} employed by google on the ranking of control loops based on the degree of interaction.\cite{farenzena2009looprank} has developed a methodology called LoopRank with the aim of prioritizing control loop maintenance by highlighting loops that have a higher correlation with other loops. In this methodology a relative weight matrix is compiled using partial correlation between input and output variables. The importance scores of each variable is then determined by calculating the normalized eigenvector of the relative weight matrix.\\
+\subsection{NEW APPROACHES TO DATA DRIVEN METHODS}
+
+In the following sections of this exploration more focus will be given to knowledge/ data driven methods. Improvements in computing power and better access to tools used for analyzing data make it possible to significantly improve the contribution of data driven methods to the FDD process.
+
+New data driven methods that apply concepts from other fields have started to show some promising results. One of these methods is the use of the PageRank algorithm \cite{bryan200625} employed by google on the ranking of control loops based on the degree of interaction.\cite{farenzena2009looprank} has developed a methodology called LoopRank with the aim of prioritizing control loop maintenance by highlighting loops that have a higher correlation with other loops.\\
 
 \subsection{PAGERANK DERIVATION}
 
@@ -127,15 +137,18 @@ The LoopRank method can be summarized in five steps:
 \subsection{LOOPRANK DEVELOPMENT}
 
 \cite{rahman2010new} compared LoopRank with a more traditional data driven method that utilizes the integral of absolute or squared error to determine loop interaction. Canonical correlation was used to calculate the relative weight matrix in the LoopRank methodology. It was found that both methods delivered similar results.\\ 
-The LoopRank methodology was further expanded on by \cite{streicher2014eigenvector} who tested the LoopRank using transfer entropy in an attempt to get a better estimation of causality when calculating the relative weight matrix. \cite{streicher2019plant} used this methodology for incipient fault detection by calculating importance scores over multiple overlapping time regions. \\ 
 
-\section{VISUALIZATION FOR FAULT DETECTION}
+The LoopRank methodology was further expanded on by \cite{streicher2014eigenvector} with the goal of improving the relative weight matrix used in step 2 of the procedure as outlined by \cite{farenzena2009looprank}.\\
+
+\cite{streicher2014eigenvector} demonstrated how transfer entropy provides a more robust estimation of the casual links between nodes in a relative weight matrix. This method was tested using data from the well known Tennessee Eastman case study and was able to successfully highlight the disturbance variables as the top ranking nodes in the matrix.
+
+\cite{streicher2019plant} further developed the LoopRank methodology to calculate importance scores for multiple overlapping time regions. Studying how the importance scores change over time then provided a very useful method for performing incipient fault detection.  \\ 
+
+\section{VISUALIZATION}
 
 The methodologies involved in fault detection and diagnosis of industrial processes rely heavily on the visual analysis of time series data. Data is continuously generated by industrial processes, this data in its simplest form can be floating point or boolean values on a control system interface screen. This data is used by plant personnel as feedback on the current status of automated processes.
 
 This study will focus on methods and approaches taken to visualize temporal or time series data. 
-
-\subsection{VISUALIZATION IN GENERAL}
 
 Some of the first books to discuss information visualization date back to 1967 with the publication of Jacques Bertin's Semiologie Graphique \cite{rees2019survey}. A survey by \cite{rees2019survey} highlighted the number of visualization books have been published each year, displayed in \ref{fig:1}.
 
@@ -329,7 +342,7 @@ Table \ref{fig:tool_comparison} shows an example of a table.
 	\end{table}
 \end{center}
 
-One of the biggest challenges with modern visualization tools is the latency created by processing large data sets \cite{ali2016big}. This can be addressed by using pre-computed data, paralizing data processing and rendering and using predictive middelware.
+One of the biggest challenges with modern visualization tools is the latency created by processing large data sets \cite{ali2016big}. This can be addressed by using pre-computed data, paralyzing data processing and rendering and using predictive middelware.
 
 \cite{caldarola2017big} completed a comprehensive survey of tools used in Big Data applications. The concept of Big Data has different dimensions, one model that attempts to described these dimensions is widely known as 3Vs. The 3Vs stand for Volume, Velocity and Variety.  Each of these dimensions pose its own unique challenges in the data management process.
 
@@ -347,13 +360,22 @@ Differentiation is also done according to four main categories that describe the
 \end{enumerate}
 \cite{caldarola2017big} analyses 35 different software solutions in these four categories. What is interesting to note is that Plotly is well described in both the data and information visualization categories which implies that does well at handling big data challenges with variety and volume.
 
+section on Neill tool....
 
+\section{VISUALIZATION AND FDD}
 
+\cite{thornhill2007advances} described the exiting potential of combining data driven methods with process information to enhance the diagnosis step. The process information required is a qualitative model of the process topology which captures the logical pathways that information can flow. A standard called Computer Aided Engineering Exchange (CAEX) specifies an XML schema that can to capture the process topology and feed it into a data driven tool.\\
 
+\cite{yim2006using} demonstrated a tool that combined plant topology information written in XML with results form a signal analysis tool called Plant-Wide Disturbance Analysis (PDA) to deliver enhanced isolation and diagnosis of root causes. The connectivity information provided by the plant topology allows the tool to verify or reject hypothesis about the propagation path of a fault. The tool described here was built in C\# and contains a reasoning engine that can searches for physical paths and determines root causes for measured plant-wide disturbances.\\
 
-Visualization plays a critical role in these data driven problem solving techniques. \cite{elmqvist2004animated} has shown that traditional methods like directed-acyclic graphs and Hasse diagrams can display casual links in an intuitive way but becomes less suitable when the number of nodes and interactions in a system grow. The use of two novel visualization techniques called Growing Squares and Growing Polygons demonstrate the use of animations, colors and patterns to better visualize casual relations.
+Another useful model to visualize process connections is the signed directed graph (SDG) model. This model provides a useful way to visual cause-effect relations in continuous systems \cite{yang2010qualitative}. The process variables are denoted as nodes and the casual relations as directed arcs. The sign of the arc indicates the casual flow of the process. \cite{streicher2019plant} used SDG models to aid in the logical reasoning process and display the results obtained from data driven methods like the LoopRank algorithm that was expanded on in earlier sections.\\
 
-Another approach to improve visualization of casual relations would be to adapt novel techniques used in other fields, similar to how PageRank was adapted to be used as LoopRank in industrial processes. Process monitoring and fault detection of batch processes has received attention in recent years. The extensive use of batch processing in the production of high value products makes it a important to ensure that batch runs are completed with a high level of success. \cite{wang2018geometric} developed a novel approach to process monitoring and fault detection in batch processes by utilizing a technique they termed time-explicit Kiviat diagrams. The core idea behind this technique is based on Multi-way Principle Component Analysis that facilitates batch-wise unfolding of the three dimensional (Time*Variables*Batches) batch data matrix into a two dimensional matrix that captures the variation across batches. The type of data required to warrant the use of this technique is very similar to the data generated by multiple time region analysis in the LoopRank analysis done by \cite{streicher2019plant}. Each batch can be seen as a time region in the LoopRank analysis and the analysis can be seen as the completion of multiple batch runs.
+Process monitoring and fault detection of batch processes has received attention in recent years. The extensive use of batch processing in the production of high value products makes it a important to ensure that batch runs are completed with a high level of success. \cite{wang2018geometric} developed a novel approach to process monitoring and fault detection in batch processes by utilizing a technique they termed time-explicit Kiviat diagrams. The core idea behind this technique is based on Multi-way Principle Component Analysis that facilitates batch-wise unfolding of the three dimensional (Time*Variables*Batches) batch data matrix into a two dimensional matrix that captures the variation across batches. The type of data required to warrant the use of this technique is very similar to the data generated by multiple time region analysis in the LoopRank analysis done by \cite{streicher2019plant}. Each batch can be seen as a time region in the LoopRank analysis and the analysis can be seen as the completion of multiple batch runs.
+
+SDG models can be obtained by flow sheets, empirical knowledge and mathematical models but in general they are more often derived from qualitative process knowledge and experience \cite{yang2010qualitative}. These models are of particular importance in plant-wide fault detection because they can help explain the fault propagation through a complex system. The directed graph description can also be represented in a matrix form an adjacency matrix with each element containing a 1 or 0 denoting the direction of the interaction between two nodes.
+
+\cite{streicher2019plant} combined the application of the LoopRank algorithm and enhancements in the casual relationships identified into a tool that has the ability to test various different methods used in FDD. The tool is predominantly developed in python with Java dependencies to perform the transfer entropy estimations used in the interaction matrix. The tool makes use of various graphical models to display information ranging from basic trending of how importance scores vary across time regions to intricate SDG graphs displaying fault propagation paths.
+
 
 %Equation \eqref{fig:example} shows an example of a numbered equation.
 %\begin{equation}

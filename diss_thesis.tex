@@ -9,6 +9,7 @@
 %%   the degree descriptions in the template to be atomically set.
 \documentclass[12250091]{diss_thesis}
 %\usepackage{natbib}
+
 %% EDIT: Replace the following with your information.
 \renewcommand{\dtthetitleeng}{TITLE}
 \renewcommand{\dtthecandidatename}{Gideon Pieter Slabbert}
@@ -16,7 +17,7 @@
 \renewcommand{\dtthesupervisor}{Mr C Sandrock}
 
 \begin{document}
-
+%\citestyle={harvard}
 %% ---[ FRONT MATTER ]-------------------------------------------------------
 
 \maketitlepage
@@ -30,7 +31,6 @@
 \pagestyle{normal}
 \setcounter{page}{1}
 %%\setlength{\parskip}{0.5em}
-
 %% ---[ CONTENT ]------------------------------------------------------------
 
 % EDIT: Include additional chapter files as necessary.
@@ -48,6 +48,7 @@
 %\backmatter
 
 %% EDIT: Change the bibliography style if necessary (not recommended).
+\nocite{*}
 \pagestyle{bibliography}
 \bibliographystyle{IEEEtran}
 %\bibliographystyle{agsm}

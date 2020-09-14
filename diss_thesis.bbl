@@ -43,12 +43,6 @@ V.~Venkatasubramanian, R.~Rengaswamy, K.~Yin, and S.~N. Kavuri, ``A review of
   methods,'' \emph{Computers \& chemical engineering}, vol.~27, no.~3, pp.
   293--311, 2003.
 
-\bibitem{jiang2019review}
-Q.~Jiang, X.~Yan, and B.~Huang, ``Review and perspectives of data-driven
-  distributed monitoring for industrial plant-wide processes,''
-  \emph{Industrial \& Engineering Chemistry Research}, vol.~58, no.~29, pp.
-  12\,899--12\,912, 2019.
-
 \bibitem{gao2015survey}
 Z.~Gao, C.~Cecati, and S.~X. Ding, ``A survey of fault diagnosis and
   fault-tolerant techniques—part i: Fault diagnosis with model-based and
@@ -59,6 +53,12 @@ Z.~Gao, C.~Cecati, and S.~X. Ding, ``A survey of fault diagnosis and
 C.~Cecati, ``A survey of fault diagnosis and fault-tolerant techniques—part
   ii: Fault diagnosis with knowledge-based and hybrid/active approaches,''
   2015.
+
+\bibitem{jiang2019review}
+Q.~Jiang, X.~Yan, and B.~Huang, ``Review and perspectives of data-driven
+  distributed monitoring for industrial plant-wide processes,''
+  \emph{Industrial \& Engineering Chemistry Research}, vol.~58, no.~29, pp.
+  12\,899--12\,912, 2019.
 
 \bibitem{bryan200625}
 K.~Bryan and T.~Leise, ``The \$25,000,000,000 eigenvector: The linear algebra
@@ -144,14 +144,25 @@ E.~G. Caldarola and A.~M. Rinaldi, ``Big data visualization tools: A survey,''
   Technology and Applications}.\hskip 1em plus 0.5em minus 0.4em\relax
   SCITEPRESS-Science and Technology Publications, Lda, 2017, pp. 296--305.
 
-\bibitem{elmqvist2004animated}
-N.~Elmqvist and P.~Tsigas, ``Animated visualization of causal relations through
-  growing 2d geometry,'' \emph{Information Visualization}, vol.~3, no.~3, pp.
-  154--172, 2004.
+\bibitem{yim2006using}
+S.~Y. Yim, H.~G. Ananthakumar, L.~Benabbas, A.~Horch, R.~Drath, and N.~F.
+  Thornhill, ``Using process topology in plant-wide control loop performance
+  assessment,'' \emph{Computers \& Chemical Engineering}, vol.~31, no.~2, pp.
+  86--99, 2006.
+
+\bibitem{yang2010qualitative}
+F.~Yang, D.~Xiao, and S.~L. Shah, ``Qualitative fault detection and hazard
+  analysis based on signed directed graphs for large-scale complex systems,''
+  \emph{Fault detection}, pp. 15--50, 2010.
 
 \bibitem{wang2018geometric}
 R.~Wang, T.~F. Edgar, M.~Baldea, M.~Nixon, W.~Wojsznis, and R.~Dunia, ``A
   geometric method for batch data visualization, process monitoring and fault
   detection,'' \emph{Journal of Process Control}, vol.~67, pp. 197--205, 2018.
+
+\bibitem{elmqvist2004animated}
+N.~Elmqvist and P.~Tsigas, ``Animated visualization of causal relations through
+  growing 2d geometry,'' \emph{Information Visualization}, vol.~3, no.~3, pp.
+  154--172, 2004.
 
 \end{thebibliography}

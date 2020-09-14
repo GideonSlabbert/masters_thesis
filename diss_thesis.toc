@@ -11,26 +11,30 @@
 \contentsline {section}{\numberline {1.6}OVERVIEW OF STUDY}{4}%
 \contentsline {chapter}{\numberline {2}LITERATURE STUDY}{5}%
 \contentsline {section}{\numberline {2.1}CHAPTER OBJECTIVES}{5}%
-\contentsline {section}{\numberline {2.2}FAULT DETECTION AND ANALYSIS}{5}%
-\contentsline {subsection}{\numberline {2.2.1}PAGERANK DERIVATION}{10}%
-\contentsline {subsection}{\numberline {2.2.2}LOOPRANK ADAPTION}{11}%
-\contentsline {subsection}{\numberline {2.2.3}LOOPRANK DEVELOPMENT}{12}%
-\contentsline {section}{\numberline {2.3}VISUALIZATION FOR FAULT DETECTION}{12}%
-\contentsline {subsection}{\numberline {2.3.1}VISUALIZATION IN GENERAL}{12}%
-\contentsline {subsection}{\numberline {2.3.2}VISUAL ANALYTICS}{13}%
-\contentsline {subsection}{\numberline {2.3.3}VALUE OF RECORD KEEPING IN VISUALIZATION}{19}%
-\contentsline {subsection}{\numberline {2.3.4}VISUALIZATION TOOLS}{20}%
-\contentsline {chapter}{\numberline {3}METHODS (FOR ILLUSTRATION THIS HEADING CONTINUES ONTO THE NEXT LINE)}{25}%
-\contentsline {section}{\numberline {3.1}CHAPTER OVERVIEW}{25}%
-\contentsline {chapter}{\numberline {4}RESULTS}{26}%
-\contentsline {section}{\numberline {4.1}CHAPTER OVERVIEW}{26}%
-\contentsline {chapter}{\numberline {5}DISCUSSION}{27}%
-\contentsline {section}{\numberline {5.1}CHAPTER OVERVIEW}{27}%
-\contentsline {chapter}{\numberline {6}CONCLUSION}{28}%
-\contentsline {section}{\numberline {6.1}EXAMPLE HEADING}{28}%
+\contentsline {section}{\numberline {2.2}FAULT DETECTION AND DIAGNOSIS}{5}%
+\contentsline {subsection}{\numberline {2.2.1}FDD AS ANALYTICAL REDUNDANCY}{6}%
+\contentsline {subsection}{\numberline {2.2.2}CLASSIFYING FDD METHODS}{7}%
+\contentsline {subsection}{\numberline {2.2.3}EVALUATING FFD METHODS AND STRUCTURE}{8}%
+\contentsline {subsection}{\numberline {2.2.4}NEW APPROACHES TO DATA DRIVEN METHODS}{10}%
+\contentsline {subsection}{\numberline {2.2.5}PAGERANK DERIVATION}{10}%
+\contentsline {subsection}{\numberline {2.2.6}LOOPRANK ADAPTION}{11}%
+\contentsline {subsection}{\numberline {2.2.7}LOOPRANK DEVELOPMENT}{12}%
+\contentsline {section}{\numberline {2.3}VISUALIZATION}{13}%
+\contentsline {subsection}{\numberline {2.3.1}VISUAL ANALYTICS}{14}%
+\contentsline {subsection}{\numberline {2.3.2}VALUE OF RECORD KEEPING IN VISUALIZATION}{19}%
+\contentsline {subsection}{\numberline {2.3.3}VISUALIZATION TOOLS}{21}%
+\contentsline {section}{\numberline {2.4}VISUALIZATION AND FDD}{24}%
+\contentsline {chapter}{\numberline {3}METHODS (FOR ILLUSTRATION THIS HEADING CONTINUES ONTO THE NEXT LINE)}{26}%
+\contentsline {section}{\numberline {3.1}CHAPTER OVERVIEW}{26}%
+\contentsline {chapter}{\numberline {4}RESULTS}{27}%
+\contentsline {section}{\numberline {4.1}CHAPTER OVERVIEW}{27}%
+\contentsline {chapter}{\numberline {5}DISCUSSION}{28}%
+\contentsline {section}{\numberline {5.1}CHAPTER OVERVIEW}{28}%
+\contentsline {chapter}{\numberline {6}CONCLUSION}{29}%
+\contentsline {section}{\numberline {6.1}EXAMPLE HEADING}{29}%
 \renewcommand *\cftchappresnum {\MakeUppercase {Chapter}\ }
-\contentsline {chapter}{REFERENCES}{29}%
+\contentsline {chapter}{REFERENCES}{30}%
 \renewcommand *\cftchappresnum {\MakeUppercase {Addendum}\ }
-\contentsline {chapter}{\numberline {A}DERIVATION OF HIGHER ORDER MODELS}{32}%
-\contentsline {section}{\numberline {A.1}Example Heading}{32}%
-\contentsline {subsection}{\numberline {A.1.1}Subheading example}{32}%
+\contentsline {chapter}{\numberline {A}DERIVATION OF HIGHER ORDER MODELS}{34}%
+\contentsline {section}{\numberline {A.1}Example Heading}{34}%
+\contentsline {subsection}{\numberline {A.1.1}Subheading example}{34}%

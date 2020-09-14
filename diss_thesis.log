@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2020.1.4)  3 SEP 2020 23:17
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2020.1.4)  14 SEP 2020 22:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1668,21 +1668,21 @@ LaTeX Warning: Unused global option(s):
 (./diss_thesis.aux)
 \openout1 = `diss_thesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Trying to load font information for T1+ptm on input line 18
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Trying to load font information for T1+ptm on input line 19
 .
  (c:/texlive/2019/texmf-dist/tex/latex/psnfss/t1ptm.fd
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
@@ -1735,14 +1735,14 @@ File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 \makeMPintoPDFobject=\count384
 \everyMPtoPDFconversion=\toks58
 )
-LaTeX Info: Redefining \microtypecontext on input line 18.
+LaTeX Info: Redefining \microtypecontext on input line 19.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `basictext'.
-LaTeX Info: Redefining \showhyphens on input line 18.
+LaTeX Info: Redefining \showhyphens on input line 19.
 Package microtype Info: Tracking enabled.
 Package microtype Info: Using default tracking set `smallcaps'.
 Package microtype Info: Adjustment of interword spacing enabled.
@@ -1768,7 +1768,7 @@ Package pgfplots notification 'compat/show suggested version=true': document ha
 s been generated with the most recent feature set (\pgfplotsset{compat=1.16}).
 
 LaTeX Font Info:    Trying to load font information for OT1+ztmcm on input line
- 18.
+ 19.
 (c:/texlive/2019/texmf-dist/tex/latex/psnfss/ot1ztmcm.fd
 File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
 )
@@ -1777,35 +1777,35 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Trying to load font information for OML+ztmcm on input line
- 18.
+ 19.
 
 (c:/texlive/2019/texmf-dist/tex/latex/psnfss/omlztmcm.fd
 File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
 )
 LaTeX Font Info:    Trying to load font information for OMS+ztmcm on input line
- 18.
+ 19.
 
 (c:/texlive/2019/texmf-dist/tex/latex/psnfss/omsztmcm.fd
 File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
 )
 LaTeX Font Info:    Trying to load font information for OMX+ztmcm on input line
- 18.
+ 19.
 
 (c:/texlive/2019/texmf-dist/tex/latex/psnfss/omxztmcm.fd
 File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
 )
 LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 1
-8.
+9.
 
 (c:/texlive/2019/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 18.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 19.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 18.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 19.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 18.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 19.
 
 (c:/texlive/2019/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
@@ -1816,14 +1816,14 @@ File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 (c:/texlive/2019/texmf-dist/tex/latex/microtype/mt-eur.cfg
 File: mt-eur.cfg 2006/07/31 v1.1 microtype config. file: AMS Euler Roman (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+wasy on input line 18
+LaTeX Font Info:    Trying to load font information for U+wasy on input line 19
 .
 
 (c:/texlive/2019/texmf-dist/tex/latex/wasysym/uwasy.fd
 File: uwasy.fd 2003/10/30 v2.0 Wasy-2 symbol font definitions
 )
 LaTeX Font Info:    Trying to load font information for OT1+lmss on input line 
-18.
+19.
 
 (c:/texlive/2019/texmf-dist/tex/latex/lm/ot1lmss.fd
 File: ot1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
@@ -1833,7 +1833,7 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Trying to load font information for OT1+lmtt on input line 
-18.
+19.
 
 (c:/texlive/2019/texmf-dist/tex/latex/lm/ot1lmtt.fd
 File: ot1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
@@ -1843,7 +1843,7 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 22.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 23.
 
 Overfull \hbox (8.32202pt too wide) has occurred while \output is active
     []
@@ -1887,7 +1887,7 @@ Overfull \hbox (8.32202pt too wide) has occurred while \output is active
 
 [3])
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <17.28> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 25.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 26.
  (./diss_thesis.toc
 Overfull \hbox (8.32202pt too wide) has occurred while \output is active
     []
@@ -2008,11 +2008,6 @@ Overfull \hbox (8.32202pt too wide) has occurred while \output is active
  []
 
 [8]
-Underfull \hbox (badness 10000) in paragraph at lines 75--76
-
- []
-
-
 Overfull \hbox (8.32202pt too wide) has occurred while \output is active
     []
  []
@@ -2023,18 +2018,22 @@ Overfull \hbox (8.32202pt too wide) has occurred while \output is active
  []
 
 [9]
+Underfull \hbox (badness 10000) in paragraph at lines 85--86
+
+ []
+
 <webpages.PNG, id=76, 110.21175pt x 124.66576pt>
 File: webpages.PNG Graphic file (type png)
 <use webpages.PNG>
-Package pdftex.def Info: webpages.PNG  used on input line 83.
+Package pdftex.def Info: webpages.PNG  used on input line 93.
 (pdftex.def)             Requested size: 55.10573pt x 62.33272pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 81--85
+Underfull \hbox (badness 10000) in paragraph at lines 91--95
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 90--97
+Underfull \hbox (badness 10000) in paragraph at lines 100--107
 
  []
 
@@ -2059,16 +2058,20 @@ Overfull \hbox (8.32202pt too wide) has occurred while \output is active
  []
 
 [11]
-Underfull \hbox (badness 10000) in paragraph at lines 129--131
+Underfull \hbox (badness 10000) in paragraph at lines 139--140
 
  []
 
-<Visualization_books_published.PNG, id=91, 419.166pt x 297.5115pt>
-File: Visualization_books_published.PNG Graphic file (type png)
-<use Visualization_books_published.PNG>
-Package pdftex.def Info: Visualization_books_published.PNG  used on input line 
-144.
-(pdftex.def)             Requested size: 419.16498pt x 297.51077pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 141--142
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 145--146
+
+ []
+
 
 Overfull \hbox (8.32202pt too wide) has occurred while \output is active
     []
@@ -2080,11 +2083,12 @@ Overfull \hbox (8.32202pt too wide) has occurred while \output is active
  []
 
 [12]
-<Sense_making_model.PNG, id=95, 626.94225pt x 440.847pt>
-File: Sense_making_model.PNG Graphic file (type png)
-<use Sense_making_model.PNG>
-Package pdftex.def Info: Sense_making_model.PNG  used on input line 164.
-(pdftex.def)             Requested size: 313.47035pt x 220.42296pt.
+<Visualization_books_published.PNG, id=94, 419.166pt x 297.5115pt>
+File: Visualization_books_published.PNG Graphic file (type png)
+<use Visualization_books_published.PNG>
+Package pdftex.def Info: Visualization_books_published.PNG  used on input line 
+157.
+(pdftex.def)             Requested size: 419.16498pt x 297.51077pt.
 
 Overfull \hbox (8.32202pt too wide) has occurred while \output is active
     []
@@ -2096,6 +2100,12 @@ Overfull \hbox (8.32202pt too wide) has occurred while \output is active
  []
 
 [13 <./Visualization_books_published.PNG>]
+<Sense_making_model.PNG, id=99, 626.94225pt x 440.847pt>
+File: Sense_making_model.PNG Graphic file (type png)
+<use Sense_making_model.PNG>
+Package pdftex.def Info: Sense_making_model.PNG  used on input line 177.
+(pdftex.def)             Requested size: 313.47035pt x 220.42296pt.
+
 Overfull \hbox (8.32202pt too wide) has occurred while \output is active
     []
  []
@@ -2110,7 +2120,7 @@ Overfull \hbox (8.32202pt too wide) has occurred while \output is active
 File: Frame_data_sensemaking_model.PNG Graphic file (type png)
 <use Frame_data_sensemaking_model.PNG>
 Package pdftex.def Info: Frame_data_sensemaking_model.PNG  used on input line 1
-82.
+95.
 (pdftex.def)             Requested size: 396.69937pt x 284.13962pt.
 
 Overfull \hbox (8.32202pt too wide) has occurred while \output is active
@@ -2122,15 +2132,15 @@ Overfull \hbox (8.32202pt too wide) has occurred while \output is active
     []
  []
 
-[15 <./Frame_data_sensemaking_model.PNG>]
-<knowledge_discovery_in_databases.PNG, id=110, 571.53525pt x 241.50224pt>
+[15]
+<knowledge_discovery_in_databases.PNG, id=109, 571.53525pt x 241.50224pt>
 File: knowledge_discovery_in_databases.PNG Graphic file (type png)
 <use knowledge_discovery_in_databases.PNG>
 Package pdftex.def Info: knowledge_discovery_in_databases.PNG  used on input li
-ne 195.
+ne 208.
 (pdftex.def)             Requested size: 457.2288pt x 193.20204pt.
 
-Overfull \hbox (16.21107pt too wide) in paragraph at lines 195--196
+Overfull \hbox (16.21107pt too wide) in paragraph at lines 208--209
  [][] 
  []
 
@@ -2144,28 +2154,28 @@ Overfull \hbox (8.32202pt too wide) has occurred while \output is active
     []
  []
 
-[16 <./knowledge_discovery_in_databases.PNG>]
-<human_computer_va_model.PNG, id=115, 914.81775pt x 462.528pt>
+[16 <./Frame_data_sensemaking_model.PNG>]
+Overfull \hbox (8.32202pt too wide) has occurred while \output is active
+    []
+ []
+
+
+Overfull \hbox (8.32202pt too wide) has occurred while \output is active
+    []
+ []
+
+[17 <./knowledge_discovery_in_databases.PNG>]
+<human_computer_va_model.PNG, id=118, 914.81775pt x 462.528pt>
 File: human_computer_va_model.PNG Graphic file (type png)
 <use human_computer_va_model.PNG>
-Package pdftex.def Info: human_computer_va_model.PNG  used on input line 221.
+Package pdftex.def Info: human_computer_va_model.PNG  used on input line 234.
 (pdftex.def)             Requested size: 457.40776pt x 231.26343pt.
 
-Overfull \hbox (16.39003pt too wide) in paragraph at lines 221--222
+Overfull \hbox (16.39003pt too wide) in paragraph at lines 234--235
  [][] 
  []
 
 
-Overfull \hbox (8.32202pt too wide) has occurred while \output is active
-    []
- []
-
-
-Overfull \hbox (8.32202pt too wide) has occurred while \output is active
-    []
- []
-
-[17]
 Overfull \hbox (8.32202pt too wide) has occurred while \output is active
     []
  []
@@ -2176,10 +2186,20 @@ Overfull \hbox (8.32202pt too wide) has occurred while \output is active
  []
 
 [18 <./human_computer_va_model.PNG>]
-<Visual_Analytics_Model.PNG, id=123, 419.76825pt x 392.06474pt>
+Overfull \hbox (8.32202pt too wide) has occurred while \output is active
+    []
+ []
+
+
+Overfull \hbox (8.32202pt too wide) has occurred while \output is active
+    []
+ []
+
+[19]
+<Visual_Analytics_Model.PNG, id=126, 419.76825pt x 392.06474pt>
 File: Visual_Analytics_Model.PNG Graphic file (type png)
 <use Visual_Analytics_Model.PNG>
-Package pdftex.def Info: Visual_Analytics_Model.PNG  used on input line 256.
+Package pdftex.def Info: Visual_Analytics_Model.PNG  used on input line 269.
 (pdftex.def)             Requested size: 209.8836pt x 196.03189pt.
 
 Overfull \hbox (8.32202pt too wide) has occurred while \output is active
@@ -2191,17 +2211,7 @@ Overfull \hbox (8.32202pt too wide) has occurred while \output is active
     []
  []
 
-[19 <./Visual_Analytics_Model.PNG>]
-Overfull \hbox (8.32202pt too wide) has occurred while \output is active
-    []
- []
-
-
-Overfull \hbox (8.32202pt too wide) has occurred while \output is active
-    []
- []
-
-[20]
+[20 <./Visual_Analytics_Model.PNG>]
 Overfull \hbox (8.32202pt too wide) has occurred while \output is active
     []
  []
@@ -2212,14 +2222,24 @@ Overfull \hbox (8.32202pt too wide) has occurred while \output is active
  []
 
 [21]
-<big_data_visualization_categories.PNG, id=135, 522.753pt x 336.0555pt>
+Overfull \hbox (8.32202pt too wide) has occurred while \output is active
+    []
+ []
+
+
+Overfull \hbox (8.32202pt too wide) has occurred while \output is active
+    []
+ []
+
+[22]
+<big_data_visualization_categories.PNG, id=138, 522.753pt x 336.0555pt>
 File: big_data_visualization_categories.PNG Graphic file (type png)
 <use big_data_visualization_categories.PNG>
 Package pdftex.def Info: big_data_visualization_categories.PNG  used on input l
-ine 338.
+ine 351.
 (pdftex.def)             Requested size: 470.47336pt x 302.44714pt.
 
-Overfull \hbox (29.45563pt too wide) in paragraph at lines 338--339
+Overfull \hbox (29.45563pt too wide) in paragraph at lines 351--352
  [][] 
  []
 
@@ -2233,7 +2253,32 @@ Overfull \hbox (8.32202pt too wide) has occurred while \output is active
     []
  []
 
-[22]
+[23 <./big_data_visualization_categories.PNG>]
+Underfull \hbox (badness 10000) in paragraph at lines 365--366
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 367--368
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 369--370
+
+ []
+
+
+Overfull \hbox (8.32202pt too wide) has occurred while \output is active
+    []
+ []
+
+
+Overfull \hbox (8.32202pt too wide) has occurred while \output is active
+    []
+ []
+
+[24]) (./chapter3.tex
 Overfull \hbox (8.32202pt too wide) has occurred while \output is active
     []
  []
@@ -2243,17 +2288,7 @@ Overfull \hbox (8.32202pt too wide) has occurred while \output is active
     []
  []
 
-[23 <./big_data_visualization_categories.PNG>]) (./chapter3.tex
-Overfull \hbox (8.32202pt too wide) has occurred while \output is active
-    []
- []
-
-
-Overfull \hbox (8.32202pt too wide) has occurred while \output is active
-    []
- []
-
-[24]
+[25]
 Chapter 3.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 36.
@@ -2269,7 +2304,7 @@ Overfull \hbox (8.32202pt too wide) has occurred while \output is active
     []
  []
 
-[25
+[26
 
 ]
 Chapter 4.
@@ -2284,7 +2319,7 @@ Overfull \hbox (8.32202pt too wide) has occurred while \output is active
     []
  []
 
-[26
+[27
 
 ]
 Chapter 5.
@@ -2298,7 +2333,7 @@ Overfull \hbox (8.32202pt too wide) has occurred while \output is active
     []
  []
 
-[27
+[28
 
 ]
 Chapter 6.
@@ -2312,7 +2347,7 @@ Overfull \hbox (8.32202pt too wide) has occurred while \output is active
     []
  []
 
-[28
+[29
 
 ] (./diss_thesis.bbl
 Overfull \hbox (8.32202pt too wide) has occurred while \output is active
@@ -2324,7 +2359,7 @@ Overfull \hbox (8.32202pt too wide) has occurred while \output is active
     []
  []
 
-[29
+[30
 
 ]
 Overfull \hbox (8.32202pt too wide) has occurred while \output is active
@@ -2336,7 +2371,7 @@ Overfull \hbox (8.32202pt too wide) has occurred while \output is active
     []
  []
 
-[30])
+[31]
 Overfull \hbox (8.32202pt too wide) has occurred while \output is active
     []
  []
@@ -2346,7 +2381,17 @@ Overfull \hbox (8.32202pt too wide) has occurred while \output is active
     []
  []
 
-[31] (./addenduma.tex
+[32])
+Overfull \hbox (8.32202pt too wide) has occurred while \output is active
+    []
+ []
+
+
+Overfull \hbox (8.32202pt too wide) has occurred while \output is active
+    []
+ []
+
+[33] (./addenduma.tex
 Addendum A.
 )
 Overfull \hbox (8.32202pt too wide) has occurred while \output is active
@@ -2358,7 +2403,7 @@ Overfull \hbox (8.32202pt too wide) has occurred while \output is active
     []
  []
 
-[32
+[34
 
 ] (./diss_thesis.aux)
 
@@ -2367,13 +2412,13 @@ LaTeX Font Warning: Size substitutions with differences
 
  ) 
 Here is how much of TeX's memory you used:
- 50243 strings out of 492163
- 1147705 string characters out of 6129077
- 1358035 words of memory out of 5000000
- 53556 multiletter control sequences out of 15000+600000
- 645535 words of font info for 306 fonts, out of 8000000 for 9000
+ 50248 strings out of 492163
+ 1147767 string characters out of 6129077
+ 1358033 words of memory out of 5000000
+ 53558 multiletter control sequences out of 15000+600000
+ 645760 words of font info for 308 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 86i,27n,140p,1304b,1557s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 86i,27n,140p,1217b,1557s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/texlive/2019/texmf-dist/fonts/enc/dvips/base/8r.enc}<c:/texlive/2019/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2019/texmf-dist/fo
 nts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2019/texmf-dist/fonts/type1
@@ -2382,10 +2427,10 @@ sfonts/cm/cmsy10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/urw/symbol/usyr.pf
 b><c:/texlive/2019/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><c:/texlive/2019
 /texmf-dist/fonts/type1/urw/times/utmr8a.pfb><c:/texlive/2019/texmf-dist/fonts/
 type1/urw/times/utmri8a.pfb>
-Output written on diss_thesis.pdf (37 pages, 1344396 bytes).
+Output written on diss_thesis.pdf (39 pages, 1347805 bytes).
 PDF statistics:
- 203 PDF objects out of 1000 (max. 8388607)
- 122 compressed objects within 2 object streams
+ 209 PDF objects out of 1000 (max. 8388607)
+ 126 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  44693 words of extra memory for PDF output out of 51595 (max. 10000000)
 
