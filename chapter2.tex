@@ -150,6 +150,8 @@ The methodologies involved in fault detection and diagnosis of industrial proces
 
 This study will focus on methods and approaches taken to visualize temporal or time series data. 
 
+\cite{few2009now} described visualization as the graphical representation of information where data visualization allows for exploration and communication. \cite{telea2014data} added that the purpose of visualization is to gain insight into some process represented in the form of quantitative data by means of interactive graphics. Insight is defined by \cite{telea2014data} as reference to two types of information; answer questions about data that describes a particular problem and facts about the problem that the user might not have been aware of.
+
 Some of the first books to discuss information visualization date back to 1967 with the publication of Jacques Bertin's Semiologie Graphique \cite{rees2019survey}. A survey by \cite{rees2019survey} highlighted the number of visualization books have been published each year, displayed in \ref{fig:1}.
 
 \begin{figure}[!ht]
@@ -251,7 +253,6 @@ The computer part of the model has three main elements:
 \end{enumerate}
 This model proposed by \cite{sacha2014knowledge} again highlights the iterative process of visual analytics and how feedback loops are used in every element of the model.
 
-
 \subsection{VALUE OF RECORD KEEPING IN VISUALIZATION}
 
 \cite{mahyar2010closer} conducted a experiment to study the visual analytics process and the role of record keeping in this process. This study also elaborated on key elements for the design of a collaborative visual analysis tool. The study required groups to complete tasks given a certain data set using computer aided visual analytics.
@@ -273,6 +274,12 @@ The findings from the study conducted by \cite{mahyar2010closer} confirmed obser
 Record keeping involves the saving of visual artifacts and notes. In most cases a visual artifact can convey a complex idea more effectively than notes. Visual artifacts were saved for two main reasons; using them in reporting and using them to enhance the analysis process.\cite{mahyar2010closer} recommends that visual analytic systems provide functionality to save visual artifacts like charts for later use and comparison. Note taking also plays a critical role in all phases of the process. The notes high level content could be divided into two categories; findings and cues. Findings are a results of mathematical calculations, statistical operations or decisions and outcomes of the analysis process, they could also take to form of saved charts. Cues can be anything that is not directly extracted from the visualizations that could assist the user to framing or understanding the task at hand. A larger proportion of findings were recorded in the analysis phase while the cues were largely taken during the visualization phase. The study concluded that record keeping is used intensively by data analysts.
 
 \cite{saraiya2006insight} completed a longitudinal study of a bioinformatics data set analysis to gain understanding of the entire analysis process from raw data to insights. Visual analytics can be described as a process wherein user gain insight into complex data. The study highlighted how analysts gather and build insights over long periods of time and connecting the data to extensive domain knowledge and expertise. It is emphasized that analyst spend a significant amount of time on manual manipulation of data and this creates a very important need for the visualization tool to be interactive. Inferior visualizations with interaction were preferred over superior static visualizations.
+
+\subsection{VALUE OF RECORD KEEPING IN VISUALIZATION}
+
+Practical side - how long does each step in analysis take, machine liearning, 60 percent of time taken to clean data
+
+Visualization critical for outleir detecton - visual anomoly detection system yet to be beaten
 
 \subsection{VISUALIZATION TOOLS}
 
@@ -360,7 +367,25 @@ Differentiation is also done according to four main categories that describe the
 \end{enumerate}
 \cite{caldarola2017big} analyses 35 different software solutions in these four categories. What is interesting to note is that Plotly is well described in both the data and information visualization categories which implies that does well at handling big data challenges with variety and volume.
 
-section on Neill tool....
+\cite{Herbst2017} completed a study of information visualization theory and developed a time series analysis tool. The goals of the visualization tool developed by \cite{Herbst2017} was called Evert, it had the following goals:
+\begin{enumerate}
+	\item Interactive visualization that enables exploration of time-series data
+	\item Seamless operation across all major operating systems
+	\item Python used as central programming language
+	\item Allow for expansion of the tool through plugins
+	\item User can efficiently apply the tool in their environments without the need to acquire new knowledge
+\end{enumerate}
+Three existing visualization environments where also analyzed to determine of they could be used as the platform for this design. The environments investigated were JupyterLab, Glue and Lyra. JupyterLab was designed to be the future of the Jupyter project's notebook interface. The JupyterLab work environment consists of multiple windows of Python interpreters. Glue or GlueViz is a Python-based project designed for multidimensional data analysis. A GUI is launched when the program is activated through which a user would interact with the tool. Lyra is a tool based on the Vega platform that doesn't require any coding to generate data visualizations. Althoug all three of these tools have their own merits they were not chosen as the basis for the Evert project. The design of JupyterLab was too linear and at the time could not allow for interactive visualizations accross interpreter windows. Glue couold not run on a web based server and could not allow for the customization of its interface. Lyra didn't allow for data manipulation and didn't support plug-ins.\\
+
+During the development of Evert one of the key criteria in deciding what interface to use was the rendering of visualization displayed in a browser. Two main approaches are followed in this regards; Canvas and Scalable Vector Graphics. Canvas is a graphics API developed in HTML5 which generates pixels to represent the image. Scalable Vector Graphics (SVG) is an XML-based image format used to define two dimensional vector based graphics. \cite{Herbst2017} highlighted the flexibility of SVG elements and speed of rendering as the motivation for using this method in the final design. The use of D3 Javascript library as a standard for creating SVG visualizations in a web environment prompted  \cite{Herbst2017} to investigate the following four plotting libraries:
+\begin{enumerate}
+	\item Plotly.js
+	\item C3.js
+	\item DC.js
+	\item MPLD3
+\end{enumerate}
+Plotly was chosen as the preferred visualization library due to its superior features such as pan, zoom and data selection interaction and ability to generate more than 2 Y-axis.
+
 
 \section{VISUALIZATION AND FDD}
 

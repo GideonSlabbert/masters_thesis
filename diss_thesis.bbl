@@ -75,6 +75,14 @@ S.~Streicher and C.~Sandrock, ``Plant wide fault and disturbance screening
   using combined transfer entropy and eigenvector centrality analysis,''
   \emph{arXiv preprint arXiv:1904.04035}, 2019.
 
+\bibitem{few2009now}
+S.~Few, \emph{Now you see it: simple visualization techniques for quantitative
+  analysis}, 2009, no. Sirsi) i9780970601988.
+
+\bibitem{telea2014data}
+A.~C. Telea, \emph{Data visualization: principles and practice}.\hskip 1em plus
+  0.5em minus 0.4em\relax CRC Press, 2014.
+
 \bibitem{rees2019survey}
 D.~Rees and R.~S. Laramee, ``A survey of information visualization books,'' in
   \emph{Computer Graphics Forum}, vol.~38, no.~1.\hskip 1em plus 0.5em minus
@@ -82,10 +90,10 @@ D.~Rees and R.~S. Laramee, ``A survey of information visualization books,'' in
 
 \bibitem{isenberg2016vispubdata}
 P.~Isenberg, F.~Heimerl, S.~Koch, T.~Isenberg, P.~Xu, C.~D. Stolper,
-  M.~Sedlmair, J.~Chen, T.~M{\"o}ller, and J.~Stasko, ``vispubdata. org: A
-  metadata collection about ieee visualization (vis) publications,'' \emph{IEEE
-  transactions on visualization and computer graphics}, vol.~23, no.~9, pp.
-  2199--2206, 2016.
+  M.~Sedlmair, J.~Chen, h.~t. c. d. r. t. b.~s. M{\"o}ller, and J.~Stasko,
+  ``vispubdata. org: A metadata collection about ieee visualization (vis)
+  publications,'' \emph{IEEE transactions on visualization and computer
+  graphics}, vol.~23, no.~9, pp. 2199--2206, 2016.
 
 \bibitem{pirolli2005sensemaking}
 P.~Pirolli and S.~Card, ``The sensemaking process and leverage points for
@@ -143,6 +151,10 @@ E.~G. Caldarola and A.~M. Rinaldi, ``Big data visualization tools: A survey,''
   in \emph{Proceedings of the 6th International Conference on Data Science,
   Technology and Applications}.\hskip 1em plus 0.5em minus 0.4em\relax
   SCITEPRESS-Science and Technology Publications, Lda, 2017, pp. 296--305.
+
+\bibitem{Herbst2017}
+N.~Herbst, ``Evert: Interactive web-based time-series analysis environment,''
+  2017, unpublished thesis.
 
 \bibitem{yim2006using}
 S.~Y. Yim, H.~G. Ananthakumar, L.~Benabbas, A.~Horch, R.~Drath, and N.~F.

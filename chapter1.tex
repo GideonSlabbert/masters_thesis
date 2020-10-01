@@ -15,9 +15,9 @@ Each sub section of a process consists of multiple control loops that together f
 However, the complexities in analyzing the various number of control loops that form part of industrial control systems causes a time delay between the onset of a fault and the detection of that fault. Furthermore, once a fault is detected it can be very difficult to discern the source of a disturbance without time consuming interventions that add risk to process stability.\cite{thornhill2007advances}\par
 %Dynamic analytical methods for fault detection based on fundamental knowledge of the processes are well developed in academic research environments. These methods struggle to gain traction in industrial environments because of the time and implicit costs involved with incorporating these dynamic, first principle models within existing processes.\par
 A data driven approach is mostly applied in solving these kind of problems and a lot of focus is given in developing methods and tools that support this approach. 
-In industry, the exact process model is rarely known or available when performing fault finding tasks using time series data.\cite{rahman2010new} Tools that only use routine operating data like the method developed by \cite{farenzena2009looprank} provide an exciting new perspective on how to solve these complex problem using data driven methods. An approach that provides the user with an intuitive and interactive tool to analyze process behavior can add value to the fault detection and diagnosis process. By highlighting fundamental interaction paths using operating data it can translate into quicker response times to address process instabilities.\par
-A key element of any tool that assists in process fault finding is the visualization and interaction with the data. Every decision made in a industrial process involves reacting to process data. In modern industrial processes most short term decisions are made using the process data as visualized on the process control system. This same data is used to monitor and detect deviations in the process. When deviations are detected a fault finding process needs to be followed to determine what caused the deviation and how to correct it.\par
-The fault finding process often requires a lot of data analysis using a certain frame of reference to determine what is normal behavior. With any process there needs to be some kind of visual interaction with the data in order for the human brain to process it. This visual interface can range from the simplest form of simply looking at how a point value on the control system changes over a period to constructing graphs of complex time series transformations of multiple data sets.\par
+In industry, the exact process model is rarely known or available when performing fault finding tasks using time series data.\cite{rahman2010new} Tools that only use routine operating data like the method developed by \cite{farenzena2009looprank} provide an exciting new perspective on how to solve these complex problem using data driven methods. An approach that provides the user with an intuitive and interactive tool to analyze process behavior can add value to the fault detection and diagnosis process. By highlighting fundamental interaction paths using operating data it can translate into faster response times to address process instabilities.\par
+A key element of any tool that assists in process fault finding is the visualization and interaction with the data. Every decision made in a industrial process involves reacting to process data. In modern industrial processes most short term decisions are made using the process data as visualized on the process control system. This same data is used to monitor and detect deviations in the process. When deviations are detected a fault finding methodology needs to be followed to determine what caused the deviation and how to correct it.\par
+The fault finding method often requires a lot of data analysis using a certain frame of reference to determine what is normal behavior. With any process there needs to be some kind of visual interaction with the data in order for the human brain to process it. This visual interface can range from the simplest form of simply looking at how a point value on the control system changes over a period of time to constructing graphs of complex time series transformations of multiple data sets.\par
 
 \subsection{Research gap}
 
@@ -25,37 +25,37 @@ The intent of this study is to explore approaches to the fault detection and dia
 In the modern industrial era a lot of fault detection problems are solved using computer based tools that are very efficient at processing large amounts of data and performing complex data transformations in a relatively short period of time.\par
 A time series fault detection and diagnosis problem is often solved by creating a specialized tool that would transform data into knowledge which would most likely have a visual representation as the end result. The problem and solution are then presented as the end result of the study. If the audience then want to re-produce the results or test the method on a different data set they have to reproduce the tool that was used to generate the knowledge as well. This is a time consuming process and a barrier to further development of the proposed method.\par
 A researcher might also make the specialized tool available to the audience but if the tool was developed on a platform that uses proprietary code then it also presents a barrier to further development. There are a lot of tools available for visualization of data but very few of them are built on open source platforms. Recent development in the computer science industry has made available a large number of open source tools and platforms, but there are very few examples in literature of them being applied in the visual analytics realm.\par
-New developments in the fault detection and diagnosis problem have presented many new views of how to identify that a fault has occurred or how to identify the root cause of a fault. These new methods display the results in static graphs that highlight the most important elements of the transformed data set. One key element of the user experience that has not been developed yet is the ability to interact with the data. Interaction allows for faster knowledge transfer and easier understanding of how the parameters used in the transformation effect the final result. If the audience could be able to interact with the presented data at every step of the transformation then a much faster and deeper understanding could be achieved of the communicated method.
+New developments in the fault detection and diagnosis problem have presented many new views of how to identify that a fault has occurred or how to identify the root cause of a fault. These new methods display the results in static graphs that highlight the most important elements of the transformed data set. One key element of the user experience that still has a lot of potential for improvement is the ability to interact with the data. Interaction allows for faster knowledge transfer and easier understanding of how the parameters used in the transformation effect the final result. If the audience could be able to interact with the presented data at every step of the transformation process then a much faster and deeper understanding could be achieved.\par
 
 \section{RESEARCH OBJECTIVE AND QUESTIONS}
 
-The focus of this dissertation will be to explore the ways in which visual analytic systems can be used to aid in the fault finding process. \par
-FDD will be discussed in general and with regards to new methods that have been developed that attempt to solve the problem.
+The focus of this dissertation will be to explore the ways in which visual analytic systems can be used to aid in the fault detection and diagnosis (FDD) process. \par
+FDD will be discussed in general and with regards to new methods that have been developed that attempt to solve the challenges to this process.
 Questions that will be explored in this study will include:
 \begin{itemize}
-\item What methods have been developed for fault detection and diagnosis?
-\item How does visual analytics play a role in the fault detection and diagnosis process?
+\item What methods have been developed for fault detection and diagnosis and how are they used in the industrial landscape?
+\item What role does visual analytics play in the fault detection and diagnosis process?
 \item What tools are currently available for visualization?
-\item How can the FDD process be facilitated by using open source software?
+\item How can the FDD process be improved using visualization techniques and open source software?
 \end{itemize}
 
 \section{HYPOTHESIS AND APPROACH}
 
 It is assumed that there is a logical thought process that is applied when doing FDD. This logical thought process combined with proven analytical methods can provide accurate an actionable results to the FDD process. Visual analytics plays a key role in this process and the different ways that data is collected, processed and transformed into knowledge about the existence of a fault and where the fault is located.
 
-The approach taken in this study will be to outline how the FFD process can be completed using time series data and graphical knowledge of the plant topology to formulate a method for detecting and diagnosis process faults. Visual analytics will be used to facilitate this process and the interaction with data in a way that guides the user in the process of completing the FDD process.
+The approach taken in this study will be to outline how the FFD process can be completed using time series data and graphical knowledge of the plant topology to formulate a method for detecting and diagnosis process faults. Visual analytics will be used to facilitate this process and the interaction with data in a way that guides the user in the FDD process.
 
 \section{RESEARCH GOALS}
 
-The goal of the study will be to highlight key aspects of the FDD process and the visual analytics systems available to use in this process. Different ways in which to develop these visual systems will be explored with a strong focus on developing computer aided tools that will be easily usable by a large audience that can also contribute the tool.
+The goal of the study will be to highlight key aspects of the FDD process and the visual analytics systems available to use in this process. Different ways in which to develop these visual systems will be explored with a strong focus on developing computer aided tools that will facilitate a visual fault finding process.
 
 \section{RESEARCH CONTRIBUTION}
 
-One particular fault finding technique that involves complex transformations of data to determine the root cause of disturbances will be discussed and demonstrated. A visual analytic system will be developed based on best practices to attempt improving the user experience when analyzing a complex control problem.
+One particular fault finding technique that involves complex transformations of data to determine the root cause of disturbances will be discussed and demonstrated. A visual analytic system will be developed based on methodologies explored in the research portion of this study to attempt improving the user experience when analyzing a complex control problem.
 
 \section{OVERVIEW OF STUDY}
 
-Chapter 2 will provide an overview of work completed in utilizing network theory and graphical methods to identify process faults. This chapter will also explore how visualization is used in the fault finding process and how visual methods support and facilitate the FDD process.
+Chapter 2 will provide an overview of the FDD process, how it is used in industry and where new methods fits into the historical framework. This chapter will also explore how visualization is used in the fault finding process and how visual analytics support and facilitate FDD.
 
 Chapter 3 will contain the results of work done to create a open source visualization tool that incorporates the insight obtained from Chapter 2.
 

@@ -12,47 +12,48 @@ Database file #1: diss_thesis.bib
 -- http://www.michaelshell.org/tex/ieeetran/bibtex/
 -- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
 Warning--empty journal in cecati2015survey
+Warning--missing publisher in few2009now
 
 Done.
-You've used 26 entries,
+You've used 29 entries,
             4087 wiz_defined-function locations,
-            987 strings with 12770 characters,
-and the built_in function-call counts, 23079 in all, are:
-= -- 1901
-> -- 542
-< -- 238
-+ -- 308
-- -- 90
-* -- 1137
-:= -- 3348
-add.period$ -- 60
-call.type$ -- 26
-change.case$ -- 26
+            1000 strings with 13142 characters,
+and the built_in function-call counts, 24091 in all, are:
+= -- 1981
+> -- 554
+< -- 239
++ -- 314
+- -- 93
+* -- 1172
+:= -- 3540
+add.period$ -- 65
+call.type$ -- 29
+change.case$ -- 28
 chr.to.int$ -- 546
-cite$ -- 27
-duplicate$ -- 1594
-empty$ -- 1751
-format.name$ -- 109
-if$ -- 5398
+cite$ -- 31
+duplicate$ -- 1672
+empty$ -- 1864
+format.name$ -- 112
+if$ -- 5631
 int.to.chr$ -- 0
-int.to.str$ -- 26
-missing$ -- 259
-newline$ -- 101
-num.names$ -- 26
-pop$ -- 553
+int.to.str$ -- 29
+missing$ -- 275
+newline$ -- 110
+num.names$ -- 29
+pop$ -- 590
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 2
-skip$ -- 1775
+skip$ -- 1865
 stack$ -- 0
-substring$ -- 1316
-swap$ -- 1400
-text.length$ -- 56
+substring$ -- 1319
+swap$ -- 1447
+text.length$ -- 57
 text.prefix$ -- 0
 top$ -- 5
-type$ -- 26
-warning$ -- 1
-while$ -- 118
-width$ -- 28
-write$ -- 285
-(There was 1 warning)
+type$ -- 29
+warning$ -- 2
+while$ -- 121
+width$ -- 31
+write$ -- 308
+(There were 2 warnings)
