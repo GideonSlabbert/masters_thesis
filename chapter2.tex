@@ -8,49 +8,50 @@
 
 \section{CHAPTER OBJECTIVES}
 
-This chapter explores literature in the field of fault detection and diagnosis of process control in industrial processes. It then elaborates on visualization techniques and how they could be used to aid in the fault detection and diagnosis process.
+This chapter explores literature in the field of fault detection and diagnosis with a specific focus on application in industrial processes. It then elaborates on visualization techniques and how they could be used to aid in the fault detection and diagnosis process.\par
 
 \section{FAULT DETECTION AND DIAGNOSIS}
 
-The automated control of industrial processes has developed significantly in recent decades. Advances in computing power had allowed the distributed control system to become common place in most industrial processes. This together with advanced control techniques like model predictive control has allowed for automated real time optimization of the key economic variables. Despite these advances one of the most important tasks in managing a process is still being done manually by operational teams; responding to abnormal events. It can be described as the timely identification, diagnosis of the root cause and the appropriate supervisory action to address an abnormality and bring the process back to stability. \cite{venkatasubramanian2003review} defined this task as abnormal event management (AEM) which is critical to the stability of a process. \cite{venkatasubramanian2003review} refers to statistics that indicate that \SI{70}{\percent} of industrial accidents are caused by human errors. This indicates that methods to improve this task can significantly improve the economic, safety and environmental impact of these industries.
+The automated control of industrial processes has developed significantly in recent decades. Advances in computing power had allowed the distributed control system to become common place in most industrial processes. This together with advanced control techniques like model predictive control has allowed for automated real time optimization of the key economic variables. Despite these advances one of the most important tasks in managing a process is still being done manually by operational teams; responding to abnormal events. The timely identification and diagnosis of the root cause of an abnormality, and the appropriate supervisory action to bring the process back to stability, is almost a daily challenge to operational teams. \cite{venkatasubramanian2003review} defined this task as abnormal event management (AEM) which is critical to the stability of a process.\par \cite{venkatasubramanian2003review} refers to statistics that indicate that \SI{70}{\percent} of industrial accidents are caused by human errors. This indicates that methods to improve this task can significantly improve the economic, safety and environmental impact of these industries.\par
+A fault can be described as a deviation of an observable variable or calculated parameter from its acceptable operating range \cite{venkatasubramanian2003review}. This can be a process deviation like low steam outlet temperatures from a boiler. A possible cause for this could be a failure on a attemperator valve which can be referred to as the basic event or root cause. The diagnosis task can be seen as a classification problem wherein a root cause or fault must be placed in a certain group of faults which will have a pe-determined method to solve them.\par
 
-A fault can be described as a deviation of an observable variable or calculated parameter from its acceptable operating range \cite{venkatasubramanian2003review}. This can be a process deviation like low steam outlet temperatures from a boiler. A possible cause for this could be a failure on a attemperator valve which can be referred to as the basic event or root cause. The diagnosis task can be seen as a classification problem wherein a root cause or fault must be placed in a certain group of faults which will have a pe-determined method to solve them.
+Disturbances in single control loops are fairly straight forward to solve but disturbances that propagate through a complex system on a plant wide scale present a much bigger challenge. One of the goals of process control is to shift process variability to places like buffer tanks and plant utilities. In modern industrial processes these options have become limited as inventory is usually kept to a minimum and the use of recycle streams for heat integration has introduced extra sources of complex interaction \cite{thornhill2007advances}.\par
 
-Disturbances in single control loops are fairly straight forward to solve but disturbances that propagate through a complex system on a plant wide scale are much harder to present a much bigger challenge. One of the goals of process control is to shift process variability to places like buffer tanks and plant utilities. In modern industrial processes these options have become limited as inventory is usually kept to a minimum and the use of recycle streams for heat integration has introduced extra sources complex interaction \cite{thornhill2007advances}.
-
-When considering which type of disturbances to analyze, the time frame of the disturbance can be used to distinguish between different types of disturbances. \cite{thornhill2007advances} classified the types of disturbances in a plant wide setting into three main categories with regards to timescales:
+The time frame over which the disturbance takes place can be used to distinguish between different types of disturbances. \cite{thornhill2007advances} classified the types of disturbances in a plant wide setting into three main categories with regards to timescales:
 \begin{enumerate}
 	\item slowly-developing, i.e. fouling of a heat exchanger
 	\item persistent and dynamic
 	\item abrupt, i.e. a compressor trip
 \end{enumerate}
-The second item, persistent and dynamic disturbances that propagate through an entire system on a continuous basis is of interest for this study.
+The first item, slowly-developing disturbances are fairly easy to analyze and very predictable in nature. They are often times expected as a result of mechanical degradation over time or inherent characteristics of the process involved. These kinds of disturbances are normally factored into the expected plant availability statistics and can be handled with proper planning and maintenance philosophies.\par
+The second item, persistent and dynamic disturbances that propagate through an entire system, are of interest for this study. These type of disturbances introduce a continuous operational challenge as they can manifest at random and are normally the first signs of instability that leads to the third item listed; abrupt disturbances. There persistent and dynamic disturbances are usually caused by components of a system that are starting to fail but have not yet reached a severity level where they cause the process to move out of acceptable operational bounds. \par
+Abrupt disturbances can also occur sporadically due to component failures that immediately result in a complete system failure. These disturbances are also fairly easy to eliminate after the faulty component is identified and a solution is developed to out engineer the failure.\par  
 
 \subsection{FDD AS ANALYTICAL REDUNDANCY}
 
-Fault diagnosis is normally used to improve the reliability of a system \cite{gao2015survey}. There are two methods that can be used to accomplish fault diagnosis: the first is hardware redundancy and the second is software or analytical redundancy. Hardware redundancy requires the use of identical components that use the same input signals to generate duplicate output signals. If the output signal then differs between the two redundant controllers it is easy to detect a fault and take action, examples of this method is limit checking and majority voting. Hardware redundancy can be very expensive and is often times not present due to cost considerations or only present on the most critical sensor elements. This creates the opportunity for faults to occur on any of the other non-redundant elements and then propagate through to even these redundant elements. For this reason analytical redundancy has become the main method for doing fault diagnosis. 
+Fault detection and diagnosis is normally used to improve the reliability of a system \cite{gao2015survey}. There are two methods that can be used to accomplish fault diagnosis:  hardware redundancy and software or analytical redundancy. Hardware redundancy requires the use of identical components that use the same input signals to generate duplicate output signals. If the output signal then differs between the two redundant systems it is easy to detect a fault and take action, examples of this method is limit checking and majority voting. Hardware redundancy is often times not present due to cost considerations or only present on the most critical sensor elements. This creates the opportunity for faults to occur on any of the other non-redundant elements and then propagate through the whole system. For this reason analytical redundancy has become the main method for doing fault diagnosis.\par
 
-In this context of analytical redundancy, fault diagnosis includes three components; fault detection, fault isolation and fault identification \cite{gao2015survey}. Fault diagnosis starts with detecting that a fault has occurred, after detection the fault needs to be isolated by providing information as to where in the system the fault is located. Finally the fault identification step provides information on the types, shapes and size of the fault which basically provides degree/ level of malfunction.
+In this context of analytical redundancy, fault diagnosis includes three components; fault detection, fault isolation and fault identification \cite{gao2015survey}. Fault diagnosis starts with detecting that a fault has occurred, after detection the fault needs to be isolated by providing information as to where in the system the fault is located. Finally the fault identification step provides information on the types, shapes and size of the fault which basically provides the degree or level of malfunction.\par
 
 \subsection{CLASSIFYING FDD METHODS}
 
-\cite{gao2015survey} completed a comprehensive overview of fault diagnosis techniques that have been developed over the last 30 years with specific focus on highlighting new developments over the last 10 years. According to this study by \cite{gao2015survey}, fault detection and diagnosis techniques can be divided into three methods; model-based methods, signal-based methods and knowledge-based methods.
+\cite{gao2015survey} completed a comprehensive overview of fault diagnosis techniques that have been developed over the last 30 years with specific focus on highlighting new developments over the last 10 years. According to this study by \cite{gao2015survey}, fault detection and diagnosis techniques can be divided into three methods; model-based methods, signal-based methods and knowledge-based methods.\par
 
-Model based methods use a model of the system derived from physical principles or system identification techniques. The system outputs are then compared to model predicted outputs to identify faults.
+Model based methods use a model of the system derived from physical principles or system identification techniques. The system outputs are then compared to model predicted outputs to identify faults.\par
 
-Signal based methods do not rely on input- output relationships but rather extract features from the signals measured in the system. Diagnostic decisions are then taken by comparing these key features to prior healthy versions of the same features. These methods can be time-domain based like computing the mean or standard deviation. They can also be frequency-domain based by looking at the spectrum of signals such as the discrete Fourier transform.
+Signal based methods do not rely on input- output relationships but rather extract features from the signals measured in the system. Diagnostic decisions are then taken by comparing these key features to prior healthy versions of the same features. These methods can be time-domain based like computing the mean or standard deviation. They can also be frequency-domain based by looking at the spectrum of signals such as the discrete Fourier transform.\par
 
-\cite{cecati2015survey} discussed the knowledge based methods in detail in the second part of the overview paper. Knowledge based methods are also referred to as data driven methods. These methods can be either qualitative or quantitative in nature. They require large amounts of historical process data and computing power to extract process knowledge. 
+\cite{cecati2015survey} discussed the knowledge based methods in detail in the second part of the overview paper. Knowledge based methods are also referred to as data driven methods. These methods can be either qualitative or quantitative in nature. They require large amounts of historical process data and computing power to extract process knowledge. These methods can be further divided into qualitative and quantitative methods.\par
 
-Qualitative knowledge based fault diagnosis is expert-system methods that rely on sets of rules to evaluate data and detect faults. The rules have to be developed specifically for the system in question but integrating this method with a object-orientated paradigm provided more flexibility by developing more general rules. Another method used with this description is qualitative trend analysis (QTA) which identifies process trends from noisy data and compares them to a database that contains fault trends. The QTA method has been advanced by combining it with integrated signed directed graphs (SDG) to compensate for some of the disadvantages of this method.
+Qualitative knowledge based fault diagnosis is expert-system methods that rely on sets of rules to evaluate data and detect faults. The rules have to be developed specifically for the system in question but integrating this method with a object-orientated paradigm provided more flexibility by developing more general rules. Another method used with this description is qualitative trend analysis (QTA) which identifies process trends from noisy data and compares them to a database that contains fault trends. The QTA method has been advanced by combining it with integrated signed directed graphs (SDG) to compensate for some of the disadvantages of this method.\par
 
-Quantitative knowledge based methods are based on solving the pattern recognition problem. This can be done using statistical analysis techniques like principal component analysis (PCA), partial least squares (PLS), independent component analysis (ICA) or support vector machine (SVM). This can also be done using Non statistical analysis based methods which are better suited for non-linear applications, an example of this is a neural network.
+Quantitative knowledge based methods are based on solving the pattern recognition problem. This can be done using statistical analysis techniques like principal component analysis (PCA), partial least squares (PLS), independent component analysis (ICA) or support vector machine (SVM). This can also be done using non-statistical analysis based methods which are better suited for non-linear applications, an example of this is a neural network.\par
 
-A lot of new research is being done in quantitative knowledge based methods due to the vast amount of data that is now available in modern industrial complexes. \cite{jiang2019review} defines these methods as multivariate statistical process monitoring (MSPM). For linear Gaussian process methods such as PCA, PLS and canonical correlation analysis CCA are used. To cater for non-Gaussian, non-linear and dynamic characteristics numerous extensions have been developed for the above mentioned methods.
+A lot of new research is being done in quantitative knowledge based methods due to the vast amount of data that is now available in modern industrial complexes. \cite{jiang2019review} defines these methods as multivariate statistical process monitoring (MSPM). For linear Gaussian process methods such as PCA, PLS and canonical correlation analysis CCA are used. To cater for non-Gaussian, non-linear and dynamic characteristics numerous extensions have been developed for the above mentioned methods.\par
 
-\subsection{EVALUATING FFD METHODS AND STRUCTURE}
+\subsection{EVALUATING FDD METHODS AND STRUCTURE}
 
-Two very important concepts to understand when evaluating fault FFD methods is completeness and resolution \cite{venkatasubramanian2003review}. Completeness describes how well a method is at detecting all the possible faults exhibited by the system. Resolution then relates to how well the method is at classifying the fault into a small subset of the available faults. A diagnostic system has the following desirable characteristics according to \cite{venkatasubramanian2003review}.
+When discussing FDD methods it is important to look at how they are evaluated. Two very important concepts to understand when evaluating fault FFD methods is completeness and resolution \cite{venkatasubramanian2003review}. Completeness describes how well a method is at detecting all the possible faults exhibited by the system. Resolution then relates to how well the method is at classifying the fault into a small subset of the available faults. A diagnostic system has the following desirable characteristics according to \cite{venkatasubramanian2003review}.
 \begin{enumerate}
 	\item Quick detection and diagnosis - creates a trade-off between robustness and performance
 	\item Isolability - ability to distinguish between different failures
@@ -58,11 +59,11 @@ Two very important concepts to understand when evaluating fault FFD methods is c
 	\item Novelty identifiability - can detect a new/novel fault in the process
 	\item Classification error estimate - error measures to project confidence levels
 	\item Adaptability - be able to develop new scope as new problems/faults arises and more information becomes available
-	\item Explanation facility - provide explanation of how fault originated and propagated. Ability to reason cause and effect relationships in the process.
+	\item Explanation facility - provide explanation of how a fault originated and propagated. Ability to reason cause and effect relationships in the process.
 	\item Modeling requirements - modeling effort required should be minimal
 	\item Storage and computational requirements - achieve balance between computational complexity and storage requirements
 	\item Multiple fault identifiability	
-\end{enumerate}
+\end{enumerate}\par
 
 In any diagnostic system the measurements and data goes through a transformation process. Two important components to take note of when considering transformations are the a priori process knowledge and the search technique used \cite{venkatasubramanian2003review}. In general the transformation of data will go through four steps:
 \begin{enumerate}
@@ -70,19 +71,18 @@ In any diagnostic system the measurements and data goes through a transformation
 	\item Feature space
 	\item Decision space
 	\item Class space	
-\end{enumerate}
+\end{enumerate}\par
 
-\cite{venkatasubramanian2003review} explains these spaces as follows:
-The measurement space contains the raw input signals to the diagnostic system. The feature space contains a set of variables that are derived from the measurement space using a priori problem knowledge. Useful features are extracted, in this transformation there is often a significant dimension reduction. This is normally done by using feature selection or feature extraction. Its assumed that features cluster better than measurements which will facilitate improved classification or better discrimination. By extracting discriminant features it takes the burden of the next transformation so that it can easily find the features distinguish between features that match certain decisions.
-The mapping from feature to decision space is usually done via some sort of objective function or using simple threshold functions. The class space consist of the list of possible faults and the decision space maps to it via threshold functions, template matching or symbolic reasoning. This could be summarized as using some sort of search or learning algorithm to complete these mappings. It is also the final interpretation of the diagnostic system delivered to the user. The decision space and the class space usually have the same dimensions. This could provide the option of combining these two spaces but the advantage of still keeping them separate is that a certain diagnostic method might not be able to give a crisp solution as to what fault is being detected.
+The measurement space contains the raw input signals to the diagnostic system. The feature space contains variables that are derived from the measurement space using a priori problem knowledge. Useful features are extracted, in this transformation there is often a significant dimension reduction. This is normally done by using feature selection or feature extraction. Its assumed that features cluster better than measurements which will facilitate improved classification or better discrimination. By extracting discriminant features it takes the burden of the next transformation so that it can easily find the features or distinguish between features that match certain decisions.\par
+The mapping from feature to decision space is usually done via some sort of objective function or using simple threshold functions. The class space consist of the list of possible faults and the decision space maps to it via threshold functions, template matching or symbolic reasoning. This could be summarized as using some sort of search or learning algorithm to complete these mappings. It is also the final interpretation of the diagnostic system delivered to the user. The decision space and the class space usually have the same dimensions. This could provide the option of combining these two spaces but the advantage of still keeping them separate is that a certain diagnostic method might not be able to give a crisp solution as to what fault is being detected.\par
 
-A priori knowledge plays a crucial role through this entire transformation process, it can greatly simplify the problem in every step of the process. Sets of failures and relationships between observations and failures is crucial to the success of any method. This relationship can be inferred, the most basic example begin a lookup table or it can be based on domain knowledge. First principle knowledge is referred to as deep, casual and model-based knowledge whereas knowledge gained from past experience with the process can be referred to as shallow, compiled, evidential or process history-based knowledge \cite{venkatasubramanian2003review}.
+A priori knowledge plays a crucial role through this entire transformation process, it can greatly simplify the problem in every step of the process. Sets of failures and relationships between observations and failures is crucial to the success of any method. This relationship can be inferred, the most basic example being a lookup table or it can be based on domain knowledge. First principle knowledge is referred to as deep, casual and model-based knowledge whereas knowledge gained from past experience with the process can be referred to as shallow, compiled, evidential or process history-based knowledge \cite{venkatasubramanian2003review}.\par
 
 \subsection{NEW APPROACHES TO DATA DRIVEN METHODS}
 
-In the following sections of this exploration more focus will be given to knowledge/ data driven methods. Improvements in computing power and better access to tools used for analyzing data make it possible to significantly improve the contribution of data driven methods to the FDD process.
+In the following sections of this exploration more focus will be given to quantitative knowledge/ data driven methods. Improvements in computing power and better access to tools used for analyzing data make it possible to significantly improve the contribution of data driven methods to the FDD process.\par
 
-New data driven methods that apply concepts from other fields have started to show some promising results. One of these methods is the use of the PageRank algorithm \cite{bryan200625} employed by google on the ranking of control loops based on the degree of interaction.\cite{farenzena2009looprank} has developed a methodology called LoopRank with the aim of prioritizing control loop maintenance by highlighting loops that have a higher correlation with other loops.\\
+The most well known statistical methods in this field like PCA, PLS or CCA have the limitation of being very dependent on linear relationships. This works well when a process or system is operating in a region where linear interactions are present. Most control techniques also have this same requirement. It is then not surprising that the factor that challenges control systems is in fact often non-linear interactions that can manifest at some operating points or during some operating conditions. A control valve that operates in the upper or lower ranges  of its range can exhibit extreme non-linearity. A worn out component like a actuator can cause big shifts in an input output relationships on direction changes. For this reason it is worthwhile investigating new methods that have shown some potential at solving these difficult problems. One of these methods is the use of the PageRank algorithm \cite{bryan200625} employed by google on the ranking of control loops based on the degree of interaction.\cite{farenzena2009looprank} has developed a methodology called LoopRank with the aim of prioritizing control loop maintenance by highlighting loops that have a higher correlation with other loops.\par
 
 \subsection{PAGERANK DERIVATION}
 
@@ -93,9 +93,9 @@ Consider a group of 4 websites that contain references to each other in the mann
 	\centering\epsfig{figure=webpages.PNG,scale=0.5}
 	\caption{web pages with references}\label{fig:7}
 \end{figure}
-An initial idea would be that a page that has more references or back links is more important. Let $x_{k}$ be the importance of page k. If this method is followed then $x_{3} = 3$ would be the most important web page because it has the most references.
+An initial idea would be that a page that has more references or back links is more important. Let $x_{k}$ be the importance of page k. If this method is followed then $x_{3} = 3$ would be the most important web page because it has the most references.\par
 
-This initial ranking method indicates that $x_{3}$ is important, but it doesn't take into account the importance that $x_{3}$ passes on to $x_{1}$ because it is the only page referenced by $x_{3}$.
+This initial ranking method indicates that $x_{3}$ is important, but it doesn't take into account the importance that $x_{3}$ passes on to $x_{1}$ because it is the only page referenced by $x_{3}$.\par
 
 Another approach would be to let back links from important pages count more than back links from less important pages. If a page k has a back link from page j, then the score given to this back link can be calculated as $x_{k} = \frac{x_{j}}{n_{j}}$ where $n_{j}$ is the total number of references made by page j. The total score for page $x_{k}$ is then calculated by the sum of all back links to it adjusted for the number of references made. Applying this new method the importance score for each node is calculated:
 \newline $x_{1} = \frac{x_{3}}{1} + \frac{x_{4}}{2} $ 
@@ -110,18 +110,18 @@ Another approach would be to let back links from important pages count more than
 \frac{1}{3} & \frac{1}{2} & 0 & \frac{1}{2} \\
 \frac{1}{3} & \frac{1}{2} & 0 & 0
 \end{bmatrix}\]
-\newline Each row in the matrix A represents a page or node while each column  represents the importance score from another node. For example row one represents node 1 and it has a back link from node 3 with an importance score of 1 and a back link from node 4 with a importance score of $\frac{1}{2}$.
+\newline Each row in the matrix A represents a page or node while each column  represents the importance score from another node. For example row one represents node 1 and it has a back link from node 3 with an importance score of 1 and a back link from node 4 with a importance score of $\frac{1}{2}$.\par
 
 if $x = \begin{bmatrix} x_{1} & x_{2} & x_{3} & x_{4} \end{bmatrix} ^{T}$ then the problem can be defined as the eigenvector problem:
 \newline $Ax = x \lambda$ 
 \newline with x being an eigenvector for A with en eigenvalue of 1
 \newline if A is a $n\times n$ matrix, then a nonzero vector x is an eigenvector if $Ax = \lambda x$ for some scalar $\lambda$. The eigenvector x that solves this equation is then calculated to be:
 \newline $x \approx \begin{bmatrix} 0.387 & 0.129 & 0.290 & 0.194\end{bmatrix}^{T}$
-which shows that node one is in fact more important than node three.
+which shows that node one is in fact more important than node three.\par
 
 \subsection{LOOPRANK ADAPTION}
 
-\cite{farenzena2009looprank} developed a method called LoopRank which is based on the PageRank algorithm to prioritize control loop maintenance. Modern industrial sites have a large number of control loops which becomes challenging to maintain effectively given limited technical resources. 
+\cite{farenzena2009looprank} developed a method called LoopRank which is based on the PageRank algorithm to prioritize control loop maintenance. Modern industrial sites have a large number of control loops which becomes challenging to maintain effectively given limited technical resources. \par
 
 The LoopRank method can be summarized in five steps:
 \begin{enumerate}
@@ -130,27 +130,27 @@ The LoopRank method can be summarized in five steps:
 	\item Compute the LoopRank based on the relative weight matrix A using the eigenvector centrality theorem
 	\item Multiply the result for each loop with a pre-defined weight that is based on the criticality of the loop. This weight is assigned heuristically depending on loop type and profitability
 	\item Normalize the results to express the score for each loop as a percentage
-\end{enumerate}
+\end{enumerate}\par
 
-\cite{farenzena2009looprank} demonstrated the efficacy of LoopRank by testing it on an industrial case study in which it successfully flagged the most critical control loops.
+\cite{farenzena2009looprank} demonstrated the efficacy of LoopRank by testing it on an industrial case study in which it successfully flagged the most critical control loops.\par
 
 \subsection{LOOPRANK DEVELOPMENT}
 
-\cite{rahman2010new} compared LoopRank with a more traditional data driven method that utilizes the integral of absolute or squared error to determine loop interaction. Canonical correlation was used to calculate the relative weight matrix in the LoopRank methodology. It was found that both methods delivered similar results.\\ 
+\cite{rahman2010new} compared LoopRank with a more traditional data driven method that utilizes the integral of absolute or squared error to determine loop interaction. Canonical correlation was used to calculate the relative weight matrix in the LoopRank methodology. It was found that both methods delivered similar results.\par
 
-The LoopRank methodology was further expanded on by \cite{streicher2014eigenvector} with the goal of improving the relative weight matrix used in step 2 of the procedure as outlined by \cite{farenzena2009looprank}.\\
+The LoopRank methodology was further expanded on by \cite{streicher2014eigenvector} with the goal of improving the relative weight matrix used in step 2 of the procedure as outlined by \cite{farenzena2009looprank}.\par
 
-\cite{streicher2014eigenvector} demonstrated how transfer entropy provides a more robust estimation of the casual links between nodes in a relative weight matrix. This method was tested using data from the well known Tennessee Eastman case study and was able to successfully highlight the disturbance variables as the top ranking nodes in the matrix.
+\cite{streicher2014eigenvector} demonstrated how transfer entropy provides a more robust estimation of the casual links between nodes in a relative weight matrix. This method was tested using data from the well known Tennessee Eastman case study and was able to successfully highlight the disturbance variables as the top ranking nodes in the matrix.\par
 
-\cite{streicher2019plant} further developed the LoopRank methodology to calculate importance scores for multiple overlapping time regions. Studying how the importance scores change over time then provided a very useful method for performing incipient fault detection.  \\ 
+\cite{streicher2019plant} further developed the LoopRank methodology to calculate importance scores for multiple overlapping time regions. Studying how the importance scores change over time then provided a very useful method for performing incipient fault detection.\par
 
 \section{VISUALIZATION}
 
-The methodologies involved in fault detection and diagnosis of industrial processes rely heavily on the visual analysis of time series data. Data is continuously generated by industrial processes, this data in its simplest form can be floating point or boolean values on a control system interface screen. This data is used by plant personnel as feedback on the current status of automated processes.
+The methodologies involved in fault detection and diagnosis of industrial processes rely heavily on the visual analysis of time series data. Data is continuously generated by industrial processes, this data in its simplest form can be floating point or boolean values on a control system interface screen. This data is used by plant personnel as feedback on the current status of automated processes.\par
 
-This study will focus on methods and approaches taken to visualize temporal or time series data. 
+This study will focus on methods and approaches taken to visualize temporal or time series data.\par 
 
-\cite{few2009now} described visualization as the graphical representation of information where data visualization allows for exploration and communication. \cite{telea2014data} added that the purpose of visualization is to gain insight into some process represented in the form of quantitative data by means of interactive graphics. Insight is defined by \cite{telea2014data} as reference to two types of information; answer questions about data that describes a particular problem and facts about the problem that the user might not have been aware of.
+\cite{few2009now} described visualization as the graphical representation of information where data visualization allows for exploration and communication. \cite{telea2014data} added that the purpose of visualization is to gain insight into some process represented in the form of quantitative data by means of interactive graphics. Insight is defined by \cite{telea2014data} as reference to two types of information; answer questions about data that describes a particular problem and facts about the problem that the user might not have been aware of.\cite{saraiya2006insight} described visual analytics as a process wherein user gain insight into complex data.
 
 Some of the first books to discuss information visualization date back to 1967 with the publication of Jacques Bertin's Semiologie Graphique \cite{rees2019survey}. A survey by \cite{rees2019survey} highlighted the number of visualization books have been published each year, displayed in \ref{fig:1}.
 
@@ -174,7 +174,7 @@ One of the earliest  models for that describe the process of 'sensemaking' was d
 	\item Development of insight through manipulation of the outline or model
 	\item Creation of a knowledge product or direct action based on the analysis
 \end{enumerate}
-The process is visually described by Figure\ref{fig:3}.
+The process is visually described by Figure \ref{fig:3}.
 \begin{figure}[!ht]
 	\centering\epsfig{figure=Sense_making_model.PNG,scale=0.5}
 	\caption{\cite{pirolli2005sensemaking} sensemaking model}\label{fig:3}
@@ -182,28 +182,26 @@ The process is visually described by Figure\ref{fig:3}.
 
 The rectangles represent the flow of data and the circles represent the process flow. What is very clear from this model is that there are a lot of back loops and sets of activities that cycle around finding information and making sense of the information. The end result of the process is the generation of novel information by the analyst.
 
-The External data sources are filtered into a smaller data set called a shoebox. Snippets are then extracted from the shoe box based on observed relationships and placed in the Evidence File. A Schema or model is then developed and verified using the Evidence file. A Hypotheses is then form based on this model with a feedback loop that search for additional support of this hypotheses. Finally there is a presentation that is first reevaluated before becoming the product of this work. This model can be used in a top-down (theory to data)  or bottom-up (data to theory) approach.
+The external data sources are filtered into a smaller data set called a shoebox. Snippets are then extracted from the shoe box based on observed relationships and placed in the evidence file. A schema or model is then developed and verified using the evidence file. A hypotheses is then form based on this model with a feedback loop that searches for additional support of this hypotheses. Finally there is a presentation that is first re-evaluated before becoming the product of this work. This model can be used in a top-down (theory to data)  or bottom-up (data to theory) approach.
 
-Another approach that represents a more non-linear model that might be a closer representation to how humans actually process information. \cite{klein2006making} present a model that starts of with the assumption that people always start making sense of something with some perspective, viewpoint or framework. The frame basically functions as hypothesis of how the data fits together.
+Another approach would be to present a more non-linear model that might be a closer representation to how humans actually process information. \cite{klein2006making} presents a model that starts of with the assumption that people always start making sense of something with some perspective, viewpoint or framework. The frame basically functions as hypothesis of how the data fits together.
 
 These frameworks or frames actually define what counts as data and shape the data. Frames also change as we acquire data making it a two way path between a frame and data.
 
-The first cycle that starts from the frame/ data idea is the elaboration cycle. In this cycle the frame is expanded and questioned - there could be doubt about the explanation it provides. If the doubt, possibly caused by troublesome data is explained away then the frame is preserved.
+The first cycle that starts from the frame/ data idea is the elaboration cycle. In this cycle the frame is expanded and questioned - there could be doubt about the explanation it provides. If the doubt, possibly caused by troublesome data, is explained away then the frame is preserved.
 
-The second cycle involves a re framing process. If questioning the frame leads to its rejection, it might lead to its replacement with a better one. We could compare frames to see which one fits the data best. 
+The second cycle involves a re-framing process. If questioning the frame leads to its rejection, it might lead to its replacement with a better one. Frames could be compared to see which one fits the data best. This model is displayed in Figure\ref{fig:4}. This is a continuous process in which a frame is strengthened or improved at each iteration.
 
-This model is displayed in Figure\ref{fig:4}.
+
 \begin{figure}[!ht]
 	\centering\epsfig{figure=Frame_data_sensemaking_model.PNG,scale=0.7}
 	\caption{\cite{klein2006making} frame-data sensemaking model}\label{fig:4}
 \end{figure}
 
-This is a continuous process in which a frame is strengthened or improvement at each iteration.
-
-Any method for turning data into knowledge requires the manipulation of the data. The analysis would start with an analysis of the data. This analysis has traditionally been done manually but with the exponential growth in the amount of data that can form part of an analysis other methods are being developed to make this step more efficient. \cite{fayyad1996data} analyzed this challenge in the emerging field of knowledge discovery in databases (KDD). In simple terms this field is concerned with development of methods and techniques for making sense of data.
+Any method for turning data into knowledge requires the manipulation of the data. Data analysis has traditionally been done manually but with the exponential growth in the amount of data that can form part of an analysis other methods are being developed to make this step more efficient. \cite{fayyad1996data} analyzed this challenge in the emerging field of knowledge discovery in databases (KDD). In simple terms this field is concerned with development of methods and techniques for making sense of data.
 
 
-One of the most noteworthy fields where these methods are applied is in the areas of astronomy. These fields contain terabytes of data contained in images. Although industrial application of data analysis contain a lot less data than this it could still be worth while studying these techniques to see if they can assist with effectively utilizing large amounts of time series data.
+One of the most noteworthy fields where these methods are applied is in the area of astronomy. These fields contain terabytes of data contained in images. Although industrial application of data analysis contains a lot less data than this it could still be worth while studying these techniques to see if they can assist with effectively utilizing large amounts of time series data.
 
 The goal of KDD is extracting high-level knowledge from low-level data in the context of large data sets \cite{fayyad1996data}. The KDD process is visually described by Figure \ref{fig:6}.
 \begin{figure}[!ht]
@@ -243,13 +241,13 @@ The computer part of the model has three main elements:
 	\item Data - this includes all the data that describes the analytical problem and includes facts in any structured, semi-structured or unstructured manner. Another element to this is a term called meta data, which could be data that describes the structure of other data or data that summarizes other data.
 	\item Model - This can be any descriptive measure of the data ranging from statistical properties of the data to complex data mining algorithms. This process can deliver a single number to describe the strength of an hypothesis or a complex pattern.
 	\item Visualization - In this process the data is transformed into some kind of visual artifact that enables the analyst to detect relationships.
-\end{enumerate}, 
+\end{enumerate}
 The human element is also described in three main loops:
 The computer part of the model has three main elements:
 \begin{enumerate}
-	\item Exploration loop - Findings are made based on observations of the visual analytics system, Actions or individual tasks are then performed that result in tangible  and unique responses from the visual analytics system. 
-	\item Verification loop - Insight is gained from interpreting Findings, often with previous domain knowledge to generate units of information. A Hypothesis is then formed based on these Insights and tested in the visual analytics system through Actions.
-	\item Knowledge - The final part is to build up confidence in the Insights from the data and Hypotheses tested on the data. If  patterns or stories told by the data makes sense and can be used to answer the questions from the visual analytic process then Knowledge is generated. This Knowledge is added to the domain knowledge of the analyst to ask more questions and generate more Knowledge.
+	\item Exploration loop - findings are made based on observations of the visual analytics system, Actions or individual tasks are then performed that result in tangible  and unique responses from the visual analytics system. 
+	\item Verification loop - insight is gained from interpreting findings, often with previous domain knowledge to generate units of information. A hypothesis is then formed based on these insights and tested in the visual analytics system through actions.
+	\item Knowledge - The final part is to build up confidence in the insights from the data and hypotheses tested on the data. If  patterns or stories told by the data makes sense and can be used to answer the questions from the visual analytic process then knowledge is generated. This knowledge is added to the domain knowledge of the analyst to ask more questions and generate more knowledge.
 \end{enumerate}
 This model proposed by \cite{sacha2014knowledge} again highlights the iterative process of visual analytics and how feedback loops are used in every element of the model.
 
@@ -263,7 +261,7 @@ Actions taken during visual analytics were grouped into four phases:
 	\item Analysis - most complex phase that requires examining of charts and making sense of them combined with other data
 	\item Dissemination - compiling findings in a report
 \end{enumerate}
-The findings from the study conducted by \cite{mahyar2010closer} confirmed observations by other researchers about the non-linear temporal order of activities. While completing the tasks users would move through the phases in a variety of orders. The visualization and analysis phases were strongly interrelated, the users moved back and forth between these two phases much more than the other phases.
+The findings from the study conducted by \cite{mahyar2010closer} confirmed observations by other researchers about the non-linear temporal order of activities. While completing the tasks users would move through the different steps in no specific order. The visualization and analysis phases were strongly interrelated, the users moved back and forth between these two phases much more than the other phases.
 
 \cite{mahyar2010closer} generated a very visual model of these four phases with key elements noted in each phase:
 \begin{figure}[!ht]
@@ -271,11 +269,11 @@ The findings from the study conducted by \cite{mahyar2010closer} confirmed obser
 	\caption{Visualization books published each year}\label{fig:2}
 \end{figure}
 
-Record keeping involves the saving of visual artifacts and notes. In most cases a visual artifact can convey a complex idea more effectively than notes. Visual artifacts were saved for two main reasons; using them in reporting and using them to enhance the analysis process.\cite{mahyar2010closer} recommends that visual analytic systems provide functionality to save visual artifacts like charts for later use and comparison. Note taking also plays a critical role in all phases of the process. The notes high level content could be divided into two categories; findings and cues. Findings are a results of mathematical calculations, statistical operations or decisions and outcomes of the analysis process, they could also take to form of saved charts. Cues can be anything that is not directly extracted from the visualizations that could assist the user to framing or understanding the task at hand. A larger proportion of findings were recorded in the analysis phase while the cues were largely taken during the visualization phase. The study concluded that record keeping is used intensively by data analysts.
+Record keeping involves the saving of visual artifacts and notes. In most cases a visual artifact can convey a complex idea more effectively than notes. Visual artifacts were saved for two main reasons; using them in reporting and using them to enhance the analysis process.\cite{mahyar2010closer} recommends that visual analytic systems provide functionality to save visual artifacts like charts for later use and comparison. Note taking also plays a critical role in all phases of the process. The notes high level content could be divided into two categories; findings and cues. Findings are a results of mathematical calculations, statistical operations or decisions and outcomes of the analysis process, they could also take to form of saved charts. Cues can be anything that is not directly extracted from the visualizations that could assist the user in framing or understanding the task at hand. A larger proportion of findings were recorded in the analysis phase while the cues were largely taken during the visualization phase. The study concluded that record keeping is used intensively by data analysts.
 
-\cite{saraiya2006insight} completed a longitudinal study of a bioinformatics data set analysis to gain understanding of the entire analysis process from raw data to insights. Visual analytics can be described as a process wherein user gain insight into complex data. The study highlighted how analysts gather and build insights over long periods of time and connecting the data to extensive domain knowledge and expertise. It is emphasized that analyst spend a significant amount of time on manual manipulation of data and this creates a very important need for the visualization tool to be interactive. Inferior visualizations with interaction were preferred over superior static visualizations.
+\cite{saraiya2006insight} completed a longitudinal study of a bioinformatics data set analysis to gain understanding of the entire analysis process from raw data to insights. The study highlighted how analysts gather and build insights over long periods of time and connecting the data to extensive domain knowledge and expertise. It is emphasized that analyst spend a significant amount of time on manual manipulation of data and this creates a very important need for the visualization tool to be interactive. Inferior visualizations with interaction were preferred over superior static visualizations.
 
-\subsection{VALUE OF RECORD KEEPING IN VISUALIZATION}
+\subsection{POWER OF VISUAL ANALYTICS}
 
 Practical side - how long does each step in analysis take, machine liearning, 60 percent of time taken to clean data
 
@@ -283,11 +281,11 @@ Visualization critical for outleir detecton - visual anomoly detection system ye
 
 \subsection{VISUALIZATION TOOLS}
 
-\cite{barnard2015usability} performed a comparison of visualization tools in the development of a tool that can be used for data analysis at CERN. The goal of this tool was to enable scientist to observe a data set as a whole in order to make better decisions of what variable pairs and time frames to analyze during test campaigns.
+\cite{barnard2015usability} performed a comparison of visualization tools in the development of a tool that could be used for data analysis at CERN. The goal of this tool was to enable scientist to observe a data set as a whole in order to make better decisions of what variable pairs and time frames to analyze during test campaigns.
 
-JavaScript and Python Libraries were investigated and evaluated. D3 and Dygraphs were both discussed as JavaScript libraries that can be used for plotting. Matplotlib was discussed as a Python library that is based on the plotting functionalities of MATLAB. Two other Python libraries, Bokeh and Mpld3 were discussed with specific attention to their capabilities to generate HTML which enables them to easily present graphs on a web browser. Furthermore Mpld3 can integrate Matplotlob plots using D3 to render them to a web page.
+JavaScript and Python Libraries were investigated and evaluated. D3 and Dygraphs were both discussed as JavaScript libraries that can be used for plotting. Matplotlib was discussed as a Python library that is based on the plotting functionalities of MATLAB. Two other Python libraries, Bokeh and Mpld3 were discussed with specific attention to their capabilities to generate HTML which enables them to easily present graphs on a web browser. Furthermore Mpld3 can integrate Matplotlob plots using D3 to render visualizations on a web page.
 
-\cite{barnard2015usability} did a detailed comparison of Bokeh and Mpld3 which identified Bokeh as their preferred choice. Comparing key aspects like loading time, rendering time and features Bokeh was faster and had more actively developed libraries.
+\cite{barnard2015usability} did a detailed comparison of Bokeh and Mpld3 which identified Bokeh as their preferred choice. Bokeh excelled at key aspects like loading time, rendering time and available features and had more actively developed libraries.
 
 \cite{fahad2018big} did a comparison of data visualization systems with the specific focus on big data applications. Tools were categorized into coding and zero coding tools with graphical user interfaces. 
 
@@ -349,25 +347,23 @@ Table \ref{fig:tool_comparison} shows an example of a table.
 	\end{table}
 \end{center}
 
-One of the biggest challenges with modern visualization tools is the latency created by processing large data sets \cite{ali2016big}. This can be addressed by using pre-computed data, paralyzing data processing and rendering and using predictive middelware.
-
-\cite{caldarola2017big} completed a comprehensive survey of tools used in Big Data applications. The concept of Big Data has different dimensions, one model that attempts to described these dimensions is widely known as 3Vs. The 3Vs stand for Volume, Velocity and Variety.  Each of these dimensions pose its own unique challenges in the data management process.
+\cite{caldarola2017big} completed a comprehensive survey of tools used in Big Data applications. The concept of Big Data has different dimensions, one model that attempts to describe these dimensions is widely known as 3Vs. The 3Vs stand for Volume, Velocity and Variety.  Each of these dimensions poses its own unique challenges in the data management process.
 
 The analysis and visualization of data was represented in a diagram that distinguishes between four different types of software solutions \cite{caldarola2017big}. The diagram displayed in Figure \ref{fig:10} depicts the different types according to the Volume and Variety challenges in the 3Vs model. 
 \begin{figure}[H]
 	\centering\epsfig{figure=big_data_visualization_categories.PNG,scale=0.9}
 	\caption{Big data visualization solutions}\label{fig:10}
 \end{figure}
-Differentiation is also done according to four main categories that describe the goals of visualization. The first goal would be the clear and effective communication of information to the user with the creation and study of the visual representation of data. The Information Visualization category is created to describe this goal. The second goal diverges from the first one in terms of spatial representation. If spatial representation is given to the visualization because of the intrinsic spatial layout of data like a flow simulation in a 3D space, then this can be seen as Scientific Visualization. These two categories can be further divided according to the dimension of volume and variety of data. In the end these four categories chosen by \cite{caldarola2017big} to divide software are:
+Differentiation is also done according to four main categories that describe the goals of visualization. The first goal would be the clear and effective communication of information to the user with the creation and study of the visual representation of data. The Information Visualization category is created to describe this goal. The second goal diverges from the first one in terms of spatial representation. If spatial representation is given to the visualization because of the intrinsic spatial layout of data like a flow simulation in a 3D space, then this can be seen as Scientific Visualization. These two categories can be further divided according to the dimension of volume and variety of data. The four categories chosen by \cite{caldarola2017big}  divide software as:
 \begin{enumerate}
 	\item business intelligent tools for data mining of heterogeneous data
 	\item scientific visualization tools focused that focus on specific spatial representations using larger data sets
 	\item data visualization tools used for visual exploration
 	\item information visualization tools used for interactive visual exploration of data
 \end{enumerate}
-\cite{caldarola2017big} analyses 35 different software solutions in these four categories. What is interesting to note is that Plotly is well described in both the data and information visualization categories which implies that does well at handling big data challenges with variety and volume.
+\cite{caldarola2017big} analyzed 35 different software solutions in these four categories. What is interesting to note is that Plotly is well described in both the data and information visualization categories which implies that it does well at handling big data challenges with variety and volume.
 
-\cite{Herbst2017} completed a study of information visualization theory and developed a time series analysis tool. The goals of the visualization tool developed by \cite{Herbst2017} was called Evert, it had the following goals:
+\cite{Herbst2017} completed a study of information visualization theory and developed a time series analysis tool. The visualization tool developed by \cite{Herbst2017} was called Evert, it had the following goals:
 \begin{enumerate}
 	\item Interactive visualization that enables exploration of time-series data
 	\item Seamless operation across all major operating systems
@@ -375,65 +371,34 @@ Differentiation is also done according to four main categories that describe the
 	\item Allow for expansion of the tool through plugins
 	\item User can efficiently apply the tool in their environments without the need to acquire new knowledge
 \end{enumerate}
-Three existing visualization environments where also analyzed to determine of they could be used as the platform for this design. The environments investigated were JupyterLab, Glue and Lyra. JupyterLab was designed to be the future of the Jupyter project's notebook interface. The JupyterLab work environment consists of multiple windows of Python interpreters. Glue or GlueViz is a Python-based project designed for multidimensional data analysis. A GUI is launched when the program is activated through which a user would interact with the tool. Lyra is a tool based on the Vega platform that doesn't require any coding to generate data visualizations. Althoug all three of these tools have their own merits they were not chosen as the basis for the Evert project. The design of JupyterLab was too linear and at the time could not allow for interactive visualizations accross interpreter windows. Glue couold not run on a web based server and could not allow for the customization of its interface. Lyra didn't allow for data manipulation and didn't support plug-ins.\\
+Three existing visualization environments where also analyzed to determine if they could be used as the platform for this design. The environments investigated were JupyterLab, Glue and Lyra. JupyterLab was designed to be the future of the Jupyter project's notebook interface. The JupyterLab work environment consists of multiple windows of Python interpreters. Glue or GlueViz is a Python-based project designed for multidimensional data analysis. A GUI is launched when the program is activated through which a user would interact with the tool. Lyra is a tool based on the Vega platform that doesn't require any coding to generate data visualizations. Although all three of these tools have their own merits they were not chosen as the basis for the Evert project. The design of JupyterLab was too linear and at the time of the study could not allow for interactive visualizations accross interpreter windows. Glue could not run on a web based server and could not allow for the customization of its interface. Lyra didn't allow for data manipulation and didn't support plug-ins.\\
 
-During the development of Evert one of the key criteria in deciding what interface to use was the rendering of visualization displayed in a browser. Two main approaches are followed in this regards; Canvas and Scalable Vector Graphics. Canvas is a graphics API developed in HTML5 which generates pixels to represent the image. Scalable Vector Graphics (SVG) is an XML-based image format used to define two dimensional vector based graphics. \cite{Herbst2017} highlighted the flexibility of SVG elements and speed of rendering as the motivation for using this method in the final design. The use of D3 Javascript library as a standard for creating SVG visualizations in a web environment prompted  \cite{Herbst2017} to investigate the following four plotting libraries:
+One of the biggest challenges with modern visualization tools is the latency created by processing large data sets \cite{ali2016big}. This can be addressed by using pre-computed data, paralyzing data processing and rendering and using predictive middelware.
+
+During the development of Evert one of the key criteria in deciding what interface to use was the rendering of visualization displayed in a browser. Two main approaches are followed in this regards; Canvas and Scalable Vector Graphics. Canvas is a graphics API developed in HTML5 which generates pixels to represent the image. Scalable Vector Graphics (SVG) is an XML-based image format used to define two dimensional vector based graphics. \cite{Herbst2017} highlighted the flexibility of SVG elements and speed of rendering as the motivation for using this method in the final design. Basing the choice of rendering on SVG would solve the challenge of latency described by \cite{ali2016big}. The use of D3 Javascript library as a standard for creating SVG visualizations in a web environment prompted  \cite{Herbst2017} to investigate the following four plotting libraries:
 \begin{enumerate}
 	\item Plotly.js
 	\item C3.js
 	\item DC.js
-	\item MPLD3
+	\item Mpld3
 \end{enumerate}
 Plotly was chosen as the preferred visualization library due to its superior features such as pan, zoom and data selection interaction and ability to generate more than 2 Y-axis.
 
 
 \section{VISUALIZATION AND FDD}
 
-\cite{thornhill2007advances} described the exiting potential of combining data driven methods with process information to enhance the diagnosis step. The process information required is a qualitative model of the process topology which captures the logical pathways that information can flow. A standard called Computer Aided Engineering Exchange (CAEX) specifies an XML schema that can to capture the process topology and feed it into a data driven tool.\\
+\cite{thornhill2007advances} described the exiting potential of combining data driven methods with process information to enhance the diagnosis step. The process information required is a qualitative model of the process topology which captures the logical pathways that information can flow. A standard called Computer Aided Engineering Exchange (CAEX) specifies an XML schema that can capture the process topology and feed it into a data driven tool.\\
 
-\cite{yim2006using} demonstrated a tool that combined plant topology information written in XML with results form a signal analysis tool called Plant-Wide Disturbance Analysis (PDA) to deliver enhanced isolation and diagnosis of root causes. The connectivity information provided by the plant topology allows the tool to verify or reject hypothesis about the propagation path of a fault. The tool described here was built in C\# and contains a reasoning engine that can searches for physical paths and determines root causes for measured plant-wide disturbances.\\
+\cite{yim2006using} demonstrated a tool that combined plant topology information written in XML with results from a signal analysis tool called Plant-Wide Disturbance Analysis (PDA) to deliver enhanced isolation and diagnosis of root causes. The connectivity information provided by the plant topology allows the tool to verify or reject hypothesis about the propagation path of a fault. The tool described here was built in C\# and contains a reasoning engine that can search for physical paths and determine root causes for measured plant-wide disturbances.\\
 
-Another useful model to visualize process connections is the signed directed graph (SDG) model. This model provides a useful way to visual cause-effect relations in continuous systems \cite{yang2010qualitative}. The process variables are denoted as nodes and the casual relations as directed arcs. The sign of the arc indicates the casual flow of the process. \cite{streicher2019plant} used SDG models to aid in the logical reasoning process and display the results obtained from data driven methods like the LoopRank algorithm that was expanded on in earlier sections.\\
+Considering qualitative analytics, as described in the section on FDD, a very useful way to visualize process connections is the signed directed graph (SDG) model. This model provides a useful way to visual cause-effect relations in continuous systems \cite{yang2010qualitative}. The process variables are denoted as nodes and the casual relations as directed arcs. The sign of the arc indicates the casual flow of the process. \cite{streicher2019plant} used SDG models to aid in the logical reasoning process and display the results obtained from data driven methods like the LoopRank algorithm that was expanded on in earlier sections.\\
 
-Process monitoring and fault detection of batch processes has received attention in recent years. The extensive use of batch processing in the production of high value products makes it a important to ensure that batch runs are completed with a high level of success. \cite{wang2018geometric} developed a novel approach to process monitoring and fault detection in batch processes by utilizing a technique they termed time-explicit Kiviat diagrams. The core idea behind this technique is based on Multi-way Principle Component Analysis that facilitates batch-wise unfolding of the three dimensional (Time*Variables*Batches) batch data matrix into a two dimensional matrix that captures the variation across batches. The type of data required to warrant the use of this technique is very similar to the data generated by multiple time region analysis in the LoopRank analysis done by \cite{streicher2019plant}. Each batch can be seen as a time region in the LoopRank analysis and the analysis can be seen as the completion of multiple batch runs.
+Process monitoring and fault detection of batch processes has received attention in recent years. The extensive use of batch processing in the production of high value products makes it a important to ensure that batch runs are completed with a high level of success. \cite{wang2018geometric} developed a novel approach to process monitoring and fault detection in batch processes by utilizing a technique termed as time-explicit Kiviat diagrams. The core idea behind this technique is based on Multi-way Principle Component Analysis that facilitates batch-wise unfolding of the three dimensional (Time*Variables*Batches) batch data matrix into a two dimensional matrix that captures the variation across batches. The type of data required to warrant the use of this technique is very similar to the data generated by multiple time region analysis in the LoopRank analysis done by \cite{streicher2019plant}. Each batch can be seen as a time region in the LoopRank analysis and the analysis can be seen as the completion of multiple batch runs.
 
-SDG models can be obtained by flow sheets, empirical knowledge and mathematical models but in general they are more often derived from qualitative process knowledge and experience \cite{yang2010qualitative}. These models are of particular importance in plant-wide fault detection because they can help explain the fault propagation through a complex system. The directed graph description can also be represented in a matrix form an adjacency matrix with each element containing a 1 or 0 denoting the direction of the interaction between two nodes.
+SDG models can be obtained by flow sheets, empirical knowledge and mathematical models but in general they are more often derived from qualitative process knowledge and experience \cite{yang2010qualitative}. These models are of particular importance in plant-wide fault detection because they can help explain the fault propagation through a complex system. The directed graph description can also be represented in a matrix form as an adjacency matrix with each element containing a 1 or 0 denoting the direction of the interaction between two nodes.
 
-\cite{streicher2019plant} combined the application of the LoopRank algorithm and enhancements in the casual relationships identified into a tool that has the ability to test various different methods used in FDD. The tool is predominantly developed in python with Java dependencies to perform the transfer entropy estimations used in the interaction matrix. The tool makes use of various graphical models to display information ranging from basic trending of how importance scores vary across time regions to intricate SDG graphs displaying fault propagation paths.
+\cite{streicher2019plant} combined the application of the LoopRank algorithm and techniques to enhance casual relationships into a tool that has the ability to test various different methods used in FDD. The tool is predominantly developed in Python with Java dependencies to perform the transfer entropy estimations used in the interaction matrix. The tool makes use of various graphical models to display information ranging from basic trending of how importance scores vary across time regions to intricate SDG graphs displaying fault propagation paths.
 
-
-%Equation \eqref{fig:example} shows an example of a numbered equation.
-%\begin{equation}
-%  \Delta w_{i,j} = \alpha a_i \Delta[j]  \label{eqn:example}
-%\end{equation}
-%
-%\begin{align}
-%  \m{QX} \m{a} & = \m{Qy} \notag \\
-%  \therefore \quad (\m{QX})^T \m{QX} \m{a} & = (\m{QX})^T \m{Qy} \notag \\
-%  \therefore \quad \m{a} & = \left( (\m{QX})^T \m{QX} \right)^{-1} (\m{QX})^T \m{Qy} \notag \\
-%        & = \left( \mt{X} \mt{Q} \m{QX} \right)^{-1} \mt{X} \mt{Q} \m{Qy} \notag \\
-%        & = \left( \mt{X} \m{W} \m{X} \right)^{-1} \mt{X} \m{W} \m{y}
-%          \label{equ:weightedleastsquares}
-%\end{align}
-
-%\subsection{A subsection with a long heading that continues from the
-%  first line onto the second line see also table of contents}
-%
-%\subsubsection{Testing deeper nested section headers}
-
-%\ref{fig:examplea} and \ref{fig:exampleb}.
-%\begin{figure}[!ht]
-%  \begin{minipage}[b]{.5\linewidth}
-%  \centering\epsfig{figure=figure1.eps}
-%  \subcaption{A subfigure}\label{fig:examplea}
-%  \end{minipage}%
-%  \begin{minipage}[b]{.5\linewidth}
-%  \centering\epsfig{figure=figure1.eps,angle=-90}
-%  \subcaption{Another subfigure}\label{fig:exampleb}
-%  \end{minipage}
-%  \caption{This is a figure caption. In the example \subref{fig:exampleb}
-%  is a rotated version of \subref{fig:examplea}.}\label{fig:example}
-%\end{figure}
 
 
 
