@@ -4,9 +4,28 @@
 %%  Copyright (C) 2011-2016 University of Pretoria.
 %%
 
-\chapter{METHODS (FOR ILLUSTRATION THIS HEADING CONTINUES ONTO THE NEXT LINE)}
+\chapter{METHODS}
 
 \section{CHAPTER OVERVIEW}
+
+This chapter will describe the process taken to develop a visual analytic system that will support the FDD process.
+
+\section{CONCEPTUAL DESIGN}
+
+The sources referenced in Chapter 2 describes various different ways of how to approach FDD and what methods work best to structure the FDD process. A common idea in most of these sources is the need for data manipulation or transformation. The key to obtaining an understanding that there is a problem and what is causing it is to  view data in a certain context. This context needs to be created by interacting with the data. 
+
+Almost all of the literature sources highlight a need for a structured approach with logical steps that lead to a final goal. [4] describes a four step transformation process that classifies each step as a different data space; measurement, feature, decision and class. [15] proposes a sensemaking model with four key steps: Information gathering, representation of information in a model, development of insight through manipulation of the model and finally creation of knowledge through analysis. [17] describes a five step process that includes data selection, processing, transformation, mining and finally interpretation or evaluation. [19] proposes a structured approach to visual analytics that focuses of problem definition, visualization, analysis and reporting.
+
+Based on the findings of all these sources it is proposed to also divide a new FDD tool into four distinct steps. The first and most important step would be the analysis of raw data. Before any complex transformations can be done it is important to understand what actual data is available and what the limitations are thereof. The human brain is very good at recognizing patterns without necessarily quantifying the model that is uses to identify the pattern. It is also important to understand the limitations imposed by the frequency of the data used. If the data is of a very low frequency it might not be feasible to identify faults that are caused by high frequency failures which is common when the failure is related to a instrument failure in industrial processes. There might also be differences in the frequency of different parameters in the data set. 
+
+Process Information Management Systems (PIMS) and Laboratory Information Management Systems (LIMS) collect and stores time series data in vastly different frequencies. For example a process data point might be available at minute intervals but a critical process specification like a viscosity analysis might only be available every eight hours. Furthermore LIMS data might also pose a challenge in terms of time shifts. The manual nature of how some lab samples are collected might cause a time shift between when the sample was taken and when the analysis was completed. In practice it can be very difficult to ensure that this time shift is consistent and also how to determine what the exact time shift is.
+
+The raw data should not only be time series data but any other data that can be used to create context. As indicated by \cite{thornhill2007advances} and \cite{yim2006using} any information regarding plant topology can provide valuable insight into the casual links between variables. This could potentially simplify any models developed and avoid nonsensical conclusions. Although the XML schema discussed by  \cite{thornhill2007advances} provides an exciting prospect in itself there is no open source version of such a application currently available. For this reason this specific schema will not be incorporated into the tool under development but the idea can still be used. Any visual or diagram of the process that generated the time series data must be included in the first step of the FDD process. Even if the casual links are specified manually this still improves greatly on assuming all parameters can be correlated to each other. 
+
+Another aspect of the first step in the proposed process is to include the ability to incorporate note taking into the raw data analysis. This ensures that any information gathered by one user can be built on by others to further the discovery process. As explained by \cite{mahyar2010closer} these notes can be in the form of findings and cues, where the findings can be as a results calculations which might only be related to one of the following steps and cues can be anything that is useful, for example an observation of the casual link identified by using the process topology.
+
+The final thread that must be woven into the entire process is the ability to interact with the data that is available. As highlighted by [20] it is more important to have a highly interactive tool than a very accurate tool because this will encourage the engagement of the user. An engaged user will spend more time to guide the FDD process and provide valuable input into it.
+
 
 
 
