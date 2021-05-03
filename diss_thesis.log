@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2020.1.4)  7 OCT 2020 22:18
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2020.1.4)  24 APR 2021 21:09
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2306,7 +2306,7 @@ Overfull \hbox (8.32202pt too wide) has occurred while \output is active
 
 [28]
 Chapter 3.
-) (./chapter4.tex
+
 Overfull \hbox (8.32202pt too wide) has occurred while \output is active
     []
  []
@@ -2319,6 +2319,26 @@ Overfull \hbox (8.32202pt too wide) has occurred while \output is active
 [29
 
 ]
+Overfull \hbox (8.32202pt too wide) has occurred while \output is active
+    []
+ []
+
+
+Overfull \hbox (8.32202pt too wide) has occurred while \output is active
+    []
+ []
+
+[30]) (./chapter4.tex
+Overfull \hbox (8.32202pt too wide) has occurred while \output is active
+    []
+ []
+
+
+Overfull \hbox (8.32202pt too wide) has occurred while \output is active
+    []
+ []
+
+[31]
 Chapter 4.
 ) (./chapter5.tex
 Overfull \hbox (8.32202pt too wide) has occurred while \output is active
@@ -2330,7 +2350,7 @@ Overfull \hbox (8.32202pt too wide) has occurred while \output is active
     []
  []
 
-[30
+[32
 
 ]
 Chapter 5.
@@ -2344,7 +2364,7 @@ Overfull \hbox (8.32202pt too wide) has occurred while \output is active
     []
  []
 
-[31
+[33
 
 ]
 Chapter 6.
@@ -2358,7 +2378,7 @@ Overfull \hbox (8.32202pt too wide) has occurred while \output is active
     []
  []
 
-[32
+[34
 
 ] (./diss_thesis.bbl
 Overfull \hbox (8.32202pt too wide) has occurred while \output is active
@@ -2370,7 +2390,7 @@ Overfull \hbox (8.32202pt too wide) has occurred while \output is active
     []
  []
 
-[33
+[35
 
 ]
 Overfull \hbox (8.32202pt too wide) has occurred while \output is active
@@ -2382,7 +2402,7 @@ Overfull \hbox (8.32202pt too wide) has occurred while \output is active
     []
  []
 
-[34]
+[36]
 Overfull \hbox (8.32202pt too wide) has occurred while \output is active
     []
  []
@@ -2392,7 +2412,7 @@ Overfull \hbox (8.32202pt too wide) has occurred while \output is active
     []
  []
 
-[35])
+[37])
 Overfull \hbox (8.32202pt too wide) has occurred while \output is active
     []
  []
@@ -2402,7 +2422,7 @@ Overfull \hbox (8.32202pt too wide) has occurred while \output is active
     []
  []
 
-[36] (./addenduma.tex
+[38] (./addenduma.tex
 Addendum A.
 )
 Overfull \hbox (8.32202pt too wide) has occurred while \output is active
@@ -2414,7 +2434,7 @@ Overfull \hbox (8.32202pt too wide) has occurred while \output is active
     []
  []
 
-[37
+[39
 
 ] (./diss_thesis.aux) ) 
 Here is how much of TeX's memory you used:
@@ -2433,10 +2453,10 @@ fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2019/texmf-dist/fonts/typ
 e1/urw/symbol/usyr.pfb><c:/texlive/2019/texmf-dist/fonts/type1/urw/times/utmb8a
 .pfb><c:/texlive/2019/texmf-dist/fonts/type1/urw/times/utmr8a.pfb><c:/texlive/2
 019/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on diss_thesis.pdf (42 pages, 1348160 bytes).
+Output written on diss_thesis.pdf (44 pages, 1352923 bytes).
 PDF statistics:
- 218 PDF objects out of 1000 (max. 8388607)
- 132 compressed objects within 2 object streams
+ 225 PDF objects out of 1000 (max. 8388607)
+ 137 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  20117 words of extra memory for PDF output out of 20736 (max. 10000000)
 
