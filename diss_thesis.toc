@@ -28,15 +28,16 @@
 \contentsline {chapter}{\numberline {3}METHODS}{29}%
 \contentsline {section}{\numberline {3.1}CHAPTER OVERVIEW}{29}%
 \contentsline {section}{\numberline {3.2}CONCEPTUAL DESIGN}{29}%
-\contentsline {chapter}{\numberline {4}RESULTS}{32}%
-\contentsline {section}{\numberline {4.1}CHAPTER OVERVIEW}{32}%
-\contentsline {chapter}{\numberline {5}DISCUSSION}{33}%
-\contentsline {section}{\numberline {5.1}CHAPTER OVERVIEW}{33}%
-\contentsline {chapter}{\numberline {6}CONCLUSION}{34}%
-\contentsline {section}{\numberline {6.1}EXAMPLE HEADING}{34}%
+\contentsline {section}{\numberline {3.3}INTERFACE EXPLORATION}{32}%
+\contentsline {chapter}{\numberline {4}RESULTS}{34}%
+\contentsline {section}{\numberline {4.1}CHAPTER OVERVIEW}{34}%
+\contentsline {chapter}{\numberline {5}DISCUSSION}{35}%
+\contentsline {section}{\numberline {5.1}CHAPTER OVERVIEW}{35}%
+\contentsline {chapter}{\numberline {6}CONCLUSION}{36}%
+\contentsline {section}{\numberline {6.1}EXAMPLE HEADING}{36}%
 \renewcommand *\cftchappresnum {\MakeUppercase {Chapter}\ }
-\contentsline {chapter}{REFERENCES}{35}%
+\contentsline {chapter}{REFERENCES}{37}%
 \renewcommand *\cftchappresnum {\MakeUppercase {Addendum}\ }
-\contentsline {chapter}{\numberline {A}DERIVATION OF HIGHER ORDER MODELS}{39}%
-\contentsline {section}{\numberline {A.1}Example Heading}{39}%
-\contentsline {subsection}{\numberline {A.1.1}Subheading example}{39}%
+\contentsline {chapter}{\numberline {A}DERIVATION OF HIGHER ORDER MODELS}{41}%
+\contentsline {section}{\numberline {A.1}Example Heading}{41}%
+\contentsline {subsection}{\numberline {A.1.1}Subheading example}{41}%
