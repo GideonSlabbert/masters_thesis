@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2020.1.4)  11 AUG 2021 11:16
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2020.1.4)  11 AUG 2021 20:36
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2363,7 +2363,7 @@ Overfull \hbox (8.32202pt too wide) has occurred while \output is active
     []
  []
 
-[33]) (./chapter4.tex
+[33]
 Overfull \hbox (8.32202pt too wide) has occurred while \output is active
     []
  []
@@ -2374,6 +2374,26 @@ Overfull \hbox (8.32202pt too wide) has occurred while \output is active
  []
 
 [34]
+Overfull \hbox (8.32202pt too wide) has occurred while \output is active
+    []
+ []
+
+
+Overfull \hbox (8.32202pt too wide) has occurred while \output is active
+    []
+ []
+
+[35]) (./chapter4.tex
+Overfull \hbox (8.32202pt too wide) has occurred while \output is active
+    []
+ []
+
+
+Overfull \hbox (8.32202pt too wide) has occurred while \output is active
+    []
+ []
+
+[36]
 Chapter 4.
 ) (./chapter5.tex
 Overfull \hbox (8.32202pt too wide) has occurred while \output is active
@@ -2385,7 +2405,7 @@ Overfull \hbox (8.32202pt too wide) has occurred while \output is active
     []
  []
 
-[35
+[37
 
 ]
 Chapter 5.
@@ -2399,7 +2419,7 @@ Overfull \hbox (8.32202pt too wide) has occurred while \output is active
     []
  []
 
-[36
+[38
 
 ]
 Chapter 6.
@@ -2413,7 +2433,7 @@ Overfull \hbox (8.32202pt too wide) has occurred while \output is active
     []
  []
 
-[37
+[39
 
 ] (./diss_thesis.bbl
 Overfull \hbox (8.32202pt too wide) has occurred while \output is active
@@ -2425,7 +2445,7 @@ Overfull \hbox (8.32202pt too wide) has occurred while \output is active
     []
  []
 
-[38
+[40
 
 ]
 Overfull \hbox (8.32202pt too wide) has occurred while \output is active
@@ -2437,7 +2457,7 @@ Overfull \hbox (8.32202pt too wide) has occurred while \output is active
     []
  []
 
-[39]
+[41]
 Overfull \hbox (8.32202pt too wide) has occurred while \output is active
     []
  []
@@ -2447,7 +2467,7 @@ Overfull \hbox (8.32202pt too wide) has occurred while \output is active
     []
  []
 
-[40])
+[42])
 Overfull \hbox (8.32202pt too wide) has occurred while \output is active
     []
  []
@@ -2457,7 +2477,7 @@ Overfull \hbox (8.32202pt too wide) has occurred while \output is active
     []
  []
 
-[41] (./addenduma.tex
+[43] (./addenduma.tex
 Addendum A.
 )
 Overfull \hbox (8.32202pt too wide) has occurred while \output is active
@@ -2469,7 +2489,7 @@ Overfull \hbox (8.32202pt too wide) has occurred while \output is active
     []
  []
 
-[42
+[44
 
 ] (./diss_thesis.aux) ) 
 Here is how much of TeX's memory you used:
@@ -2479,7 +2499,7 @@ Here is how much of TeX's memory you used:
  53032 multiletter control sequences out of 15000+600000
  588758 words of font info for 204 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 86i,12n,140p,1399b,992s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 86i,12n,140p,1620b,992s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/texlive/2019/texmf-dist/fonts/enc/dvips/base/8r.enc}
 <c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texli
 ve/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2019/t
@@ -2488,10 +2508,10 @@ fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2019/texmf-dist/fonts/typ
 e1/urw/symbol/usyr.pfb><c:/texlive/2019/texmf-dist/fonts/type1/urw/times/utmb8a
 .pfb><c:/texlive/2019/texmf-dist/fonts/type1/urw/times/utmr8a.pfb><c:/texlive/2
 019/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on diss_thesis.pdf (47 pages, 1362839 bytes).
+Output written on diss_thesis.pdf (49 pages, 1367664 bytes).
 PDF statistics:
- 234 PDF objects out of 1000 (max. 8388607)
- 143 compressed objects within 2 object streams
+ 241 PDF objects out of 1000 (max. 8388607)
+ 148 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  20117 words of extra memory for PDF output out of 20736 (max. 10000000)
 
